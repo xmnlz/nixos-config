@@ -1,8 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  system.stateVersion = "25.11";
-
   home = {
     homeDirectory = "home/xmnlz";
   };
