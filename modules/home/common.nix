@@ -2,7 +2,7 @@
 
 {
   home = {
-    homeDirectory = "home/xmnlz";
+    homeDirectory = "/home/xmnlz";
   };
 
   home.packages = with pkgs; [
