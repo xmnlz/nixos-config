@@ -1,4 +1,4 @@
-{ pkgs, home-manager, ... }:
+{ pkgs, home-manager, zen-browser, ... }:
 
 {
   system.stateVersion = "25.11";
@@ -17,6 +17,7 @@
     imports = [
       ./home.nix
     ];
+    extraSpecialArgs = { inherit zen-browser; };
   };
 
 }
