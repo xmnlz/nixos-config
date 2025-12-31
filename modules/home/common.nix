@@ -2,6 +2,7 @@
 
 {
   home = {
+    username = "xmnlz";
     homeDirectory = "/home/xmnlz";
   };
 
