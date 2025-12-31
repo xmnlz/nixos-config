@@ -1,7 +1,7 @@
 {
   config,
   pkgs,
-  zen-browser,
+  inputs,
   ...
 }:
 
@@ -9,15 +9,15 @@
   home.stateVersion = "25.11";
 
   home.packages = with pkgs; [
-    google-chrome
+    inputs.zen-browser.packages.${pkgs.system}.default
     telegram-desktop
     gh
-    zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   imports = [
     ../../modules/home/common.nix
     ../../modules/home/ghostty
+    ../../modules/home/vicinae.nix
   ];
 
 }

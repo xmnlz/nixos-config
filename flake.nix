@@ -12,22 +12,22 @@
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
     };
+
+    vicinae = {
+      url = "github:vicinaehq/vicinae";
+    };
   };
 
-  outputs =
-    { self, nixpkgs, home-manager, zen-browser, ... }:
+  outputs = { self, ... }@inputs:
     {
-      nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.laptop = inputs.nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
         modules = [
-          home-manager.nixosModules.home-manager
+          inputs.home-manager.nixosModules.home-manager
           ./hosts/laptop
         ];
-        specialArgs = {
-          inherit home-manager;
-          inherit zen-browser;
-        };
+        specialArgs = { inherit inputs; };
       };
     };
 }

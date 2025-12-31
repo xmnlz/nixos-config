@@ -1,4 +1,4 @@
-{ pkgs, home-manager, zen-browser, ... }:
+{ inputs, ... }:
 
 {
   system.stateVersion = "25.11";
@@ -13,11 +13,12 @@
 
   services.xserver.enable = false;
 
-  home-manager.extraSpecialArgs = { inherit zen-browser; };
+  home-manager.extraSpecialArgs = { inherit inputs; };
 
   home-manager.users.xmnlz = {
     imports = [
       ./home.nix
+      inputs.vicinae.homeManagerModules.default
     ];
   };
 
