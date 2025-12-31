@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  users.mutableUsers = false;
+  # users.mutableUsers = false;
 
   users.users.xmnlz = {
     isNormalUser = true;
