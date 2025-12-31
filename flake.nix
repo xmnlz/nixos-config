@@ -17,8 +17,12 @@
         system = "x86_64-linux";
 
         modules = [
+          home-manager.nixosModules.home-manager
           ./hosts/laptop
         ];
+        specialArgs = {
+          inherit home-manager;
+        };
       };
     };
 }
