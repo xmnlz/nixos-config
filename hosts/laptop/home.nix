@@ -1,10 +1,25 @@
-{ config, pkgs, ... }: 
+{ config, pkgs, ... }:
 
 {
+  home.stateVersion = "25.11";
+
   home.username = "xmnlz";
   home.homeDirectory = "/home/xmnlz";
 
-  home.packages = [];
+  xdg.configFile."hypr".source = ./hypr;
 
-  home.stateVersion = "25.11";
+  wayland.windowManager.hyprland.enable = true;
+
+  home.packages = with pkgs; [
+    stable.git
+    neovim
+    google-chrome
+    telegram-desktop
+    gh
+  ];
+
+  programs.git = {
+    enable = true;
+  };
+
 }
