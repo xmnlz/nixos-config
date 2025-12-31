@@ -13,11 +13,12 @@
 
   services.xserver.enable = false;
 
+  home-manager.extraSpecialArgs = { inherit zen-browser; };
+
   home-manager.users.xmnlz = {
     imports = [
       ./home.nix
     ];
-    extraSpecialArgs = { inherit zen-browser; };
   };
 
 }
