@@ -1,6 +1,8 @@
 { pkgs, home-manager, ... }:
 
 {
+  system.stateVersion = "25.11";
+
   imports = [
     ./hardware.nix
 
