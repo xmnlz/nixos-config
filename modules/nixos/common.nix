@@ -6,6 +6,8 @@
     "flakes"
   ];
 
+  nixpkgs.config.allowUnfree = true;
+
   nix.gc = {
     automatic = true;
     dates = "daily";
@@ -16,5 +18,4 @@
 
   i18n.defaultLocale = "en_US.UTF-8";
 
-  nixpkgs.config.allowUnfree = true;
 }
