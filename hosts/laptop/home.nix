@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, zen-browser, ... }:
 
 {
   home.stateVersion = "25.11";
@@ -7,6 +7,7 @@
     google-chrome
     telegram-desktop
     gh
+    zen-browser.packages.${pkgs.system}.default
   ];
 
   imports = [
