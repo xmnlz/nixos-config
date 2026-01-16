@@ -1,7 +1,7 @@
-require 'options'
-require 'remap'
-require 'lsp'
-require 'lazy'
+require 'config.options'
+require 'config.remap'
+require 'config.lsp'
+require 'config.lazy'
 
 -- Sync clipboard between OS and Neovim.
 -- Schedule the setting after `UiEnter` because it can increase startup-time.
