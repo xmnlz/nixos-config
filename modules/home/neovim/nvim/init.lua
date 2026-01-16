@@ -3,7 +3,6 @@ require 'remap'
 require 'lsp'
 require 'lazy'
 
-
 -- Sync clipboard between OS and Neovim.
 -- Schedule the setting after `UiEnter` because it can increase startup-time.
 vim.schedule(function()
