@@ -2,12 +2,11 @@
 
 {
   home.packages = with pkgs; [
-    lua-language-server
     gopls
-    tsserver
+    lua-language-server
+    typescript-language-server
     tailwindcss-language-server
     svelte-language-server
-    html-lsp
     docker-language-server
     zls
   ];
