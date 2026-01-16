@@ -8,6 +8,7 @@
     tailwindcss-language-server
     svelte-language-server
     docker-language-server
+    pyright
     zls
   ];
 }
