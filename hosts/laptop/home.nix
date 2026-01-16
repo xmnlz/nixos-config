@@ -19,6 +19,7 @@
     ../../modules/home/common.nix
     ../../modules/home/lsp.nix
     ../../modules/home/neovim
+    ../../modules/home/tmux
     ../../modules/home/ghostty
     ../../modules/home/vicinae.nix
   ];

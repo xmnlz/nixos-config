@@ -1,5 +1,5 @@
 vim.lsp.enable {
-  'docker_language_server',
+  'dockerls',
   'tailwindcss',
   'tinymist',
   'svelte',
@@ -8,6 +8,8 @@ vim.lsp.enable {
   'ts_ls',
   'html',
   'zls',
+  'nil',
+  'pyright'
 }
 
 vim.api.nvim_create_autocmd('LspAttach', {
