@@ -16,8 +16,8 @@
 
   imports = [
     ../../modules/home/common.nix
+    ../../modules/home/neovim
     ../../modules/home/ghostty
     ../../modules/home/vicinae.nix
   ];
-
 }

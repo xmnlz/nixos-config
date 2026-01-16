@@ -8,5 +8,5 @@
     vimAlias = true;
   };
 
-  # home.file".config/nvim".source = ./nvim;
+  xdg.configFile."nvim".source = ./nvim;
 }
