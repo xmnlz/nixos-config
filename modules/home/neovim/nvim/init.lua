@@ -1,4 +1,4 @@
-require 'config.remap'
+require 'remap'
 
 -- Sync clipboard between OS and Neovim.
 -- Schedule the setting after `UiEnter` because it can increase startup-time.
