@@ -8,9 +8,8 @@
 {
   home.stateVersion = "25.11";
 
-  programs.home-manager.enable = true; 
-
   home.packages = with pkgs; [
+    home-manager
     inputs.zen-browser.packages.${pkgs.system}.default
     telegram-desktop
     gh
