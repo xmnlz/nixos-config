@@ -12,6 +12,7 @@
     git
     btop
     neovim
+    fastfetch
     tmux
     ripgrep
     curl
