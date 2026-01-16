@@ -2,6 +2,7 @@
 
 {
   home.packages = with pkgs; [
+    nil
     gopls
     lua-language-server
     typescript-language-server
