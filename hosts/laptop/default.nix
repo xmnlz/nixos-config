@@ -6,6 +6,8 @@
   imports = [
     ./hardware.nix
 
+    ./modules/services.nix
+
     ../../modules/nixos/common.nix
     ../../modules/nixos/users.nix
     ../../modules/nixos/gnome.nix
