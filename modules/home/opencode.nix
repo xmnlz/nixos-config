@@ -7,4 +7,4 @@
   programs.opencode = {
     enable = true;
   };
-
+}
