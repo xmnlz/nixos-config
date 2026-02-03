@@ -6,5 +6,5 @@
 }: {
   programs.opencode = {
     enable = true;
-  }
+  };
 }
