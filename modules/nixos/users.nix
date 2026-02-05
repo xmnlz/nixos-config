@@ -8,7 +8,7 @@
     description = "xmnlz";
     extraGroups = [
       "wheel"
-      "networkmanager",
+      "networkmanager"
     ];
   };
 }
