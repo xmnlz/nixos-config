@@ -17,6 +17,7 @@
 
   imports = [
     ../../modules/home/common.nix
+    ../../modules/home/languages.nix
     ../../modules/home/lsp.nix
     ../../modules/home/opencode.nix
     ../../modules/home/neovim
