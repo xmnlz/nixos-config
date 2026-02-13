@@ -20,6 +20,7 @@
     ../../modules/home/languages.nix
     ../../modules/home/lsp.nix
     ../../modules/home/opencode.nix
+    ../../modules/home/steam.nix
     ../../modules/home/neovim
     ../../modules/home/tmux
     ../../modules/home/ghostty
