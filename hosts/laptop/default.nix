@@ -13,8 +13,6 @@
     ../../modules/nixos/gnome.nix
   ];
 
-  services.xserver.enable = false;
-
   home-manager.extraSpecialArgs = { inherit inputs; };
 
   home-manager.users.xmnlz = {
