@@ -9,6 +9,7 @@
   };
 
   home.packages = with pkgs; [
+    vencord
     zsh
     git
     btop

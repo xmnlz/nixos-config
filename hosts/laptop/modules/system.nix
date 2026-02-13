@@ -29,6 +29,11 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  programs.hyprland.enable = true;
+  services.xserver.videoDrivers = [ "amdgpu" ]; 
 
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
+    driSupport32Bit = true;
+  };
 }
