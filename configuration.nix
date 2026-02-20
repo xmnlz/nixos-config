@@ -60,7 +60,9 @@
     useGlobalPkgs = true;
     useUserPackages = true;
     extraSpecialArgs = { inherit inputs; };
-    users.xmnlz = import ./home.nix;
+    users = {
+      xmnlz = import ./home.nix;
+    };
   };
 
   system.stateVersion = "25.11";
