@@ -27,5 +27,8 @@
         email = "lemmeq9@gmail.com";
       };
     };
+    extraConfig = {
+      credential.helper = "!gh auth git-credential";
+    };
   };
 }
