@@ -18,4 +18,12 @@
     pyright
     zls
   ];
+
+  programs.git.config = {
+    user = {
+      name = "xmnlz";
+      username = "xmnlz";
+      email = "lemmeq9@gmail.com"
+    };
+  };
 }
