@@ -7,6 +7,7 @@
     ./system/networking.nix
     ./system/services.nix
     ./system/gnome.nix
+    ./system/hyprland.nix
     ./system/gaming.nix
   ];
 
