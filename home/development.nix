@@ -1,7 +1,11 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   home.packages = with pkgs; [
+    # Languages
+    zig
+
+    # LSP servers
     nil
     gopls
     tinymist
@@ -15,4 +19,3 @@
     zls
   ];
 }
-

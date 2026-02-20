@@ -1,0 +1,21 @@
+{ ... }:
+
+{
+  services.fprintd.enable = true;
+
+  # Uncomment to enable fingerprint auth in PAM (test carefully to avoid lockout)
+  # security.pam.services = {
+  #   login.fprintAuth = true;
+  #   sudo.fprintAuth = true;
+  #   greetd.fprintAuth = true;
+  # };
+
+  # Uncomment to use greetd instead of GDM (also disable GDM in system/gnome.nix)
+  # services.greetd = {
+  #   enable = true;
+  #   settings.default_session = {
+  #     command = "Hyprland";
+  #     user = "greeter";
+  #   };
+  # };
+}

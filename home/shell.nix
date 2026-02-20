@@ -1,13 +1,6 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
-  nixpkgs.config.allowUnfree = true;
-
-  home = {
-    username = "xmnlz";
-    homeDirectory = "/home/xmnlz";
-  };
-
   home.packages = with pkgs; [
     vesktop
     zsh

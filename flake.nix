@@ -1,5 +1,5 @@
 {
-  description = "Nixos config";
+  description = "NixOS configuration";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -14,22 +14,13 @@
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
-    nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
         home-manager.nixosModules.home-manager
-        ./hosts/laptop
-      ];
-    }; 
-
-    homeConfigurations."xmnlz" = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.x86_64-linux;
-      extraSpecialArgs = { inherit inputs; };
-      modules = [
-        ./hosts/laptop/home.nix 
-        inputs.vicinae.homeManagerModules.default 
+        ./configuration.nix
       ];
     };
-  }; 
+  };
 }
