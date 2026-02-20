@@ -11,6 +11,9 @@
   # };
 
   # Uncomment to use greetd instead of GDM (also disable GDM in system/gnome.nix)
+  # If enabling greetd, also add:
+  #   users.users.greeter = { isSystemUser = true; group = "greeter"; };
+  #   users.groups.greeter = {};
   # services.greetd = {
   #   enable = true;
   #   settings.default_session = {
