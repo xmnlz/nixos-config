@@ -2,10 +2,8 @@
 
 {
   # Enable Hyprland
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
+  wayland.windowManager.hyprland.enable = true;
+  programs.kitty.enable = true;
 
   # Essential packages for Hyprland
   environment.systemPackages = with pkgs; [
