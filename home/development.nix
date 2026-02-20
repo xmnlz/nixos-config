@@ -19,11 +19,13 @@
     zls
   ];
 
-  programs.git.config = {
-    user = {
-      name = "xmnlz";
-      username = "xmnlz";
-      email = "lemmeq9@gmail.com";
+  programs.git = {
+    enable = true;
+    settings = {
+      user = {
+        name = "xmnlz";
+        email = "lemmeq9@gmail.com";
+      };
     };
   };
 }
