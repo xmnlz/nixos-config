@@ -11,24 +11,8 @@
   environment.systemPackages = with pkgs; [
     # Terminal
     kitty
-    
-    # Launcher
-    wofi
-    
-    # Notifications
-    mako
-    
-    # Screenshot
-    grim
-    slurp
-    
-    # Status bar
-    waybar
-    
+
     # Clipboard
     wl-clipboard
-    
-    # File manager
-    xfce.thunar
   ];
 }
