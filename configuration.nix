@@ -49,12 +49,6 @@
     extraGroups = [ "wheel" "networkmanager" ];
   };
 
-  users.users.greeter = {
-    isSystemUser = true;
-    home = "/var/lib/greeter";
-    createHome = true;
-  };
-
   # Home Manager
   home-manager = {
     useGlobalPkgs = true;
