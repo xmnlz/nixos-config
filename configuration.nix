@@ -14,6 +14,19 @@
   # Nix settings
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
+    
+    # Binary caches
+    substituters = [
+      "https://cache.nixos.org"
+      "https://cachix.cachix.org"
+      "https://vicinae.cachix.org"
+    ];
+    
+    trusted-public-keys = [
+      "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+      "cachix.cachix.org-1:eWNHQldwUO7G2VkjpnjDbWwy4KQ/HNxht7H4SSoMckM="
+      "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
+    ];
   };
 
   nixpkgs.config.allowUnfree = true;
