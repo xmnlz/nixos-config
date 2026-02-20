@@ -2,8 +2,10 @@
 
 {
   # Enable Hyprland
-  wayland.windowManager.hyprland.enable = true;
-  programs.kitty.enable = true;
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
 
   # Essential packages for Hyprland
   environment.systemPackages = with pkgs; [
@@ -25,5 +27,8 @@
     
     # Clipboard
     wl-clipboard
+    
+    # File manager
+    xfce.thunar
   ];
 }
