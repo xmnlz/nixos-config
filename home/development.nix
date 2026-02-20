@@ -22,9 +22,13 @@
   programs.git = {
     enable = true;
     settings = {
+      init = {
+        defaultBranch = "main";
+      };
       credential = { 
         helper = "!gh auth git-credential";
       };
+
       user = {
         name = "xmnlz";
         email = "lemmeq9@gmail.com";

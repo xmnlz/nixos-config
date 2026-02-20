@@ -2,7 +2,7 @@
 
 {
   networking = {
-    hostName = "xmnlz-laptop";
+    hostName = "xmnlz";
     networkmanager.enable = true;
   };
 }
