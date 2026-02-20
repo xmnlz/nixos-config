@@ -23,7 +23,7 @@
     user = {
       name = "xmnlz";
       username = "xmnlz";
-      email = "lemmeq9@gmail.com"
+      email = "lemmeq9@gmail.com";
     };
   };
 }
