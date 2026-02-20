@@ -22,13 +22,13 @@
   programs.git = {
     enable = true;
     settings = {
+      credential = { 
+        helper = "!gh auth git-credential";
+      };
       user = {
         name = "xmnlz";
         email = "lemmeq9@gmail.com";
       };
-    };
-    extraConfig = {
-      credential.helper = "!gh auth git-credential";
     };
   };
 }
