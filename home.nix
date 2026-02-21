@@ -4,6 +4,7 @@
   imports = [
     ./home/shell.nix
     ./home/development.nix
+    ./home/hypr
     ./home/gaming.nix
     ./home/apps/ghostty
     ./home/apps/neovim

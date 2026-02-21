@@ -7,7 +7,6 @@
     ./system/networking.nix
     ./system/services.nix
     ./system/gnome.nix
-    ./system/hyprland.nix
     ./system/gaming.nix
   ];
 
@@ -17,14 +16,17 @@
     
     # Binary caches
     substituters = [
-      "https://cache.nixos.org"
-      "https://cachix.cachix.org"
+      "https://hyprland.cachix.org"
       "https://vicinae.cachix.org"
     ];
-    
+
+    trusted-substituters = [
+      "https://hyprland.cachix.org"
+      "https://vicinae.cachix.org"
+    ];
+
     trusted-public-keys = [
-      "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
-      "cachix.cachix.org-1:eWNHQldwUO7G2VkjpnjDbWwy4KQ/HNxht7H4SSoMckM="
+      "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
       "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
     ];
   };
