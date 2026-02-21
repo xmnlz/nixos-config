@@ -1,10 +1,6 @@
 { inputs, pkgs, ... }:
 
 {
-  wayland.windowManager.hyprland.systemd = {
-    variables = [ "--all" ];
-  };
-
   services.vicinae = {
     enable = true;
 
