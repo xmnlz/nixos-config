@@ -66,7 +66,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    home-manage
+    home-manager
   ];
 
   # Home Manager
