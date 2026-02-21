@@ -5,6 +5,7 @@
     ./home/shell.nix
     ./home/development.nix
     ./home/gaming.nix
+    ./home/hypr
     ./home/apps/ghostty
     ./home/apps/neovim
     ./home/apps/tmux
@@ -12,6 +13,7 @@
     ./home/apps/vicinae.nix
     inputs.vicinae.homeManagerModules.default
   ];
+
 
   home = {
     username = "xmnlz";
@@ -23,7 +25,9 @@
       telegram-desktop
       gh
     ];
+
   };
+
 
   programs.home-manager.enable = true;
 }

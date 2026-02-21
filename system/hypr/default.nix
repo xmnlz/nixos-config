@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   wayland.windowManager.hyprland = {
@@ -7,4 +7,3 @@
 
   xdg.configFile."hypr/hyprland.conf".source = ./hyprland.conf;
 }
-
