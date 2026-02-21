@@ -1,6 +1,7 @@
 { inputs, pkgs, ... }:
 
 {
+
   services.vicinae = {
     enable = true;
 
