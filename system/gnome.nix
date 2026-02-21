@@ -1,8 +1,7 @@
 { ... }:
 
 {
-  programs.hyprland = {
-    withUWSM = true;
+  programs.niri= {
     enable = true;
   };
 
