@@ -2,7 +2,7 @@
 
 {
   wayland.windowManager.hyprland.systemd = {
-      variables = [ "--all" ];
+    variables = [ "--all" ];
   };
 
   services.vicinae = {
