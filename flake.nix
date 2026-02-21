@@ -18,7 +18,7 @@
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
-    nixosConfigurations.xmnlz-laptop = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.xmnlz= nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
