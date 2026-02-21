@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   imports = [
@@ -64,6 +64,10 @@
     description = "xmnlz";
     extraGroups = [ "wheel" "networkmanager" ];
   };
+
+  environment.systemPackages = with pkgs; [
+    home-manage
+  ];
 
   # Home Manager
   home-manager = {
