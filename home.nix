@@ -3,9 +3,9 @@
 {
   imports = [
     ./home/shell.nix
+    ./home/hypr
     ./home/development.nix
     ./home/gaming.nix
-    ./home/hypr
     ./home/apps/ghostty
     ./home/apps/neovim
     ./home/apps/tmux
