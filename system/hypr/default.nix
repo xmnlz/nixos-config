@@ -5,6 +5,6 @@
     enable = true;
   };
 
-  xdg.configFile."hypr/hyprland.conf".source = ./home/hypr/hyprland.conf;
+  xdg.configFile."hypr/hyprland.conf".source = ./hyprland.conf;
 }
 

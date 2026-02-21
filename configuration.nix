@@ -6,6 +6,7 @@
     ./system/boot.nix
     ./system/networking.nix
     ./system/services.nix
+    ./system/hypr
     ./system/gnome.nix
     ./system/gaming.nix
   ];
