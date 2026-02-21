@@ -1,7 +1,11 @@
 { ... }:
 
 {
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    withUWSM = true;
+    enable = true;
+  };
+
   services.desktopManager.gnome.enable = true;
   services.displayManager.gdm.enable = true;
 }
