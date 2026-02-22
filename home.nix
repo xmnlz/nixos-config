@@ -3,6 +3,7 @@
 {
   imports = [
     ./home/shell.nix
+    ./home/apps/vicinae.nix
     ./home/hypr
     ./home/development.nix
     ./home/gaming.nix
@@ -10,7 +11,6 @@
     ./home/apps/neovim
     ./home/apps/tmux
     ./home/apps/opencode.nix
-    ./home/apps/vicinae.nix
     inputs.vicinae.homeManagerModules.default
   ];
 
