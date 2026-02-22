@@ -13,6 +13,8 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  boot.initrd.verbose = false;
+
   boot.initrd.availableKernelModules = [
     "nvme"
     "xhci_pci"
