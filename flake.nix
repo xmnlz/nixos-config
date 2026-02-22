@@ -1,6 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -22,6 +23,7 @@
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
+        inputs.nixos-hardware.nixosModules.framework-amd-ai-300-series
         home-manager.nixosModules.home-manager
         ./configuration.nix
       ];
