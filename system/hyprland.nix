@@ -3,6 +3,7 @@
 {
   programs.hyprland = {
     enable = true;
+    withUWSM = true;
   };
 
   # Essential packages for Hyprland

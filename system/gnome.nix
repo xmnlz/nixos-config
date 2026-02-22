@@ -1,8 +1,9 @@
 { ... }:
 
 {
-  programs.hyprland= {
+  programs.hyprland = {
     enable = true;
+    withUWSM = true;
   };
 
   services.xserver.enable = true;
