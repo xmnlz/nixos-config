@@ -19,15 +19,7 @@
     username = "xmnlz";
     homeDirectory = "/home/xmnlz";
     stateVersion = "25.11";
-
-    packages = with pkgs; [
-      inputs.zen-browser.packages.${pkgs.system}.default
-      telegram-desktop
-      gh
-    ];
-
   };
-
 
   programs.home-manager.enable = true;
 }

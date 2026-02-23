@@ -1,15 +1,17 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   home.packages = with pkgs; [
-
-    # discord
+    # apps 
+    inputs.zen-browser.packages.${pkgs.system}.default
+    telegram-desktop
     vesktop
 
     # shell
     tmux
     zsh
     git
+    gh
 
     # utils
     fastfetch
