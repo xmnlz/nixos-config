@@ -63,7 +63,7 @@
     isNormalUser = true;
     description = "xmnlz";
     extraGroups = [ "wheel" "networkmanager" ];
-    shell = [ pkgs.fish ];
+    shell = pkgs.fish;
   };
 
 
