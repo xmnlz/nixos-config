@@ -8,8 +8,6 @@
       enable = true;
       autoStart = true;
 
-      # target = "hyprland-session.target";
-
       environment = {
         USE_LAYER_SHELL = 1;
       };

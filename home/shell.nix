@@ -2,16 +2,22 @@
 
 {
   home.packages = with pkgs; [
+
+    # discord
     vesktop
+
+    # shell
+    tmux
     zsh
     git
-    btop
+
+    # utils
     fastfetch
-    tmux
     ripgrep
+    unzip
+    btop
     curl
     wget
-    unzip
     zip
   ];
 }

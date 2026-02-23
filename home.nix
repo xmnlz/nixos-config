@@ -7,7 +7,7 @@
     ./home/hypr
     ./home/development.nix
     ./home/gaming.nix
-    ./home/apps/ghostty
+    ./home/apps/ghostty.nix
     ./home/apps/neovim
     ./home/apps/tmux
     ./home/apps/opencode.nix

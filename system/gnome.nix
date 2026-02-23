@@ -7,6 +7,7 @@
     xwayland.enable = true;
   };
 
+  # FIXME: https://github.com/NixOS/nixpkgs/issues/484328
   programs.uwsm.waylandCompositors = {
     hyprland = {
       prettyName = "Hyprland";
