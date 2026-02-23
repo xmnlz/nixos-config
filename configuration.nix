@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   imports = [
@@ -63,6 +63,7 @@
     isNormalUser = true;
     description = "xmnlz";
     extraGroups = [ "wheel" "networkmanager" ];
+    shell = [ pkgs.fish ];
   };
 
 
