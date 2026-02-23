@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }:
+{ inputs, ... }:
 
 {
   imports = [
@@ -20,6 +20,7 @@
     homeDirectory = "/home/xmnlz";
     stateVersion = "25.11";
   };
-
+  
+  # This is requred to just restart the hm modules included
   programs.home-manager.enable = true;
 }
