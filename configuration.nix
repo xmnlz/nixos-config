@@ -4,8 +4,7 @@
   imports = [
     ./hardware.nix
     ./system/boot.nix
-    ./system/networking.nix
-    ./system/services.nix
+    ./system/general.nix
     ./system/gnome.nix
     ./system/gaming.nix
   ];
@@ -65,9 +64,6 @@
     extraGroups = [ "wheel" "networkmanager" ];
   };
 
-  environment.systemPackages = with pkgs; [
-    home-manager
-  ];
 
   # Home Manager
   home-manager = {

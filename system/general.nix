@@ -1,7 +1,19 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
+
+  environment.systemPackages = with pkgs; [
+    fish
+    # home-manager
+  ];
+
   services.fprintd.enable = true;
+
+  networking = {
+    hostName = "xmnlz";
+    networkmanager.enable = true;
+  };
+
 
   # Uncomment to enable fingerprint auth in PAM (test carefully to avoid lockout)
   # security.pam.services = {
@@ -22,3 +34,4 @@
   #   };
   # };
 }
+
