@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }:
+{ inputs, ... }:
 
 {
   imports = [
@@ -6,6 +6,7 @@
     ./system/boot.nix
     ./system/general.nix
     ./system/gnome.nix
+    ./system/hyprland.nix
     ./system/gaming.nix
   ];
 
@@ -65,7 +66,6 @@
   };
 
 
-  # Home Manager
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;

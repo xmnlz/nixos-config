@@ -5,7 +5,7 @@
     # Languages
     zig
 
-    # LSP servers
+    # LSP 
     nil
     gopls
     tinymist

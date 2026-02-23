@@ -3,8 +3,8 @@
 {
 
   environment.systemPackages = with pkgs; [
+    # shell
     fish
-    # home-manager
   ];
 
   services.fprintd.enable = true;
