@@ -1,6 +1,11 @@
 { ... }: 
 
 {
+  qt = {
+    enable = true;
+    # platformTheme = "gtk";
+  };
+
   programs.quickshell = {
     enable = true;
   #   systemd.enable = true;
