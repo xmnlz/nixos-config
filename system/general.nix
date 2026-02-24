@@ -13,6 +13,10 @@
     networkmanager.enable = true;
   };
 
+  services.openssh= {
+    enable = true;
+  };
+
 
   # Uncomment to enable fingerprint auth in PAM (test carefully to avoid lockout)
   # security.pam.services = {
