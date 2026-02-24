@@ -21,5 +21,8 @@
     curl
     wget
     zip
+
+    # ui
+    quickshell
   ];
 }
