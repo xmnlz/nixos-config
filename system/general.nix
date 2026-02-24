@@ -3,8 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
-    # shell
-    fish
+
   ];
 
   services.fprintd.enable = true;
