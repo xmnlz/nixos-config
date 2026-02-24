@@ -21,11 +21,6 @@
 
   programs.fish = {
     enable = true;
-    shellAliases = {
-      # nixos stuff
-      nrs = "nixos-rebuild switch --flake .";
-      nrb = "nixos-rebuild boot --flake .";
-    };
   };
 
   programs.git = {
