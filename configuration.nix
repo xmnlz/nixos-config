@@ -58,7 +58,9 @@
     };
   };
 
-  # User account
+  # TODO: Find a better way to do so 
+  programs.fish.enable = true;
+
   users.users.xmnlz = {
     isNormalUser = true;
     description = "xmnlz";
