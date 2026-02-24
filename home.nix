@@ -5,6 +5,7 @@
     ./home/shell.nix
     ./home/apps/vicinae.nix
     ./home/hypr
+    ./home/quickshell
     ./home/development.nix
     ./home/gaming.nix
     ./home/apps/ghostty.nix
