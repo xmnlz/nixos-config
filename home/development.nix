@@ -21,6 +21,7 @@
 
   programs.fish = {
     enable = true;
+
   };
 
   programs.git = {
@@ -30,15 +31,9 @@
         name = "xmnlz";
         email = "lemmeq9@gmail.com";
       };
-      core = {
-        editor = "nvim";
-      };
-      init = {
-        defaultBranch = "main";
-      };
-      credential = { 
-        helper = "!gh auth git-credential";
-      };
+      core.editor = "nvim";
+      init.defaultBranch = "main";
+      credential.helper = "!gh auth git-credential";
     };
   };
 }
