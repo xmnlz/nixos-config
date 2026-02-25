@@ -3,7 +3,7 @@
 {
   qt = {
     enable = true;
-    # platformTheme = "gtk";
+    platformTheme = "gnome";
   };
 
   programs.quickshell = {
