@@ -5,7 +5,7 @@ PanelWindow {
   anchors.top: true
   anchors.left: true
   anchors.right: true
-  implicitHight: 30
+  implicitHeight: 30
   color: "#1a1b26"
 
   Text {
