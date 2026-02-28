@@ -1,39 +1,55 @@
-import Quickshell
 import QtQuick
+import Quickshell
 import Quickshell.Services.SystemTray
 
 PanelWindow {
-  anchors.top: true
-  anchors.left: true
-  anchors.right: true
-  implicitHeight: 30
-  color: "#1a1b26"
+    anchors.top: true
+    anchors.left: true
+    anchors.right: true
+    implicitHeight: 30
+    color: "#1a1b26"
 
-  Row {
-    spacing: 12
-    anchors.verticalCenter: parent.verticalCenter
-
-    // left side text to verify
-    Text { text: "My Bar" }
-
-    // a flexible space
-    Item { Layout.fillWidth: true }
-
-    // system tray area
+    // The service (data provider)
     SystemTray {
         id: tray
     }
 
-    // clock example
-    Text {
-        text: Qt.formatTime(new Date(), "hh:mm")
-    }
-  }
+    Row {
+        anchors.fill: parent
+        anchors.margins: 8
+        spacing: 12
 
-  Text {
-    anchors.centerIn: parent
-    text: "My first bar"
-    color: "#a9b1d6"
-    font.pixelSize: 14
-  }
+        Text {
+            text: "My Bar"
+            color: "#a9b1d6"
+        }
+
+        Item { width: 1; Layout.fillWidth: true }
+
+        // Render tray items
+        Repeater {
+            model: tray.items
+
+            delegate: Item {
+                width: 20
+                height: 20
+
+                Image {
+                    anchors.fill: parent
+                    source: modelData.icon
+                    fillMode: Image.PreserveAspectFit
+                }
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: modelData.activate()
+                }
+            }
+        }
+
+        Text {
+            color: "#a9b1d6"
+            text: Qt.formatTime(new Date(), "hh:mm")
+        }
+    }
 }
