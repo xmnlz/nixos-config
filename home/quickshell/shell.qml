@@ -4,9 +4,11 @@ import Quickshell
 import Quickshell.Services.SystemTray
 
 PanelWindow {
-    anchors.top: true
-    anchors.left: true
-    anchors.right: true
+    anchors {
+      top: true
+      right: true
+      left: true
+    }
     implicitHeight: 30
     color: "#1a1b26"
 
@@ -14,8 +16,6 @@ PanelWindow {
         anchors.fill: parent
         anchors.margins: 6
         spacing: 10
-
-        Text { text: "My Bar" }
 
         Item { Layout.fillWidth: true }
 
