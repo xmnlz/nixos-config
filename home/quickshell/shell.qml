@@ -9,24 +9,19 @@ PanelWindow {
     implicitHeight: 30
     color: "#1a1b26"
 
-    // The service (data provider)
-    SystemTray {
-        id: tray
-    }
+    // This just *activates* the service
+    SystemTray { id: tray }
 
     Row {
         anchors.fill: parent
-        anchors.margins: 8
-        spacing: 12
+        anchors.margins: 6
+        spacing: 10
 
-        Text {
-            text: "My Bar"
-            color: "#a9b1d6"
-        }
+        Text { text: "My Bar" }
 
-        Item { width: 1; Layout.fillWidth: true }
+        Item { Layout.fillWidth: true }  // spacer if using RowLayout
 
-        // Render tray items
+        // Show tray icons
         Repeater {
             model: tray.items
 
@@ -48,7 +43,6 @@ PanelWindow {
         }
 
         Text {
-            color: "#a9b1d6"
             text: Qt.formatTime(new Date(), "hh:mm")
         }
     }
