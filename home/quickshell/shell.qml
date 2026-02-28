@@ -10,8 +10,6 @@ PanelWindow {
     implicitHeight: 30
     color: "#1a1b26"
 
-    SystemTray { id: tray }
-
     RowLayout {
         anchors.fill: parent
         anchors.margins: 6
@@ -19,11 +17,10 @@ PanelWindow {
 
         Text { text: "My Bar" }
 
-        Item { Layout.fillWidth: true }  // spacer — now works in RowLayout
+        Item { Layout.fillWidth: true }
 
-        // Show tray icons
         Repeater {
-            model: tray.items
+            model: SystemTray.items
 
             delegate: Item {
                 width: 20
