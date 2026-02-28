@@ -1,4 +1,5 @@
 import QtQuick
+import QtQuick.Layouts
 import Quickshell
 import Quickshell.Services.SystemTray
 
@@ -9,17 +10,16 @@ PanelWindow {
     implicitHeight: 30
     color: "#1a1b26"
 
-    // This just *activates* the service
     SystemTray { id: tray }
 
-    Row {
+    RowLayout {
         anchors.fill: parent
         anchors.margins: 6
         spacing: 10
 
         Text { text: "My Bar" }
 
-        Item { Layout.fillWidth: true }  // spacer if using RowLayout
+        Item { Layout.fillWidth: true }  // spacer — now works in RowLayout
 
         // Show tray icons
         Repeater {
@@ -37,13 +37,27 @@ PanelWindow {
 
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: modelData.activate()
+                    acceptedButtons: Qt.LeftButton | Qt.RightButton
+                    onClicked: (mouse) => {
+                        if (mouse.button === Qt.RightButton && modelData.hasMenu)
+                            modelData.display(tray, mouseX, mouseY)
+                        else
+                            modelData.activate()
+                    }
                 }
             }
         }
 
         Text {
+            id: clock
             text: Qt.formatTime(new Date(), "hh:mm")
+
+            Timer {
+                interval: 1000
+                running: true
+                repeat: true
+                onTriggered: clock.text = Qt.formatTime(new Date(), "hh:mm")
+            }
         }
     }
 }
