@@ -6,7 +6,7 @@
     inputs.zen-browser.packages.${pkgs.system}.default
     telegram-desktop
     vesktop
-    spicetify-cli
+    spotify
 
     # shell
     tmux
