@@ -36,7 +36,7 @@
   # Automatic garbage collection
   nix.gc = {
     automatic = true;
-    persistant = true;
+    persistent = true;
     dates = "weekly";
   };
 
