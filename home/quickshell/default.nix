@@ -4,7 +4,9 @@
   qt = {
     enable = true;
     # TODO: Fix this later 
-    platformTheme = "gnome";
+    platformTheme = {
+      name = "gtk";
+    };
 
     style = {
       name = "adwaita-dark";
