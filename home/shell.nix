@@ -6,6 +6,7 @@
     inputs.zen-browser.packages.${pkgs.system}.default
     telegram-desktop
     vesktop
+    legcord
     spotify
 
     # shell
