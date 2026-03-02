@@ -5,7 +5,7 @@
     enable = true;
     # TODO: Fix this later 
     platformTheme = "gnome";
-    style = "adwaita";
+    style = "adwaita-dark";
   };
 
   programs.quickshell = {
