@@ -24,6 +24,20 @@
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-config";
       nrb = "sudo nixos-rebuild boot --flake ~/nixos-config";
     };
+    pointerCursor = {
+      package = kuromi-cursor;
+      name = "kuromi-cursor";
+      size = 24; 
+
+      # Enables HYPRCURSOR_THEME + HYPRCURSOR_SIZE env vars
+      hyprcursor = {
+        enable = true;
+        size = 24;
+      };
+
+      gtk.enable = true;
+      x11.enable = true;
+    };
   };
   
   # This is requred to just restart the hm modules included
