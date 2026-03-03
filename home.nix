@@ -26,7 +26,7 @@
     };
     pointerCursor = {
       package = pkgs.kuromi-cursor;
-      name = "kuromi-cursor";
+      name = "Kuromi-cursor";
       size = 24; 
 
       # Enables HYPRCURSOR_THEME + HYPRCURSOR_SIZE env vars

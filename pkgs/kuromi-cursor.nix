@@ -14,6 +14,6 @@ stdenv.mkDerivation {
 
   installPhase = ''
     mkdir -p $out/share/icons
-    cp -r kuromi-cursor $out/share/icons/
+    cp -r Kuromi-cursor $out/share/icons/
   '';
 }
