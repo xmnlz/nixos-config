@@ -6,7 +6,7 @@ stdenv.mkDerivation {
 
   src = fetchurl {
     url = "https://github.com/rockman6554/kuromi-cursor-linux/releases/download/2.0/kuromi-cursor.tgz";
-    sha256 = "09z21hwcydxvvydsfpyjl7fgy369cmri3pmqlg4v2jn6vwb7x4nq";
+    sha256 = "OK9rUmaeRnwt2l7ruEXLztnriVvraB9Q417K/lNogRc=";
   };
 
   # The tarball extracts to a folder named "kuromi-cursor"
