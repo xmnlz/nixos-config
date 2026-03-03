@@ -41,6 +41,27 @@
         "type": "github"
       }
     },
+    "hyprland-preview-share-picker": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1769511279,
+        "narHash": "sha256-UL5W6LGFN/ut7FP+p1RCHGp20tb8Dc06c3iYNFcPogA=",
+        "owner": "WhySoBad",
+        "repo": "hyprland-preview-share-picker",
+        "rev": "e056361af807058828c9075135d72b980fce318e",
+        "submodules": true,
+        "type": "github"
+      },
+      "original": {
+        "owner": "WhySoBad",
+        "repo": "hyprland-preview-share-picker",
+        "type": "github"
+      }
+    },
     "nixos-hardware": {
       "locked": {
         "lastModified": 1771969195,
@@ -124,6 +145,7 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
+        "hyprland-preview-share-picker": "hyprland-preview-share-picker",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs",
         "vicinae": "vicinae",

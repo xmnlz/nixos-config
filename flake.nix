@@ -9,7 +9,9 @@
     };
 
     hyprland-preview-share-picker = {
-      url = "github:WhySoBad/hyprland-preview-share-picker";
+      url = "git+https://github.com/WhySoBad/hyprland-preview-share-picker.git?submodules=1";
+      # or pin to the exact rev you had in the lock file:
+      # url = "git+https://github.com/WhySoBad/hyprland-preview-share-picker.git?e056361af807058828c9075135d72b980fce318e&submodules=1";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
