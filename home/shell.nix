@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs; [
     # apps 
-    inputs.zen-browser.packages.${pkgs.system}.default
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
     telegram-desktop
     vesktop
     spotify
@@ -26,5 +26,8 @@
     # ui
     quickshell
     adwaita-qt
+
+    # test stuff
+    inputs.hyprland-preview-share-picker.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
