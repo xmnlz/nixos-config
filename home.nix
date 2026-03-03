@@ -25,7 +25,7 @@
       nrb = "sudo nixos-rebuild boot --flake ~/nixos-config";
     };
     pointerCursor = {
-      package = kuromi-cursor;
+      package = pkgs.kuromi-cursor;
       name = "kuromi-cursor";
       size = 24; 
 
