@@ -8,11 +8,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hyprland-preview-share-picker = {
-      url = "github:WhySoBad/hyprland-preview-share-picker";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     vicinae.url = "github:vicinaehq/vicinae";
 
     vicinae-extensions = {
