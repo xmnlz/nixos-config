@@ -10,7 +10,7 @@
     gopls
     tinymist
     lua-language-server
-    kdePackages.qtdeclarative
+    pkgs.kdePackages.qtdeclarative
     typescript-language-server
     tailwindcss-language-server
     svelte-language-server

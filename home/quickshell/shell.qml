@@ -7,8 +7,12 @@ import Quickshell.Services.SystemTray
 PanelWindow {
   id: bar
 
+  weight: 10
+
   anchors {
     top: true
+
+    
   }
 }
 
