@@ -31,7 +31,7 @@
       name = "Kuromi-cursor";
       size = 32;
 
-      hyprcursor.enable = true;
+      hyprcursor.enable = false;
       gtk.enable = true;
       x11.enable = true;
     };
