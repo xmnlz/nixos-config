@@ -29,7 +29,7 @@
       enable = true;
       package = pkgs.kuromi-cursor;
       name = "Kuromi-cursor";
-      size = 32;
+      size = 24;
 
       hyprcursor.enable = false;
       gtk.enable = true;
