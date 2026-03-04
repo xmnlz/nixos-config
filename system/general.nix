@@ -10,7 +10,10 @@
 
   networking = {
     hostName = "xmnlz";
-    networkmanager.enable = true;
+    networkmanager = {
+      enable = true;
+      wifi.powersave = false;
+    };
   };
 
   services.openssh= {
