@@ -24,17 +24,14 @@
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-config";
       nrb = "sudo nixos-rebuild boot --flake ~/nixos-config";
     };
+
     pointerCursor = {
+      enable = true;
       package = pkgs.kuromi-cursor;
       name = "Kuromi-cursor";
-      size = 24; 
+      size = 32;
 
-      # Enables HYPRCURSOR_THEME + HYPRCURSOR_SIZE env vars
-      hyprcursor = {
-        enable = true;
-        size = 24;
-      };
-
+      hyprcursor.enable = true;
       gtk.enable = true;
       x11.enable = true;
     };
