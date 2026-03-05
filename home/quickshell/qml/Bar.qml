@@ -5,6 +5,7 @@ import Quickshell
 import Quickshell.Widgets
 import Quickshell.Services.SystemTray
 
+
 PanelWindow {
   id: bar
 
@@ -58,3 +59,4 @@ PanelWindow {
     }
   }
 }
+
