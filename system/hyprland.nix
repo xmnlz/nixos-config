@@ -7,6 +7,12 @@
     xwayland.enable = true;
   };
 
+  xdg.portal = {
+    enable = true;
+    extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
+    config.hyprland.default = [ "hyprland" "gtk" ];
+  };
+
   # FIXME: https://github.com/NixOS/nixpkgs/issues/484328
   programs.uwsm.waylandCompositors = {
     hyprland = {
