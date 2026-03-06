@@ -1,18 +1,6 @@
 { ... }: 
 
 {
-  qt = {
-    enable = true;
-    # TODO: Fix this later 
-    platformTheme = {
-      name = "gtk";
-    };
-
-    style = {
-      name = "adwaita-dark";
-    };
-  };
-
   programs.quickshell = {
     enable = true;
     #   systemd.enable = true;
