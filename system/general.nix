@@ -3,10 +3,10 @@
 {
   qt = {
     enable = true;
-    # TODO: Fix this later 
-    platformTheme = {
-      name = "gnome";
-    };
+    # # TODO: Fix this later 
+    # platformTheme = {
+    #   name = "gnome";
+    # };
 
     style = {
       name = "adwaita-dark";
