@@ -1,6 +1,18 @@
 { pkgs, ... }:
 
 {
+  qt = {
+    enable = true;
+    # TODO: Fix this later 
+    platformTheme = {
+      name = "gnome";
+    };
+
+    style = {
+      name = "adwaita-dark";
+    };
+  };
+
 
   environment.systemPackages = with pkgs; [
 
