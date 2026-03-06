@@ -3,7 +3,6 @@ import QtQuick
 
 QtObject {
   id: theme
-
   // Backgrounds
   readonly property color background: "#1c1c1e"        // Main bar background
   readonly property color surface: "#2c2c2e"           // Elevated elements
