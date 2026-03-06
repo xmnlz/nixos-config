@@ -8,9 +8,9 @@
     #   name = "gnome";
     # };
 
-    style = {
-      name = "adwaita-dark";
-    };
+    # style = {
+    #   name = "adwaita-dark";
+    # };
   };
 
 
