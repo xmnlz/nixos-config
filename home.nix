@@ -37,6 +37,6 @@
     };
   };
   
-  # This is requred to just restart the hm modules included
+  # This is requred to just restart only the hm 
   programs.home-manager.enable = true;
 }
