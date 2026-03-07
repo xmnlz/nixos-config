@@ -15,8 +15,10 @@
     inputs.vicinae.homeManagerModules.default
   ];
 
-  # TEMP solution
-  gtk.enable = true;
+  gtk = {
+    enable = true;
+    colorScheme = "dark";
+  };
 
   home = {
     username = "xmnlz";
