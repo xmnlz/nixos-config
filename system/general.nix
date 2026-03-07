@@ -9,6 +9,10 @@
     nerd-fonts.jetbrains-mono
   ];
 
+  fonts.fontconfig.defaultFonts = {
+    monospace = [ "JetBrains Mono" ];
+  };
+
   qt = {
     enable = true;
     # # TODO: Fix this later 
