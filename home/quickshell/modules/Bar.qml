@@ -17,7 +17,6 @@ PanelWindow {
   property bool showClock: true
   
   // WINDOW SETUP
-  
   anchors {
     top: true
     left: true
@@ -33,9 +32,8 @@ PanelWindow {
   height: Theme.barHeight
   color: Theme.background
   
-  // Wayland layershell configuration
-  WlrLayershell.layer: WlrLayer.Top
-  WlrLayershell.namespace: "quickshell-bar"
+  // WlrLayershell.layer: WlrLayer.Top
+  // WlrLayershell.namespace: "quickshell-bar"
   
   RowLayout {
     anchors.fill: parent
@@ -44,7 +42,6 @@ PanelWindow {
     spacing: Theme.spacingSection
     
     // Workspaces
-    
     RowLayout {
       spacing: Theme.spacingSmall
       visible: bar.showWorkspaces
@@ -121,9 +118,7 @@ PanelWindow {
       }
     }
     
-    // ====================================
     // LEFT-CENTER: Window Title
-    // ====================================
     
     Text {
       visible: bar.showWindowTitle
@@ -146,19 +141,12 @@ PanelWindow {
       }
     }
     
-    // ====================================
     // SPACER (pushes right section to the right)
-    // ====================================
-    
     Item { Layout.fillWidth: true }
     
-    // ====================================
     // RIGHT SECTION: System Tray
-    // ====================================
     
-    // ----------------------------------
     // System Tray (HIGH-RES ICONS!)
-    // ----------------------------------
     
     RowLayout {
       visible: bar.showSystemTray
@@ -254,10 +242,7 @@ PanelWindow {
       }
     }
     
-    // ----------------------------------
     // Separator before clock
-    // ----------------------------------
-    
     Rectangle {
       visible: bar.showClock
       width: 1
@@ -265,10 +250,7 @@ PanelWindow {
       color: Theme.separator
     }
     
-    // ----------------------------------
     // Clock
-    // ----------------------------------
-    
     Text {
       visible: bar.showClock
       

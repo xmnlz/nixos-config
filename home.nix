@@ -31,12 +31,11 @@
       name = "Kuromi-cursor";
       size = 48;
 
-      hyprcursor.enable = false;
       gtk.enable = true;
       x11.enable = true;
     };
   };
-  
+
   # This is requred to just restart only the hm 
   programs.home-manager.enable = true;
 }

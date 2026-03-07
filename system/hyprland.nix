@@ -21,10 +21,4 @@
       binPath = "/run/current-system/sw/bin/start-hyprland";
    };
   };
-
-  # Essential packages for Hyprland
-  environment.systemPackages = with pkgs; [
-    # Clipboard
-    # wl-clipboard
-  ];
 }

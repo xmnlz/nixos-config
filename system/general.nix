@@ -1,6 +1,14 @@
 { pkgs, ... }:
 
 {
+  environment.systemPackages = with pkgs; [
+
+  ];
+
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+  ];
+
   qt = {
     enable = true;
     # # TODO: Fix this later 
@@ -14,9 +22,6 @@
   };
 
 
-  environment.systemPackages = with pkgs; [
-
-  ];
 
   services.fprintd.enable = true;
 

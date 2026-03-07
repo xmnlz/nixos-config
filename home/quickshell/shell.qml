@@ -3,7 +3,6 @@
 import QtQuick
 import Quickshell
 
-import "config"
 import "modules"
 
 ShellRoot {
