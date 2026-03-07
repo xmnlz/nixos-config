@@ -15,6 +15,8 @@
     inputs.vicinae.homeManagerModules.default
   ];
 
+  # TEMP solution
+  gtk.enable = true;
 
   home = {
     username = "xmnlz";
@@ -31,11 +33,12 @@
       name = "Kuromi-cursor";
       size = 48;
 
+      hyprcursor.enable = false;
       gtk.enable = true;
       x11.enable = true;
     };
   };
-
+  
   # This is requred to just restart only the hm 
   programs.home-manager.enable = true;
 }
