@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     # Languages
+    bun
     zig
 
     # LSP 
