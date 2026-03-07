@@ -10,19 +10,11 @@
   ];
 
   fonts.fontconfig.defaultFonts = {
-    monospace = [ "JetBrains Mono" ];
+    monospace = [ "JetBrainsMono Nerd Font Mono" ];
   };
 
   qt = {
     enable = true;
-    # # TODO: Fix this later 
-    # platformTheme = {
-    #   name = "gnome";
-    # };
-
-    # style = {
-    #   name = "adwaita-dark";
-    # };
   };
 
 
