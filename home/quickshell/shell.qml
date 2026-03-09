@@ -3,7 +3,7 @@
 import QtQuick
 import Quickshell
 
-import "modules"
+import qs.modules
 
 ShellRoot {
   Variants {
