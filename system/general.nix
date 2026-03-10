@@ -7,6 +7,7 @@
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
+    material-symbols
   ];
 
   fonts.fontconfig.defaultFonts = {

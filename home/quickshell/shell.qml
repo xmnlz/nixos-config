@@ -3,18 +3,8 @@
 import QtQuick
 import Quickshell
 
-import qs.modules
+import qs.modules.bar
 
 ShellRoot {
-  Variants {
-    model: Quickshell.screens
-    
-    Bar {
-      required property var modelData
-      screen: modelData
-      
-      // Optional: Customize per-monitor
-      // showMediaControls: screen.primary
-    }
-  }
+    Bar {}
 }
