@@ -18,7 +18,7 @@ PanelWindow {
 
   color: "transparent"
 
-  implicitHeight: 44
+  implicitHeight: 36
 
   Rectangle {
     anchors.fill: parent
@@ -32,8 +32,6 @@ PanelWindow {
     anchors.left: parent.left
     anchors.leftMargin: 40
     anchors.verticalCenter: parent.verticalCenter
-    width: childrenRect.width
-    height: childrenRect.height
 
     DateTime {
       anchors.verticalCenter: parent.verticalCenter
@@ -46,8 +44,6 @@ PanelWindow {
     id: barCenter
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.verticalCenter: parent.verticalCenter
-    width: workspace.width
-    height: workspace.height
 
     Workspaces {
       id: workspace
@@ -61,11 +57,23 @@ PanelWindow {
     anchors.verticalCenter: parent.verticalCenter
     spacing: 16
 
-    Battery {
+    Tray {
       anchors.verticalCenter: parent.verticalCenter
     }
 
-    Tray {
+    BatteryIndicator {
+      anchors.verticalCenter: parent.verticalCenter
+    }
+
+    BluetoothIndicator {
+      anchors.verticalCenter: parent.verticalCenter
+    }
+
+    NetworkIndicator {
+      anchors.verticalCenter: parent.verticalCenter
+    }
+
+    NotificationIndicator {
       anchors.verticalCenter: parent.verticalCenter
     }
   }
