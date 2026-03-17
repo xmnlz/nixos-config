@@ -31,6 +31,7 @@ Singleton {
   NotificationServer {
     id: server
     keepOnReload: false
+
     actionsSupported: true
     bodyMarkupSupported: true
     imageSupported: true
