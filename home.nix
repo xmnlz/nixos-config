@@ -11,7 +11,6 @@
     ./home/apps/neovim
     ./home/apps/tmux
     ./home/apps/ghostty.nix
-    ./home/apps/steam.nix
     inputs.vicinae.homeManagerModules.default
     ./home/apps/vicinae.nix
     ./home/apps/opencode.nix
