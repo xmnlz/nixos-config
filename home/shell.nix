@@ -18,6 +18,7 @@
     obs-studio
     vesktop
     spotify
+    steam
 
     # shell
     tmux
