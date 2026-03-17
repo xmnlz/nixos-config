@@ -1,13 +1,22 @@
 { inputs, pkgs, ... }:
 
 {
+  gtk = {
+    enable = true;
+    colorScheme = "dark";
+  };
+
+  qt = {
+    enable = true;
+  };
+
   home.packages = with pkgs; [
     # apps 
-    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
-    inputs.hyprland-contrib.packages.${pkgs.stdenv.hostPlatform.system}.grimblast
     telegram-desktop
-
-    legcord
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
+    google-chrome
+    obs-studio
+    vesktop
     spotify
 
     # shell
@@ -17,6 +26,7 @@
     gh
 
     # utils
+    inputs.hyprland-contrib.packages.${pkgs.stdenv.hostPlatform.system}.grimblast
     fastfetch
     ripgrep
     unzip

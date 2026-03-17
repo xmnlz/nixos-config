@@ -3,24 +3,27 @@
 {
   imports = [
     ./home/shell.nix
-    ./home/apps/vicinae.nix
+
     ./home/hypr
     ./home/quickshell
     ./home/development.nix
-    ./home/gaming.nix
-    ./home/apps/ghostty.nix
+
     ./home/apps/neovim
     ./home/apps/tmux
-    ./home/apps/opencode.nix
+    ./home/apps/ghostty.nix
+    ./home/apps/steam.nix
     inputs.vicinae.homeManagerModules.default
+    ./home/apps/vicinae.nix
+    ./home/apps/opencode.nix
   ];
 
-  gtk = {
-    enable = true;
-    colorScheme = "dark";
-  };
 
   home = {
+    sessionVariables = {
+      LIBVA_DRIVER_NAME = "radeonsi";
+      LIBVA_DISPLAY = "drm";
+    };
+
     username = "xmnlz";
     homeDirectory = "/home/xmnlz";
     stateVersion = "25.11";
@@ -39,6 +42,7 @@
       gtk.enable = true;
       x11.enable = true;
     };
+
   };
   
   # This is requred to just restart only the hm 

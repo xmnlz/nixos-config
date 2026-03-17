@@ -5,9 +5,8 @@
     ./hardware.nix
     ./system/boot.nix
     ./system/general.nix
-    ./system/gnome.nix
     ./system/hyprland.nix
-    ./system/gaming.nix
+    ./system/gnome.nix
   ];
 
   # Nix settings
