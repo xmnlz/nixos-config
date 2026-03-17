@@ -18,17 +18,18 @@
 
 
   home = {
-    sessionVariables = {
-      LIBVA_DRIVER_NAME = "radeonsi";
-      LIBVA_DISPLAY = "drm";
-    };
-
     username = "xmnlz";
     homeDirectory = "/home/xmnlz";
     stateVersion = "25.11";
+
     shellAliases = {
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-config";
       nrb = "sudo nixos-rebuild boot --flake ~/nixos-config";
+    };
+
+    sessionVariables = {
+      LIBVA_DRIVER_NAME = "radeonsi";
+      LIBVA_DISPLAY = "drm";
     };
 
     pointerCursor = {
@@ -45,5 +46,5 @@
   };
   
   # This is requred to just restart only the hm 
-  programs.home-manager.enable = true;
+  # programs.home-manager.enable = true;
 }
