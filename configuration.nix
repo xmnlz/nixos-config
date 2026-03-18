@@ -11,18 +11,18 @@
 
   system.stateVersion = "26.05";
 
-  # Nix settings
+  nixpkgs.config.allowUnfree = true;
+
   nix.settings = {
+    auto-optimise-store = true;
     experimental-features = [ "nix-command" "flakes" ];
   };
 
-  nixpkgs.config.allowUnfree = true;
-
-  # Automatic garbage collection
   nix.gc = {
     automatic = true;
     persistent = true;
-    dates = "weekly";
+    dates = "daily";
+    options = "--delete-older-than 3d";
   };
 
   # Localization
@@ -62,5 +62,4 @@
       xmnlz = import ./home.nix;
     };
   };
-
 }
