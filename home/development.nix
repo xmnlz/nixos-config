@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    # Languages
+    # languages
     bun
     zig
 
