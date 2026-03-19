@@ -21,8 +21,8 @@
     steam
 
     # shell
+    alacritty
     tmux
-    zsh
     git
     gh
 
