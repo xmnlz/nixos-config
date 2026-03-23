@@ -21,7 +21,7 @@
   home = {
     username = "xmnlz";
     homeDirectory = "/home/xmnlz";
-    stateVersion = "25.11";
+    stateVersion = "26.05";
 
     shellAliases = {
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-config";
