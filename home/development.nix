@@ -24,6 +24,10 @@
   programs.fish = {
     enable = true;
 
+    shellInit = ''
+      set fish_greeting
+    '';
+
     functions.fish_prompt = ''
       set -l last_status $status
 
