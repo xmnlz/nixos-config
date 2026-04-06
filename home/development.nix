@@ -11,7 +11,10 @@
     gopls
     tinymist
     lua-language-server
+
     pkgs.kdePackages.qtdeclarative
+    pkgs.kdePackages.qt5compat
+
     typescript-language-server
     tailwindcss-language-server
     svelte-language-server
