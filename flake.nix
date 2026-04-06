@@ -16,14 +16,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    vicinae = {
-      url = "github:vicinaehq/vicinae";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    vicinae.url = "github:vicinaehq/vicinae";
 
     vicinae-extensions = {
       url = "github:vicinaehq/extensions";
       inputs.vicinae.follows = "vicinae";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     zen-browser = {
@@ -35,7 +33,7 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations.xmnlz = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
+      # system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
         inputs.nixos-hardware.nixosModules.framework-amd-ai-300-series
