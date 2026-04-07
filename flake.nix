@@ -31,9 +31,8 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations.xmnlz = nixpkgs.lib.nixosSystem {
-      # system = "x86_64-linux";
       specialArgs = { inherit inputs; };
       modules = [
         inputs.nixos-hardware.nixosModules.framework-amd-ai-300-series
