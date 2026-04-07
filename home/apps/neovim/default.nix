@@ -32,6 +32,9 @@
       neomodern-nvim
 
       nvim-cmp
+      cmp-nvim-lsp
+      cmp-path
+
       nvim-lspconfig
 
       telescope-nvim

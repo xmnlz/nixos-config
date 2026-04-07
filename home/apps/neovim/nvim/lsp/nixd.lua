@@ -15,7 +15,7 @@ return {
           expr = '(builtins.getFlake (toString ./.)).nixosConfigurations.xmnlz.options',
         },
         home_manager = {
-          expr = '(builtins.getFlake (toString ./.)).homeConfigurations."xmnlz@xmnlz".options',
+          expr = '(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.xmnlz.options.home-manager.users.type.getSubOptions []',
         },
       },
     },

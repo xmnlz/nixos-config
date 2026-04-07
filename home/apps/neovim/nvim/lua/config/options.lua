@@ -47,6 +47,3 @@ vim.opt.splitright = true -- Vertical splits open to the right
 vim.opt.splitbelow = true -- Horizontal splits open below
 
 vim.opt.list = false -- Don't show whitespace characters by default
-
--- Completion options
-vim.opt.completeopt = { 'menu', 'menuone', 'noinsert' }

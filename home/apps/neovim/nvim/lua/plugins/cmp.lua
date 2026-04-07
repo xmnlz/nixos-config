@@ -1,7 +1,12 @@
 local cmp = require 'cmp'
-local types = require('cmp.types')
 
 cmp.setup {
+  snippet = {
+    expand = function(args)
+      vim.snippet.expand(args.body)
+    end,
+  },
+
   completion = { completeopt = 'menu,menuone,noinsert' },
 
   mapping = cmp.mapping.preset.insert {
@@ -12,15 +17,12 @@ cmp.setup {
     ['<C-y>'] = cmp.mapping.confirm { select = true },
     ['<C-l>'] = cmp.mapping.complete(),
   },
+
   sources = {
-    {
-      name = 'nvim_lsp',
-      entry_filter = function(entry)
-        return entry:get_kind() ~= types.lsp.CompletionItemKind.Snippet
-      end,
-    },
+    { name = 'nvim_lsp' },
     { name = 'path' },
   },
+
   window = {
     completion = cmp.config.window.bordered(),
     documentation = cmp.config.window.bordered(),
