@@ -6,7 +6,6 @@
     ./system/boot.nix
     ./system/general.nix
     ./system/hyprland.nix
-    ./system/gnome.nix
   ];
 
   system.stateVersion = "26.05";
