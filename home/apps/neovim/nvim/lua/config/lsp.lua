@@ -1,4 +1,5 @@
 vim.lsp.enable({
+  "nixd",
 	"dockerls",
 	"tailwindcss",
 	"tinymist",
@@ -8,7 +9,6 @@ vim.lsp.enable({
 	"ts_ls",
 	"html",
 	"zls",
-	"nixd",
 	"pyright",
 	"qmlls",
 })
