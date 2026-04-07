@@ -22,7 +22,6 @@
     username = "xmnlz";
     homeDirectory = "/home/xmnlz";
     stateVersion = "26.05";
-
     shellAliases = {
       nrs = "sudo nixos-rebuild switch --flake ~/nixos-config";
       nrb = "sudo nixos-rebuild boot --flake ~/nixos-config";
@@ -43,9 +42,5 @@
       gtk.enable = true;
       x11.enable = true;
     };
-
   };
-  
-  # This is requred to just restart only the hm 
-  # programs.home-manager.enable = true;
 }
