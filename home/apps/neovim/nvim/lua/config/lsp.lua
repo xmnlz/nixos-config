@@ -8,7 +8,7 @@ vim.lsp.enable({
 	"ts_ls",
 	"html",
 	"zls",
-	"nil",
+	"nixd",
 	"pyright",
 	"qmlls",
 })

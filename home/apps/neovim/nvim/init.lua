@@ -1,7 +1,10 @@
 require 'config.options'
 require 'config.remap'
 require 'config.lsp'
-require 'config.lazy'
+
+require 'plugins.theme'
+require 'plugins.telescope'
+require 'plugins.cmp'
 
 -- Sync clipboard between OS and Neovim.
 -- Schedule the setting after `UiEnter` because it can increase startup-time.
@@ -14,5 +17,11 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = vim.api.nvim_create_augroup('x-highlight-yank', { clear = true }),
   callback = function()
     vim.highlight.on_yank()
+  end,
+})
+
+vim.api.nvim_create_autocmd('FileType', {
+  callback = function()
+    pcall(vim.treesitter.start)
   end,
 })
