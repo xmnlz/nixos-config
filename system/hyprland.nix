@@ -13,6 +13,8 @@
     config.hyprland.default = [ "hyprland" "gtk" ];
   };
 
+  services.displayManager.gdm.enable = true;
+
   # FIXME: https://github.com/NixOS/nixpkgs/issues/484328
   programs.uwsm.waylandCompositors = {
     hyprland = {
