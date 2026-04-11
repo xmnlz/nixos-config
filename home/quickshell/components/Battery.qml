@@ -15,7 +15,7 @@ Item {
 
     Text {
       text: UPower.percentage + "%"
-      color: UPower.color_function(Theme.text)
+      color: UPower.color
 
       font {
         family: Theme.fontFamily

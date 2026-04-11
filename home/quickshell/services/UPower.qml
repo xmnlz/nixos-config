@@ -1,54 +1,43 @@
 pragma Singleton
-
 import QtQuick
 import Quickshell
 import Quickshell.Services.UPower
-
 import qs.etc
 
 Singleton {
   id: root
 
-  readonly property int percentage_warning: 40
-  readonly property int percentage_critical: 20
-  readonly property int percentage_surplus: 80
+  readonly property int thresholdCritical: 20
+  readonly property int thresholdWarning: 40
+  readonly property int thresholdSurplus: 80
 
-  property string perfomance: PowerProfiles.degradationReason
+  readonly property int percentage: Math.round(UPower.displayDevice.percentage * 100)
+  readonly property bool exists: UPower.displayDevice.isLaptopBattery
+  readonly property bool isCharging: UPower.displayDevice.state === UPowerDeviceState.Charging
+  readonly property bool isFullyCharged: UPower.displayDevice.state === UPowerDeviceState.FullyCharged
 
-  readonly property list<string> icon_array: ["battery_android_alert", "battery_android_frame_2", "battery_android_frame_3", "battery_android_frame_6", "battery_android_frame_full"]
-  property int icon_index: 0
-  property string icon: "NULL"
+  readonly property list<string> icons: ["battery_android_frame_1", "battery_android_frame_2", "battery_android_frame_3", "battery_android_frame_4", "battery_android_frame_5", "battery_android_frame_6"]
 
-  property int percentage: Math.round(UPower.displayDevice.percentage * 100)
-  property bool isCharging: UPower.displayDevice.state === UPowerDeviceState.Charging
-  property bool exists: UPower.displayDevice.isLaptopBattery
+  readonly property string icon: {
+    if (isCharging)
+      return "battery_android_frame_bolt";
+    if (isFullyCharged)
+      return "battery_android_frame_full";
+    if (percentage <= thresholdCritical)
+      return "battery_android_alert";
 
-  Component.onCompleted: console.log(perfomance)
+    const index = Math.round((percentage / 100) * (icons.length - 1));
+    return icons[index];
+  }
 
-  function color_function(normal) {
-    if (percentage >= percentage_surplus)
+  readonly property color color: {
+    if (percentage >= thresholdSurplus)
       return Theme.info;
-    if (percentage > percentage_warning)
-      return normal;
-    if (percentage > percentage_critical)
+    if (percentage > thresholdWarning)
+      return Theme.text;
+    if (percentage > thresholdCritical)
       return Theme.warning;
+
     return Theme.urgent;
   }
-
-  function is_color_normal() {
-    return percentage > percentage_warning && percentage < percentage_surplus;
-  }
-
-  function update_icon() {
-    if (isCharging) {
-      icon = "battery_android_frame_bolt";
-    } else {
-      let normalized = percentage / 100.0;
-      icon_index = Math.round(normalized * (icon_array.length - 1));
-      icon = icon_array[icon_index];
-    }
-  }
-
-  onPercentageChanged: update_icon()
-  onIsChargingChanged: update_icon()
 }
