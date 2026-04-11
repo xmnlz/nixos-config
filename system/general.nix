@@ -30,6 +30,8 @@
     monospace = [ "JetBrainsMono Nerd Font Mono" ];
   };
 
+  services.upower.enable = true;
+
   services.pipewire = {
     enable = true;
     alsa.enable = true;
