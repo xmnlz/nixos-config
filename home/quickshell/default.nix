@@ -6,5 +6,5 @@
     systemd.enable = true;
   };
 
-  xdg.configFile."quickshell/shell.qml".source = ./shell.qml;
+  xdg.configFile."quickshell".source = ../quickshell;
 }
