@@ -35,8 +35,6 @@
     wget
     zip
 
-    # ui
-    quickshell
     adwaita-qt
   ];
 }
