@@ -12,7 +12,7 @@ Scope {
     PanelWindow {
       property var modelData
       screen: modelData
-      implicitHeight: 52
+      implicitHeight: 46
       color: "transparent"
       anchors {
         top: true
@@ -69,6 +69,12 @@ Scope {
             verticalCenter: parent.verticalCenter
           }
           spacing: 8
+
+          BarBlock {
+            SystemTray {
+              anchors.centerIn: parent
+            }
+          }
 
           BarBlock {
             Battery {
