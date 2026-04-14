@@ -10,7 +10,6 @@
 
     ./home/apps/neovim
     ./home/apps/tmux
-    ./home/apps/ghostty.nix
     ./home/apps/alacritty.nix
     inputs.vicinae.homeManagerModules.default
     ./home/apps/vicinae.nix
