@@ -42,6 +42,8 @@
     };
   };
 
+  hardware.bluetooth.enable = true;
+
   # TODO: Find a better way to do so 
   programs.fish.enable = true;
 
