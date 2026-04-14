@@ -19,6 +19,7 @@
     vesktop
     spotify
     steam
+    nautilus
 
     # shell
     tmux
