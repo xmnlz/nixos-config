@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Layouts
 import Quickshell
+import Quickshell.Services.SystemTray
 
 import qs.components
 import qs.etc
@@ -19,6 +20,7 @@ Scope {
         left: true
         right: true
       }
+
       margins {
         top: 8
         right: 8
@@ -63,6 +65,7 @@ Scope {
         // RIGHT — implicit size flows up from BarBlock children
         RowLayout {
           id: rightSection
+
           anchors {
             right: parent.right
             rightMargin: 12
@@ -71,6 +74,9 @@ Scope {
           spacing: 8
 
           BarBlock {
+            // show the tray only we have anything to show 
+            visible: SystemTray.items.values.length >= 1
+
             SystemTray {
               anchors.centerIn: parent
             }
