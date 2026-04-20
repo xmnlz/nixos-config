@@ -9,7 +9,6 @@
   ];
 
   system.stateVersion = "26.05";
-
   nixpkgs.config.allowUnfree = true;
 
   nix.settings = {
