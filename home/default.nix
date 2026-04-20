@@ -3,6 +3,7 @@
 {
   imports = [
     ./shell.nix
+    ./languages.nix
 
     ./desktop/hyprland
     ./desktop/dms.nix
@@ -17,6 +18,7 @@
     ./gui/vicinae.nix
     ./gui/files.nix
     ./gui/steam.nix
+    ./gui/media.nix
 
     ./cli/git.nix
     ./cli/btop.nix
