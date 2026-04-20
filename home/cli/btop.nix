@@ -1,7 +1,7 @@
 { ... }:
 
 {
-  programs.dms-shell = {
+  programs.btop = {
     enable = true;
   };
 }

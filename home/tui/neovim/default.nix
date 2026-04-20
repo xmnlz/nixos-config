@@ -20,6 +20,7 @@
       zls
       gopls
       qt6.qtdeclarative
+      pkgs.kdePackages.qt5compat
 
       tinymist
 
