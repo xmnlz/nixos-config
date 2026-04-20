@@ -75,7 +75,13 @@
           position = 0;
           screenPreferences = [ "all" ];
           showOnLastDisplay = true;
-          leftWidgets = [ "workspaceSwitcher" ];
+          leftWidgets =  [ 
+            "workspaceSwitcher"
+            {
+              id = "network_speed_monitor";
+              enabled = true;
+            }
+          ];
           centerWidgets = [
             {
               id = "clock";
