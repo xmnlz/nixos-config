@@ -1,3 +1,4 @@
+-- TODO: Make this config work not only my hardcoded user 
 return {
   cmd = { "nixd" },
   filetypes = { "nix" },
