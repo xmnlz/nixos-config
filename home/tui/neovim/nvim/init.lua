@@ -2,7 +2,7 @@ require 'config.options'
 require 'config.remap'
 require 'config.lsp'
 
-require 'plugins.cmp'
+require 'plugins.blink'
 require 'plugins.theme'
 require 'plugins.telescope'
 

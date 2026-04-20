@@ -32,10 +32,7 @@
     plugins = with pkgs.vimPlugins; [
       neomodern-nvim
 
-      nvim-cmp
-      cmp-nvim-lsp
-      cmp-path
-
+      blink-cmp
       nvim-lspconfig
 
       telescope-nvim
