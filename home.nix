@@ -1,30 +1,12 @@
-{ inputs, pkgs, ... }:
+{ pkgs, ... }:
 
 {
-  imports = [
-    ./home/shell.nix
-
-    ./home/hypr
-    ./home/quickshell
-    ./home/development.nix
-
-    ./home/apps/neovim
-    ./home/apps/tmux
-    ./home/apps/alacritty.nix
-    inputs.vicinae.homeManagerModules.default
-    ./home/apps/vicinae.nix
-    ./home/apps/opencode.nix
-  ];
-
+  imports = [ ./home ];
 
   home = {
     username = "xmnlz";
     homeDirectory = "/home/xmnlz";
     stateVersion = "26.05";
-    shellAliases = {
-      nrs = "sudo nixos-rebuild switch --flake ~/nixos-config";
-      nrb = "sudo nixos-rebuild boot --flake ~/nixos-config";
-    };
 
     sessionVariables = {
       LIBVA_DRIVER_NAME = "radeonsi";
