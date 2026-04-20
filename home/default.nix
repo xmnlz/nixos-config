@@ -1,7 +1,7 @@
 { inputs, ... }:
 
 {
-  import = [
+  imports = [
     ./shell.nix
 
     ./desktop/hyprland
@@ -29,5 +29,6 @@
   ] ++ [
     inputs.vicinae.homeManagerModules.default
     inputs.dms.homeModules.dank-material-shell
+    inputs.zen-browser.homeModules.beta
   ];
 }
