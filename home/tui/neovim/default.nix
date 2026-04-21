@@ -1,4 +1,15 @@
 { pkgs, ... }:
+let
+  grammars = pkgs.vimPlugins.nvim-treesitter.builtGrammars;
+  treesitterGrammars = map (lang: grammars.${lang}) [
+    "lua" "nix" "python" "rust"
+    "typescript" "tsx" "javascript"
+    "bash" "go" "zig"
+    "html" "css" "svelte" "dockerfile"
+    "json" "yaml" "toml"
+    "markdown" "markdown_inline"
+  ];
+in
 {
   programs.neovim = {
     enable = true;
@@ -6,61 +17,28 @@
     viAlias = true;
     vimAlias = true;
 
-    # lsp binaries
     extraPackages = with pkgs; [
       nixd
-
       typescript-language-server
       svelte-language-server
       vscode-langservers-extracted
       tailwindcss-language-server
-
       lua-language-server
-
-      zls
-      gopls
+      zls gopls tinymist
+      docker-language-server
+      pyright
       qt6.qtdeclarative
       pkgs.kdePackages.qt5compat
-
-      tinymist
-
-      docker-language-server
-
-      pyright
     ];
 
     plugins = with pkgs.vimPlugins; [
       neomodern-nvim
-
       blink-cmp
       nvim-lspconfig
-
       telescope-nvim
       telescope-ui-select-nvim
       plenary-nvim
-
-      (nvim-treesitter.withPlugins (p: [
-        p.lua
-        p.nix
-        p.python
-        p.rust
-        p.typescript
-        p.tsx
-        p.javascript
-        p.bash
-        p.go
-        p.zig
-        p.html
-        p.css
-        p.svelte
-        p.dockerfile
-        p.json
-        p.yaml
-        p.toml
-        p.markdown
-        p.markdown_inline
-      ]))
-    ];
+    ] ++ treesitterGrammars;
   };
 
   xdg.configFile."nvim".source = ./nvim;
