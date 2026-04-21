@@ -77,10 +77,6 @@
           showOnLastDisplay = true;
           leftWidgets =  [ 
             "workspaceSwitcher"
-            {
-              id = "network_speed_monitor";
-              enabled = true;
-            }
           ];
           centerWidgets = [
             {
