@@ -19,6 +19,25 @@
         rosePine = "rosePine";
       };
 
+      acMonitorTimeout = 180;
+      acLockTimeout = 180;
+      acSuspendTimeout = 600;
+      acSuspendBehavior = 2;
+
+      batteryMonitorTimeout = 180;
+      batteryLockTimeout = 180;
+      batterySuspendTimeout = 300;
+      batterySuspendBehavior = 2;
+      batteryChargeLimit = 100;
+
+      lockBeforeSuspend = false;
+      loginctlLockIntegration = true;
+
+      fadeToLockEnabled = true;
+      fadeToLockGracePeriod = 5;
+      fadeToDpmsEnabled = true;
+      fadeToDpmsGracePeriod = 5;
+
       cornerRadius = 16;
       showLauncherButton = false;
       controlCenterShowMicPercent = true;
@@ -161,7 +180,6 @@
 
       builtInPluginSettings = {
         dms_settings_search = {
-          trigger = "?";
           enabled = false;
         };
         dms_settings.enabled = false;
