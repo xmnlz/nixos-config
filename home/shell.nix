@@ -4,6 +4,7 @@
   home.shellAliases = {
     nrs = "sudo nixos-rebuild switch --flake ~/nixos-config";
     nrb = "sudo nixos-rebuild boot --flake ~/nixos-config";
+    nrt = "sudo nixos-rebuild test --flake ~/nixos-config";
   };
 
   programs.fish = {

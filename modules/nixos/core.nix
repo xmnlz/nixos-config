@@ -1,7 +1,8 @@
-{ ... }:
+{ self, ... }:
 
 {
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.overlays = [ self.overlays.kuromi-cursor ];
 
   nix.settings = {
     auto-optimise-store = true;

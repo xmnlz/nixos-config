@@ -1,12 +1,9 @@
 { pkgs, ... }:
 
 {
-  networking = {
-    hostName = "xmnlz";
-    networkmanager = {
-      enable = true;
-      wifi.powersave = false;
-    };
+  networking.networkmanager = {
+    enable = true;
+    wifi.powersave = false;
   };
 
   xdg.portal = {
@@ -39,9 +36,8 @@
     wireplumber.enable = true;
   };
 
-  # TODO: Add some pkgs lol 
   environment.systemPackages = with pkgs; [
-
+    fish
   ];
 }
 

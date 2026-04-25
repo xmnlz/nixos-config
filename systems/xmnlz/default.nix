@@ -14,11 +14,12 @@
   ] ++ [ 
     inputs.nixos-hardware.nixosModules.framework-amd-ai-300-series
   ];
-
    # nixpkgs.hostPlatform = { system = "aarch64-linux"; };
 
    system.stateVersion = "26.05";
    networking.hostName = "xmnlz";
+
+   programs.fish.enable = true;
 
    users.users.xmnlz = {
     isNormalUser = true;
