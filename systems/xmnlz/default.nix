@@ -2,7 +2,8 @@
 
 
 {
-   imports = [
+  
+  imports = [
     ./hardware.nix
 
     ../../modules/nixos/core.nix
@@ -14,21 +15,20 @@
   ] ++ [ 
     inputs.nixos-hardware.nixosModules.framework-amd-ai-300-series
   ];
-   # nixpkgs.hostPlatform = { system = "aarch64-linux"; };
 
-   system.stateVersion = "26.05";
-   networking.hostName = "xmnlz";
+  system.stateVersion = "26.05";
+  networking.hostName = "xmnlz";
 
-   programs.fish.enable = true;
+  programs.fish.enable = true;
 
-   users.users.xmnlz = {
+  users.users.xmnlz = {
     isNormalUser = true;
     description = "xmnlz";
     extraGroups = [ "wheel" "networkmanager" ];
     shell = pkgs.fish;
   };
 
-   home-manager = {
+  home-manager = {
     verbose = true;
     useGlobalPkgs = true;
     useUserPackages = true;
