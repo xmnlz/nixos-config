@@ -4,7 +4,7 @@ let
   treesitterGrammars = map (lang: grammars.${lang}) [
     "lua" "nix" "python" "rust"
     "typescript" "tsx" "javascript"
-    "bash" "go" "zig"
+    "bash" "go" "zig" "kotlin"
     "html" "css" "svelte" "dockerfile"
     "json" "yaml" "toml"
     "markdown" "markdown_inline"
