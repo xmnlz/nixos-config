@@ -1,15 +1,4 @@
 { pkgs, ... }:
-let
-  grammars = pkgs.vimPlugins.nvim-treesitter.builtGrammars;
-  treesitterGrammars = map (lang: grammars.${lang}) [
-    "lua" "nix" "python" "rust"
-    "typescript" "tsx" "javascript"
-    "bash" "go" "zig" "kotlin"
-    "html" "css" "svelte" "dockerfile"
-    "json" "yaml" "toml"
-    "markdown" "markdown_inline"
-  ];
-in
 {
   programs.neovim = {
     enable = true;
@@ -38,7 +27,17 @@ in
       telescope-nvim
       telescope-ui-select-nvim
       plenary-nvim
-    ] ++ treesitterGrammars;
+
+      # NOTE: Treesetter is here just for the queries
+      (nvim-treesitter.withPlugins (p: map (lang: p.${lang}) [
+        "lua" "nix" "python" "rust"
+        "typescript" "tsx" "javascript"
+        "bash" "go" "zig" "kotlin"
+        "html" "css" "svelte" "dockerfile"
+        "json" "yaml" "toml"
+        "markdown" "markdown_inline"
+      ]))
+    ];
   };
 
   xdg.configFile."nvim".source = ./nvim;
