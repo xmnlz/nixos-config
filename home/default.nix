@@ -19,6 +19,7 @@
     ./gui/files.nix
     ./gui/steam.nix
     ./gui/media.nix
+    ./gui/notes.nix
 
     ./cli/git.nix
     ./cli/btop.nix
