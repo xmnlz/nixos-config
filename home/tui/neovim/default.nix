@@ -28,14 +28,13 @@
       telescope-ui-select-nvim
       plenary-nvim
 
-      # NOTE: Treesetter is here just for the queries
-      (nvim-treesitter.withPlugins (p: map (lang: p.${lang}) [
-        "lua" "nix" "python" "rust"
-        "typescript" "tsx" "javascript"
-        "bash" "go" "zig" "kotlin"
-        "html" "css" "svelte" "dockerfile"
-        "json" "yaml" "toml"
-        "markdown" "markdown_inline"
+      (nvim-treesitter.withPlugins (p: [
+        p.lua p.nix p.python p.rust
+        p.typescript p.tsx p.javascript
+        p.bash p.go p.zig p.kotlin
+        p.html p.css p.svelte p.dockerfile
+        p.json p.yaml p.toml
+        p.markdown p.markdown_inline
       ]))
     ];
   };
