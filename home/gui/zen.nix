@@ -1,4 +1,4 @@
-{...}:
+{ ... }:
 
 { 
   programs.zen-browser = {
