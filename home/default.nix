@@ -20,6 +20,7 @@
     ./gui/gaming.nix
     ./gui/media.nix
     ./gui/notes.nix
+    ./gui/wireshark.nix
 
     ./cli/git.nix
     ./cli/btop.nix
