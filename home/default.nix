@@ -17,7 +17,7 @@
     ./gui/alacritty.nix
     ./gui/vicinae.nix
     ./gui/files.nix
-    ./gui/steam.nix
+    ./gui/gaming.nix
     ./gui/media.nix
     ./gui/notes.nix
 
