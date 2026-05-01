@@ -23,6 +23,7 @@
     ./gui/wireshark.nix
 
     ./cli/git.nix
+    ./cli/direnv.nix
     ./cli/btop.nix
     ./cli/fastfetch.nix
     ./cli/utils.nix
