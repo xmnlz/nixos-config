@@ -11,6 +11,7 @@
     ../../modules/desktop/boot.nix
     ../../modules/desktop/general.nix
     ../../modules/desktop/hyprland.nix
+    ../../modules/desktop/keyring.nix
   ] ++ [ 
     inputs.nixos-hardware.nixosModules.framework-amd-ai-300-series
   ];
