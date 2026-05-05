@@ -12,6 +12,6 @@
     config.hyprland.default = [ "hyprland" "gtk" ];
   };
 
-  services.displayManager.gdm.enable = true;
+  # services.displayManager.gdm.enable = true;
 }
 

@@ -10,6 +10,7 @@
 
     ../../modules/desktop/boot.nix
     ../../modules/desktop/general.nix
+    ../../modules/desktop/greetd.nix
     ../../modules/desktop/hyprland.nix
     ../../modules/desktop/keyring.nix
   ] ++ [ 
