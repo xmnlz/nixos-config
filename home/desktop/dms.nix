@@ -11,7 +11,6 @@
     systemd.enable = true;
 
     settings = {
-
       # --- Theme ---
       currentThemeName = "custom";
       currentThemeCategory = "registry";
