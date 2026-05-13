@@ -25,7 +25,7 @@
   users.users.xmnlz = {
     isNormalUser = true;
     description = "xmnlz";
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" "networkmanager" "docker" ];
     shell = pkgs.fish;
   };
 
