@@ -6,6 +6,11 @@
     wifi.powersave = false;
   };
 
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = false;
+  };
+
   xdg.portal = {
     enable = true;
     extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
