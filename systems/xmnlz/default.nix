@@ -12,6 +12,7 @@
     ../../modules/desktop/general.nix
     ../../modules/desktop/greetd.nix
     ../../modules/desktop/hyprland.nix
+    ../../modules/desktop/docker.nix
     ../../modules/desktop/keyring.nix
   ] ++ [ 
     inputs.nixos-hardware.nixosModules.framework-amd-ai-300-series
