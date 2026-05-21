@@ -5,9 +5,9 @@
     enable = true;
     wifi.powersave = false;
   };
-
-  hardware.bluetooth = {
-    enable = true;
+  
+  hardware = {
+    bluetooth.enable = true;
   };
 
   xdg.portal = {

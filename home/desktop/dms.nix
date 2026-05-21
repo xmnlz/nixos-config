@@ -235,7 +235,6 @@
         }
       ];
 
-      # --- Plugins ---
       builtInPluginSettings = {
         dms_settings_search.enabled = false;
         dms_settings.enabled = false;
