@@ -23,6 +23,7 @@
     plugins = with pkgs.vimPlugins; [
       neomodern-nvim
       blink-cmp
+      conform-nvim
       nvim-lspconfig
       telescope-nvim
       telescope-ui-select-nvim

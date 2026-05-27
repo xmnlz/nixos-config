@@ -1,4 +1,7 @@
-require('blink.cmp').setup {
+local blink = require("conform")
+
+
+blink.setup {
   keymap = {
     preset = 'default',
     ['<C-e>'] = { 'show', 'fallback' },
