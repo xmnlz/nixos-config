@@ -7,7 +7,10 @@
   };
   
   hardware = {
-    bluetooth.enable = true;
+    bluetooth = {
+      enable = true;
+      powerOnBoot = false;
+    };
   };
 
   xdg.portal = {
