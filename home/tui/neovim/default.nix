@@ -7,6 +7,7 @@
     vimAlias = true;
 
     extraPackages = with pkgs; [
+      # lsp's
       nixd
       typescript-language-server
       svelte-language-server
@@ -18,6 +19,9 @@
       pyright
       qt6.qtdeclarative
       pkgs.kdePackages.qt5compat
+
+      # formaters's
+      alejandra
     ];
 
     plugins = with pkgs.vimPlugins; [
