@@ -3,8 +3,10 @@ require 'config.remap'
 require 'config.lsp'
 
 require 'plugins.blink'
+require 'plugins.conform'
 require 'plugins.theme'
 require 'plugins.telescope'
+
 
 -- Sync clipboard between OS and Neovim.
 -- Schedule the setting after `UiEnter` because it can increase startup-time.
