@@ -1,22 +1,25 @@
-{ inputs, pkgs, ... }:
-
 {
-  
-  imports = [
-    ./hardware.nix
+  inputs,
+  pkgs,
+  ...
+}: {
+  imports =
+    [
+      ./hardware.nix
 
-    ../../modules/nixos/core.nix
-    ../../modules/nixos/locale.nix
+      ../../modules/nixos/core.nix
+      ../../modules/nixos/locale.nix
 
-    ../../modules/desktop/boot.nix
-    ../../modules/desktop/general.nix
-    ../../modules/desktop/greetd.nix
-    ../../modules/desktop/hyprland.nix
-    ../../modules/desktop/docker.nix
-    ../../modules/desktop/keyring.nix
-  ] ++ [ 
-    inputs.nixos-hardware.nixosModules.framework-amd-ai-300-series
-  ];
+      ../../modules/desktop/boot.nix
+      ../../modules/desktop/general.nix
+      ../../modules/desktop/greetd.nix
+      ../../modules/desktop/hyprland.nix
+      ../../modules/desktop/docker.nix
+      ../../modules/desktop/keyring.nix
+    ]
+    ++ [
+      inputs.nixos-hardware.nixosModules.framework-amd-ai-300-series
+    ];
 
   system.stateVersion = "26.05";
   networking.hostName = "xmnlz";
@@ -26,7 +29,7 @@
   users.users.xmnlz = {
     isNormalUser = true;
     description = "xmnlz";
-    extraGroups = [ "wheel" "networkmanager" "docker" ];
+    extraGroups = ["wheel" "networkmanager" "docker"];
     shell = pkgs.fish;
   };
 
@@ -35,7 +38,7 @@
     useGlobalPkgs = true;
     useUserPackages = true;
     backupFileExtension = "bak";
-    extraSpecialArgs = { inherit inputs; };
+    extraSpecialArgs = {inherit inputs;};
 
     users = {
       xmnlz = import ./home.nix;

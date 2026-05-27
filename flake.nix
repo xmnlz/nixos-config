@@ -34,21 +34,26 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs:
-  let
+  outputs = {
+    self,
+    nixpkgs,
+    home-manager,
+    ...
+  } @ inputs: let
     overlays = {
       kuromi-cursor = final: prev: {
         kuromi-cursor = prev.callPackage ./pkgs/kuromi-cursor.nix {};
       };
     };
 
-    mkHost = host: nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs self; };
-      modules = [
-        home-manager.nixosModules.home-manager
-        ./systems/${host}
-      ];
-    };
+    mkHost = host:
+      nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs self;};
+        modules = [
+          home-manager.nixosModules.home-manager
+          ./systems/${host}
+        ];
+      };
   in {
     inherit overlays;
 
