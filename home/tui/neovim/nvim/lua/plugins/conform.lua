@@ -8,6 +8,14 @@ conform.setup({
   notify_on_error = true,
   notify_no_formatters = true,
 
+  formatters = {
+    biome = {
+      -- forces the nix store path
+      command = vim.fn.exepath("biome"),
+      require_cwd = false,
+    },
+  },
+
   formatters_by_ft = {
     nix = { "alejandra", "nixfmt", stop_after_first = true },
 
