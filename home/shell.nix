@@ -1,10 +1,10 @@
-{ ... }:
-
-{
+{...}: {
   home.shellAliases = {
     nrs = "sudo nixos-rebuild switch --flake ~/nixos-config";
     nrb = "sudo nixos-rebuild build --flake ~/nixos-config";
     nrt = "sudo nixos-rebuild test --flake ~/nixos-config";
+
+    tm = "tmux new -A -s \"$(basename $PWD)\"";
   };
 
   programs.fish = {
