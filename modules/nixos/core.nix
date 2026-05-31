@@ -1,12 +1,13 @@
-{ self, ... }:
-
-{
+{self, ...}: {
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.overlays = [ self.overlays.kuromi-cursor ];
+  nixpkgs.overlays = [self.overlays.kuromi-cursor];
 
   nix.settings = {
     auto-optimise-store = true;
-    experimental-features = [ "nix-command" "flakes" ];
+    experimental-features = ["nix-command" "flakes"];
+
+    extra-substituters = ["https://noctalia.cachix.org"];
+    extra-trusted-public-keys = ["noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="];
   };
 
   nix.gc = {
