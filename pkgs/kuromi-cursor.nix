@@ -1,5 +1,7 @@
-{ stdenv, fetchurl }:
-
+{
+  stdenv,
+  fetchurl,
+}:
 stdenv.mkDerivation {
   pname = "kuromi-cursor";
   version = "2.0";
