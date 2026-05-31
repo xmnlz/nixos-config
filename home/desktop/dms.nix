@@ -17,12 +17,12 @@
     systemd.enable = true;
 
     settings = {
-      currentThemeName = "custom";
-      currentThemeCategory = "registry";
-      customThemeFile = "${config.home.homeDirectory}/.config/DankMaterialShell/themes/rosePine/theme.json";
-      registryThemeVariants = {
-        rosePine = "rosePine";
-      };
+      currentThemeName = "dynamic";
+      currentThemeCategory = "dynamic";
+      # customThemeFile = "${config.home.homeDirectory}/.config/DankMaterialShell/themes/rosePine/theme.json";
+      # registryThemeVariants = {
+      #   rosePine = "rosePine";
+      # };
 
       # Matugen (dynamic theming)
       matugenScheme = "scheme-tonal-spot";
