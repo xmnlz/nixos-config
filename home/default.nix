@@ -7,7 +7,6 @@
     ./desktop/dms.nix
     ./desktop/qt.nix
     ./desktop/gtk.nix
-    ./desktop/noctalia.nix
 
     ./gui/zen.nix
     ./gui/chromium.nix
