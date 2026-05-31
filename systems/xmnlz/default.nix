@@ -21,7 +21,7 @@
       inputs.nixos-hardware.nixosModules.framework-amd-ai-300-series
     ];
 
-  system.stateVersion = "26.05";
+  system.stateVersion = "26.11";
   networking.hostName = "xmnlz";
 
   programs.fish.enable = true;
