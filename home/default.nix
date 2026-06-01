@@ -1,5 +1,7 @@
 {...}: {
   imports = [
+    ./xdg.nix
+
     ./shell.nix
     ./languages.nix
 
