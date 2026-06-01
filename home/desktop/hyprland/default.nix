@@ -9,8 +9,8 @@
         {
           monitor = "";
           path = "~/wallpapers";
-          # 4 hours
-          timeout = 14400;
+          # 30min
+          timeout = 1800;
         }
       ];
     };
