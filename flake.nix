@@ -1,7 +1,7 @@
 {
   inputs = {
     # https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "https://channels.nixos.org/nixpkgs-unstable/nixexprs.tar.xz";
 
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
