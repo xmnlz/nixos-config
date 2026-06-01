@@ -485,7 +485,7 @@
       displaySnapToEdge = false;
 
       screenPreferences = {
-        wallpaper = [];
+        wallpaper = ["all"];
         dock = [];
         notepad = [];
       };
