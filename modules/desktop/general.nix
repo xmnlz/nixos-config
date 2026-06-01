@@ -1,11 +1,9 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   networking.networkmanager = {
     enable = true;
     wifi.powersave = false;
   };
-  
+
   hardware = {
     bluetooth = {
       enable = true;
@@ -15,14 +13,14 @@
 
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-hyprland ];
-    config.hyprland.default = [ "hyprland" "gtk" ];
+    extraPortals = [pkgs.xdg-desktop-portal-hyprland];
+    config.hyprland.default = ["hyprland" "gtk"];
   };
 
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
-    extraPackages = with pkgs; [ libva mesa ];
+    extraPackages = with pkgs; [libva mesa];
   };
 
   fonts.packages = with pkgs; [
@@ -31,7 +29,7 @@
   ];
 
   fonts.fontconfig.defaultFonts = {
-    monospace = [ "JetBrainsMono Nerd Font Mono" ];
+    monospace = ["JetBrainsMono Nerd Font Mono"];
   };
 
   services.upower.enable = true;
@@ -47,4 +45,3 @@
     fish
   ];
 }
-

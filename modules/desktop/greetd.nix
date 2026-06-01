@@ -1,15 +1,13 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   environment.systemPackages = with pkgs; [
-    tuigreet 
+    tuigreet
   ];
 
   services.greetd = {
     enable = true;
     settings = {
       initial_session = {
-        command = "uwsm start hyprland-uwsm.desktop"; 
+        command = "uwsm start hyprland-uwsm.desktop";
         user = "xmnlz";
       };
 

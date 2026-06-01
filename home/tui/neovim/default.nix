@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   programs.neovim = {
     enable = true;
     defaultEditor = true;
@@ -14,7 +13,9 @@
       vscode-langservers-extracted
       tailwindcss-language-server
       lua-language-server
-      zls gopls tinymist
+      zls
+      gopls
+      tinymist
       docker-language-server
       pyright
       qt6.qtdeclarative
@@ -34,12 +35,26 @@
       plenary-nvim
 
       (nvim-treesitter.withPlugins (p: [
-        p.lua p.nix p.python p.rust
-        p.typescript p.tsx p.javascript
-        p.bash p.go p.zig p.kotlin
-        p.html p.css p.svelte p.dockerfile
-        p.json p.yaml p.toml
-        p.markdown p.markdown_inline
+        p.lua
+        p.nix
+        p.python
+        p.rust
+        p.typescript
+        p.tsx
+        p.javascript
+        p.bash
+        p.go
+        p.zig
+        p.kotlin
+        p.html
+        p.css
+        p.svelte
+        p.dockerfile
+        p.json
+        p.yaml
+        p.toml
+        p.markdown
+        p.markdown_inline
       ]))
     ];
   };

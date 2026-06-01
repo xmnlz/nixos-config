@@ -1,10 +1,8 @@
-{ pkgs, ... }: 
-
-{
+{pkgs, ...}: {
   gtk = {
     enable = true;
     colorScheme = "dark";
-     iconTheme = {
+    iconTheme = {
       name = "hicolor";
       package = pkgs.hicolor-icon-theme;
     };
