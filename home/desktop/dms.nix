@@ -7,7 +7,7 @@
     enable = true;
 
     enableSystemMonitoring = true;
-    enableDynamicTheming = false;
+    enableDynamicTheming = true;
     enableClipboardPaste = false;
 
     systemd.enable = true;
@@ -24,7 +24,7 @@
       matugenScheme = "scheme-tonal-spot";
       runUserMatugenTemplates = true;
       matugenTargetMonitor = "";
-      runDmsMatugenTemplates = false;
+      runDmsMatugenTemplates = true;
 
       matugenTemplateGtk = false;
       matugenTemplateNiri = false;
