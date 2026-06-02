@@ -21,7 +21,7 @@
       # };
 
       # Matugen (dynamic theming)
-      matugenScheme = "scheme-tonal-spot";
+      matugenScheme = "scheme-content";
       runUserMatugenTemplates = true;
       matugenTargetMonitor = "";
       runDmsMatugenTemplates = true;
