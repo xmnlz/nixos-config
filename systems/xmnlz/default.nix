@@ -33,6 +33,16 @@
     shell = pkgs.fish;
   };
 
+  # TODO: Fix this
+  programs.nix-ld = {
+    enable = true;
+    libraries = with pkgs; [
+      stdenv.cc.cc.lib
+      zlib
+      openssl
+    ];
+  };
+
   home-manager = {
     verbose = true;
     useGlobalPkgs = true;
