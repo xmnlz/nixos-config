@@ -27,6 +27,7 @@
     ./cli/utils.nix
 
     ./tui/opencode.nix
+    ./tui/claude.nix
     ./tui/lazygit.nix
     ./tui/btop.nix
     ./tui/tmux
