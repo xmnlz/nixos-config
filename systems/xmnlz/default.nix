@@ -16,6 +16,7 @@
       ../../modules/desktop/hyprland.nix
       ../../modules/desktop/docker.nix
       ../../modules/desktop/keyring.nix
+      ../../modules/desktop/nix-ld.nix
     ]
     ++ [
       inputs.nixos-hardware.nixosModules.framework-amd-ai-300-series
@@ -32,16 +33,6 @@
     extraGroups = ["wheel" "networkmanager" "docker"];
     shell = pkgs.fish;
   };
-
-  # # TODO: Fix this
-  # programs.nix-ld = {
-  #   enable = true;
-  #   libraries = with pkgs; [
-  #     stdenv.cc.cc.lib
-  #     zlib
-  #     openssl
-  #   ];
-  # };
 
   home-manager = {
     verbose = true;
