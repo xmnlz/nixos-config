@@ -9,6 +9,7 @@
       # lsp's
       nixd
       typescript-language-server
+      typescript-go
       svelte-language-server
       vscode-langservers-extracted
       tailwindcss-language-server

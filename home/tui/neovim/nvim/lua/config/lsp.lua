@@ -4,17 +4,18 @@ vim.lsp.config('*', { capabilities = capabilities })
 
 vim.lsp.enable({
   "nixd",
-	"dockerls",
-	"tailwindcss",
-	"tinymist",
-	"svelte",
-	"lua_ls",
-	"gopls",
-	"ts_ls",
-	"html",
-	"zls",
-	"pyright",
-	"qmlls",
+  "dockerls",
+  "tailwindcss",
+  "tinymist",
+  "svelte",
+  "lua_ls",
+  "gopls",
+  "tsgo",
+  -- "ts_ls",
+  "html",
+  "zls",
+  "pyright",
+  "qmlls",
 })
 
 
