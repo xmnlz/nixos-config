@@ -13,9 +13,9 @@
 
     pointerCursor = {
       enable = true;
-      package = pkgs.kuromi-cursor;
-      name = "Kuromi-cursor";
-      size = 48;
+      package = pkgs.apple-cursor;
+      name = "apple-cursor";
+      size = 32;
 
       hyprcursor.enable = true;
       gtk.enable = true;
