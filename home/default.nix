@@ -25,6 +25,7 @@
     ./cli/direnv.nix
     ./cli/fastfetch.nix
     ./cli/utils.nix
+    ./cli/bitwarden.nix
 
     ./tui/opencode.nix
     ./tui/claude.nix
