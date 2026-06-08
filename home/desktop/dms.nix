@@ -127,7 +127,7 @@
 
       cursorSettings = {
         theme = "macOS-White";
-        size = 24;
+        size = 28;
         niri = {
           hideWhenTyping = false;
           hideAfterInactiveMs = 0;

@@ -15,7 +15,7 @@
       enable = true;
       package = pkgs.apple-cursor;
       name = "macOS-White";
-      size = 24;
+      size = 28;
 
       hyprcursor.enable = true;
       gtk.enable = true;
