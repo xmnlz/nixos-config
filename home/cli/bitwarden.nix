@@ -1,5 +1,5 @@
-{...}: {
-  programs.rbw = {
-    enable = true;
-  };
+{pkgs, ...}: {
+  home.packages = with pkgs; [
+    bitwarden-cli
+  ];
 }
