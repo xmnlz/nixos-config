@@ -14,8 +14,8 @@
     pointerCursor = {
       enable = true;
       package = pkgs.apple-cursor;
-      name = "apple-cursor";
-      size = 32;
+      name = "macOS-White";
+      size = 24;
 
       hyprcursor.enable = true;
       gtk.enable = true;

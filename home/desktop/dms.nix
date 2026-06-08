@@ -126,7 +126,7 @@
       networkPreference = "auto";
 
       cursorSettings = {
-        theme = "System Default";
+        theme = "macOS-White";
         size = 24;
         niri = {
           hideWhenTyping = false;
