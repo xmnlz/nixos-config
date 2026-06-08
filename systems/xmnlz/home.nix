@@ -7,6 +7,7 @@
     stateVersion = "26.05";
 
     sessionVariables = {
+      NIXOS_OZONE_WL = "1";
       LIBVA_DRIVER_NAME = "radeonsi";
       LIBVA_DISPLAY = "drm";
     };
