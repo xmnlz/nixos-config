@@ -1,8 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    (spotify.override {
-      deviceScaleFactor = 2;
-    })
+    spotify
     blender
   ];
 
