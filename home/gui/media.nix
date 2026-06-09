@@ -1,9 +1,8 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    (spotify.override
-      {
-        commandLineArgs = ["--ozone-platform-hint=auto"];
-      })
+    (spotify.override {
+      deviceScaleFactor = 2;
+    })
     blender
   ];
 
