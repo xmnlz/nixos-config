@@ -20,6 +20,7 @@
     ./gui/gaming.nix
     ./gui/media.nix
     ./gui/notes.nix
+    ./gui/helium.nix
 
     ./cli/git.nix
     ./cli/direnv.nix
