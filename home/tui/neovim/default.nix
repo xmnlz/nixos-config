@@ -34,6 +34,7 @@
       telescope-nvim
       telescope-ui-select-nvim
       plenary-nvim
+      gitsigns-nvim
 
       (nvim-treesitter.withPlugins (p: [
         p.lua

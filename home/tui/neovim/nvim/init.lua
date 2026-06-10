@@ -6,6 +6,7 @@ require 'plugins.blink'
 require 'plugins.conform'
 require 'plugins.theme'
 require 'plugins.telescope'
+require 'plugins.gitsigns'
 
 
 -- Sync clipboard between OS and Neovim.
