@@ -4,6 +4,6 @@
   ...
 }: {
   home.packages = with pkgs; [
-    inputs.helium.packages.${system}.default
+    inputs.helium.packages.${stdenv.hostPlatform.system}.default
   ];
 }
