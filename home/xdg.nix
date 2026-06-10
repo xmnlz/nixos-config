@@ -6,5 +6,6 @@
     download = "${config.home.homeDirectory}/downloads";
     documents = "${config.home.homeDirectory}/documents";
     projects = "${config.home.homeDirectory}/projects";
+    publishShare = "${config.home.homeDirectory}/share";
   };
 }
