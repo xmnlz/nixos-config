@@ -16,6 +16,7 @@ vim.lsp.enable({
   "zls",
   "pyright",
   "qmlls",
+  "biome",
 })
 
 
