@@ -7,6 +7,20 @@ telescope.setup {
   extensions = {
     ['ui-select'] = require('telescope.themes').get_dropdown(),
   },
+  pickers = {
+    lsp_references = {
+      layout_strategy = "vertical",
+      layout_config   = { preview_height = 0.55 },
+    },
+    lsp_definitions = {
+      layout_strategy = "vertical",
+      layout_config   = { preview_height = 0.55 },
+    },
+    lsp_implementations = {
+      layout_strategy = "vertical",
+      layout_config   = { preview_height = 0.55 },
+    },
+  },
 }
 
 -- pcall(require('telescope').load_extension, 'fzf')
