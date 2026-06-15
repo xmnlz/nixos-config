@@ -28,26 +28,19 @@ vim.api.nvim_create_autocmd("LspAttach", {
       vim.keymap.set("n", key, fn, { noremap = true, silent = true, buffer = bufnr })
     end
 
-    map("gd", function()
-      builtin.lsp_definitions { show_line = true }
-    end)
 
-    map("gr", function()
-      builtin.lsp_references {
-        show_line            = true,
-        include_current_line = false,
-        include_declaration  = false,
-      }
-    end)
+    map("gr",
+      function()
+        builtin.lsp_references {
+          show_line = true,
+          include_current_line = false,
+          include_declaration = false
+        }
+      end)
 
-    map("gI", function()
-      builtin.lsp_implementations { show_line = true }
-    end)
-
-    map("<leader>D", function()
-      builtin.lsp_type_definitions()
-    end)
-
+    map("gd", function() builtin.lsp_definitions { show_line = true } end)
+    map("gI", function() builtin.lsp_implementations { show_line = true } end)
+    map("<leader>D", function() builtin.lsp_type_definitions() end)
     map("<leader>rn", vim.lsp.buf.rename)
     map("<leader>ca", vim.lsp.buf.code_action)
     map("gD", vim.lsp.buf.declaration)
