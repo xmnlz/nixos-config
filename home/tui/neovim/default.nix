@@ -33,6 +33,7 @@
       nvim-lspconfig
       telescope-nvim
       telescope-ui-select-nvim
+      telescope-fzf-native-nvim
       plenary-nvim
       gitsigns-nvim
 
