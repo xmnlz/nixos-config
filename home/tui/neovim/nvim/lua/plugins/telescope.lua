@@ -1,5 +1,4 @@
 local telescope = require('telescope')
-local sorters = require('telescope.sorters')
 local builtin = require('telescope.builtin')
 
 
@@ -13,13 +12,12 @@ telescope.setup {
   },
   pickers = {
     lsp_references = {
-      initial_mode = "normal",
+      initial_mode = "insert",
       layout_strategy = "vertical",
       layout_config = {
         preview_height = 0.55,
       },
       path_display = { "smart" },
-      sorter = sorters.get_fzy_sorter(),
     },
 
     lsp_definitions = {
@@ -28,7 +26,6 @@ telescope.setup {
       layout_config = {
         preview_height = 0.55,
       },
-      sorter = sorters.get_fzy_sorter(),
     },
 
     lsp_implementations = {
@@ -37,7 +34,6 @@ telescope.setup {
       layout_config = {
         preview_height = 0.55,
       },
-      sorter = sorters.get_fzy_sorter(),
     },
   },
 }
