@@ -13,6 +13,7 @@ telescope.setup {
   },
   pickers = {
     lsp_references = {
+      initial_mode = "normal",
       layout_strategy = "vertical",
       layout_config = {
         preview_height = 0.55,
@@ -22,6 +23,7 @@ telescope.setup {
     },
 
     lsp_definitions = {
+      initial_mode = "normal",
       layout_strategy = "vertical",
       layout_config = {
         preview_height = 0.55,
@@ -30,6 +32,7 @@ telescope.setup {
     },
 
     lsp_implementations = {
+      initial_mode = "normal",
       layout_strategy = "vertical",
       layout_config = {
         preview_height = 0.55,
