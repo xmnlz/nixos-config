@@ -29,12 +29,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end
 
     map("gd", function()
-      builtin.lsp_definitions { initial_mode = "normal", show_line = true }
+      builtin.lsp_definitions { show_line = true }
     end)
 
     map("gr", function()
       builtin.lsp_references {
-        initial_mode         = "normal",
         show_line            = true,
         include_current_line = false,
         include_declaration  = false,
@@ -42,11 +41,11 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end)
 
     map("gI", function()
-      builtin.lsp_implementations { initial_mode = "normal", show_line = true }
+      builtin.lsp_implementations { show_line = true }
     end)
 
     map("<leader>D", function()
-      builtin.lsp_type_definitions { initial_mode = "normal" }
+      builtin.lsp_type_definitions()
     end)
 
     map("<leader>rn", vim.lsp.buf.rename)
