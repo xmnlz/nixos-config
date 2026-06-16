@@ -8,6 +8,5 @@ gitsigns.setup {
 
     map('n', '<leader>bb', gitsigns.blame)
     map('n', '<leader>tb', gitsigns.toggle_current_line_blame)
-    map('n', '<leader>go', open_commit)
   end,
 }
