@@ -8,6 +8,7 @@
     extraPackages = with pkgs; [
       # lsp's
       nixd
+      pyright
       typescript-language-server
       typescript-go
       svelte-language-server
