@@ -4,6 +4,5 @@
     discord
     vesktop
     slack
-    linear
   ];
 }
