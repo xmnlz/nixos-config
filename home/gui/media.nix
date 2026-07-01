@@ -11,7 +11,6 @@
           --add-flags "--enable-features=UseOzonePlatform --ozone-platform=wayland"
       '';
     })
-    blender
   ];
 
   programs.obs-studio = {
