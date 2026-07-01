@@ -9,7 +9,10 @@
       core.editor = "nvim";
       init.defaultBranch = "main";
       push.autoSetupRemote = true;
-      merge.tool = "vimdiff";
+
+      pull.rebase = false;
+      merge.tool = "nvimdiff";
+
       mergetool.prompt = false;
     };
   };
