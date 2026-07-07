@@ -141,11 +141,11 @@
         "nixpkgs-nixcord": "nixpkgs-nixcord"
       },
       "locked": {
-        "lastModified": 1783396978,
-        "narHash": "sha256-YMBXIgzI2JLH1kc/6R0kAfhZrzAfyVLrYwLSfUY3EpA=",
+        "lastModified": 1783423948,
+        "narHash": "sha256-T179gXrHsuOaZi4RwSHDp+o/REcvUYAiXEMCJKiZ0SU=",
         "owner": "FlameFlag",
         "repo": "nixcord",
-        "rev": "6d367422f7f38f6b83196d382f653706ae1a0d75",
+        "rev": "fa47f8720a7c998c8fbfbc477cdbfcb414641c2c",
         "type": "github"
       },
       "original": {
@@ -340,11 +340,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1783386941,
-        "narHash": "sha256-osfzluTpmK+j3ORg1xtnomkPK3dgv+fOOpptnSF4y0k=",
+        "lastModified": 1783427387,
+        "narHash": "sha256-QcHqcMZNG5eGXqpCD+FkKl5Pm64z8Kh/U9lI/dSCw6s=",
         "owner": "vicinaehq",
         "repo": "vicinae",
-        "rev": "e3b30a3f8d96dcf80ee23e6115efdc5b33c6aebc",
+        "rev": "4096191dbb8e613a668492eb255994c49445db2e",
         "type": "github"
       },
       "original": {
