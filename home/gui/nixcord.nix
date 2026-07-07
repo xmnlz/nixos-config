@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  inputs,
+  pkgs,
+  ...
+}: {
   imports = [
     inputs.nixcord.homeModules.nixcord
   ];
@@ -6,7 +10,10 @@
   programs.nixcord = {
     enable = true;
     discord = {
-      vencord.enable = true;
+      vencord = {
+        enable = true;
+        package = pkgs.vencord;
+      };
       krisp.enable = true;
 
       settings = {
