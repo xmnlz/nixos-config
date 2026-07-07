@@ -6,5 +6,6 @@
   programs.nixcord = {
     enable = true;
     discord.krisp.enable = true;
+    discord.silenceNoModClientWarning = true;
   };
 }
