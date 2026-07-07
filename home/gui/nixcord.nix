@@ -6,8 +6,12 @@
   programs.nixcord = {
     enable = true;
     discord = {
+      vencord.enable = true;
       krisp.enable = true;
-      silenceNoModClientWarning = true;
+
+      settings = {
+        SKIP_HOST_UPDATE = true;
+      };
     };
   };
 }
