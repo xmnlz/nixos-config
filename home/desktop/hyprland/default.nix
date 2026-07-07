@@ -1,4 +1,6 @@
 {...}: {
+  imports = [./uwsm.nix];
+
   xdg.configFile."hypr/hyprland.conf".source = ./hyprland.conf;
 
   xdg.configFile."hypr/xdph.conf".text = ''
