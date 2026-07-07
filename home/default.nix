@@ -5,6 +5,7 @@
     ./shell.nix
     ./languages.nix
 
+    ./desktop/hyprland/uwsm.nix
     ./desktop/hyprland
     ./desktop/dms.nix
     ./desktop/qt.nix
@@ -21,7 +22,7 @@
     ./gui/media.nix
     ./gui/notes.nix
     ./gui/helium.nix
-    ./gui/nixcord.nix
+    ./gui/xdiscord.nix
 
     ./cli/git.nix
     ./cli/direnv.nix
