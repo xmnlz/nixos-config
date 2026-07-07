@@ -5,7 +5,6 @@
     ./shell.nix
     ./languages.nix
 
-    ./desktop/hyprland/uwsm.nix
     ./desktop/hyprland
     ./desktop/dms.nix
     ./desktop/qt.nix
