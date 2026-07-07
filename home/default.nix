@@ -21,6 +21,7 @@
     ./gui/media.nix
     ./gui/notes.nix
     ./gui/helium.nix
+    ./gui/nixcord.nix
 
     ./cli/git.nix
     ./cli/direnv.nix
