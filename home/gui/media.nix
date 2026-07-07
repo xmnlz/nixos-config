@@ -1,16 +1,6 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
-    # TODO: https://github.com/NixOS/nixpkgs/pull/53561 wait until this will be merged inside unstable
-    (symlinkJoin {
-      name = "spotify";
-      paths = [spotify];
-      buildInputs = [makeWrapper];
-      postBuild = ''
-        wrapProgram $out/bin/spotify \
-          --unset DISPLAY \
-          --add-flags "--enable-features=UseOzonePlatform --ozone-platform=wayland"
-      '';
-    })
+    spotify
   ];
 
   programs.obs-studio = {
