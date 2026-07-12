@@ -22,6 +22,7 @@
     ./gui/notes.nix
     ./gui/helium.nix
     ./gui/xdiscord.nix
+    ./gui/pgadmin.nix
 
     ./cli/git.nix
     ./cli/direnv.nix
