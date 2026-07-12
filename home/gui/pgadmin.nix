@@ -1,5 +1,0 @@
-{...}: {
-  services.pgadmin = {
-    enable = true;
-  };
-}
