@@ -403,11 +403,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1783876087,
-        "narHash": "sha256-O81yeZEeGcVmS5u12w+P3gMkZKLEfRP5Bc8HyJ7XL14=",
+        "lastModified": 1783903016,
+        "narHash": "sha256-IdUHaA8MUPfITikjZrPxCedMBVwZQNIQl6CI2n2YL5I=",
         "owner": "vicinaehq",
         "repo": "vicinae",
-        "rev": "8802754abf1c1db7db3a70004df0ea8783bed582",
+        "rev": "4933bfd829dcfba4a9b0a1f83a08ce8d29f16691",
         "type": "github"
       },
       "original": {
@@ -451,11 +451,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1783866614,
-        "narHash": "sha256-o2h5BfVz9MPIERBPVHtvQGilphtNn5+cCuqqfY5Lkq8=",
+        "lastModified": 1783893146,
+        "narHash": "sha256-eKn371TzEBL1fbyYMXgmiCMeoJQHe8s6b2lL5Z2vBQc=",
         "owner": "0xc000022070",
         "repo": "zen-browser-flake",
-        "rev": "51602966429e8ccae61324e56b51c37308d1b64e",
+        "rev": "59b3e080fe16995291da16e9229f61aa8aff350a",
         "type": "github"
       },
       "original": {
