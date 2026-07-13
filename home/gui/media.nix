@@ -11,6 +11,7 @@
   xdg.mimeApps = {
     enable = true;
     defaultApplications = {
+      "application/pdf" = ["zen-beta.desktop"];
       "video/mp4" = ["mpv.desktop"];
       "video/x-matroska" = ["mpv.desktop"];
       "video/webm" = ["mpv.desktop"];
