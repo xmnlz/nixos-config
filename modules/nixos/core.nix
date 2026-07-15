@@ -1,5 +1,7 @@
 {self, ...}: {
   nixpkgs.config.allowUnfree = true;
+  # vesktop bundles electron 40.10.5 (EOL); remove once vesktop upstream bumps electron
+  nixpkgs.config.permittedInsecurePackages = ["electron-40.10.5"];
   nixpkgs.overlays = [self.overlays.kuromi-cursor];
 
   nix.settings = {
