@@ -14,6 +14,11 @@ conform.setup({
       command = vim.fn.exepath("biome"),
       require_cwd = false,
     },
+    -- `biome check --write`: formats AND sorts imports + safe fixes
+    ["biome-check"] = {
+      command = vim.fn.exepath("biome"),
+      require_cwd = false,
+    },
   },
 
   formatters_by_ft = {
@@ -29,17 +34,17 @@ conform.setup({
     java = { "google-java-format" },
     kotlin = { "ktlint" },
 
-    javascript = { "biome", "prettierd", "prettier", stop_after_first = true },
-    typescript = { "biome", "prettierd", "prettier", stop_after_first = true },
-    javascriptreact = { "biome", "prettierd", "prettier", stop_after_first = true },
-    typescriptreact = { "biome", "prettierd", "prettier", stop_after_first = true },
+    javascript = { "biome-check", "prettierd", "prettier", stop_after_first = true },
+    typescript = { "biome-check", "prettierd", "prettier", stop_after_first = true },
+    javascriptreact = { "biome-check", "prettierd", "prettier", stop_after_first = true },
+    typescriptreact = { "biome-check", "prettierd", "prettier", stop_after_first = true },
 
-    svelte = { "biome", "prettierd", "prettier", stop_after_first = true },
-    astro = { "biome", "prettierd", "prettier", stop_after_first = true },
-    css = { "biome", "prettierd", "prettier", stop_after_first = true },
+    svelte = { "biome-check", "prettierd", "prettier", stop_after_first = true },
+    astro = { "biome-check", "prettierd", "prettier", stop_after_first = true },
+    css = { "biome-check", "prettierd", "prettier", stop_after_first = true },
     html = { "htmlbeautifier" },
 
-    json = { "biome", "prettierd", "prettier", stop_after_first = true },
+    json = { "biome-check", "prettierd", "prettier", stop_after_first = true },
     yaml = { "yamlfix" },
     toml = { "taplo" },
     proto = { "buf" },
