@@ -12,6 +12,7 @@
 
       pull.rebase = false;
       merge.tool = "nvimdiff";
+      merge.conflictStyle = "zdiff3";
 
       mergetool.prompt = false;
     };
