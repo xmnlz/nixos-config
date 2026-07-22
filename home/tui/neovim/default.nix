@@ -37,6 +37,7 @@
       telescope-fzf-native-nvim
       plenary-nvim
       gitsigns-nvim
+      diffview-nvim
 
       (nvim-treesitter.withPlugins (p: [
         p.lua
