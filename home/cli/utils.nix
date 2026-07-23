@@ -9,6 +9,7 @@
     unzip
     curl
     wget
+    wl-clipboard
     zip
   ];
 }
