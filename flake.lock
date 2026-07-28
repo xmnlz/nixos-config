@@ -158,11 +158,11 @@
         "nixpkgs-nixcord": "nixpkgs-nixcord"
       },
       "locked": {
-        "lastModified": 1785167626,
-        "narHash": "sha256-3dgGZTZCsZZjLRNxNsqsUbKIh2Rfe+wgDWuSumL3Z0Y=",
+        "lastModified": 1785211862,
+        "narHash": "sha256-C9kGKpf7M/HF4CQNZXMT9wuNWtI96cZyS3V5p9wQv7g=",
         "owner": "FlameFlag",
         "repo": "nixcord",
-        "rev": "053f324061bf9ae31b30ea7b8f45470418d352ca",
+        "rev": "aa819877f5f273f0c3c1009710a970b25db18f13",
         "type": "github"
       },
       "original": {
@@ -403,11 +403,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1785169067,
-        "narHash": "sha256-+jDB0zpHeqlJkQMIGXLzYU8QXSdDichHLsd3PUWZQh0=",
+        "lastModified": 1785173354,
+        "narHash": "sha256-QFq1bl8Of8GL7datfff0zJKyxna3+0FQfHoPAuXYiXA=",
         "owner": "vicinaehq",
         "repo": "vicinae",
-        "rev": "ae4e84ca4347b89c906dda0b64ec197660a6dda6",
+        "rev": "01cd7cb4936d9cb14272091623da85e7c880f0dc",
         "type": "github"
       },
       "original": {
@@ -451,11 +451,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1785149826,
-        "narHash": "sha256-0RSrog5pYzJur43VoT+Ur6R7csV8ltQI4tFbc9PjR98=",
+        "lastModified": 1785187836,
+        "narHash": "sha256-s0bx1KUa8wQhkL4zatdFmhae97J5O4DryIMJaHEeS7c=",
         "owner": "0xc000022070",
         "repo": "zen-browser-flake",
-        "rev": "163fb9c2cb58f402ea8da849e0412d583b7fdf3b",
+        "rev": "17a400c5b5afc3b8ff3ec1c8bfa6cc2e763b4d45",
         "type": "github"
       },
       "original": {
