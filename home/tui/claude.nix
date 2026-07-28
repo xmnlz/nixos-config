@@ -17,7 +17,6 @@
         ask = [
           "Write"
           "Edit"
-          "MultiEdit"
           "NotebookEdit"
           "Bash(rm:*)"
           "Bash(mv:*)"
