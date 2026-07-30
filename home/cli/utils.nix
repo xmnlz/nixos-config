@@ -10,6 +10,7 @@
     curl
     wget
     wl-clipboard
+    iw
     zip
   ];
 }
