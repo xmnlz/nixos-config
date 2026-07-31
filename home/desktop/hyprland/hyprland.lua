@@ -1,0 +1,6 @@
+require("config.monitors")
+require("config.looknfeel")
+require("config.input")
+require("config.binds")
+require("config.rules")
+require("config.autostart")

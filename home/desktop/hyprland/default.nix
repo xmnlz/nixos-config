@@ -1,11 +1,18 @@
 {...}: {
   imports = [./uwsm.nix];
 
-  xdg.configFile."hypr/hyprland.conf".source = ./hyprland.conf;
+  xdg.configFile = {
+    "hypr/hyprland.lua".source = ./hyprland.lua;
 
-  xdg.configFile."hypr/xdph.conf".text = ''
-    screencopy {
-      allow_token_by_default = true
-    }
-  '';
+    "hypr/config" = {
+      source = ./config;
+      recursive = true;
+    };
+
+    "hypr/xdph.conf".text = ''
+      screencopy {
+        allow_token_by_default = true
+      }
+    '';
+  };
 }
