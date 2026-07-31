@@ -57,6 +57,10 @@
       kuromi-cursor = final: prev: {
         kuromi-cursor = prev.callPackage ./pkgs/kuromi-cursor.nix {};
       };
+
+      spotify-jam = final: prev: {
+        spotify-jam = prev.callPackage ./pkgs/spotify-jam.nix {};
+      };
     };
 
     mkHost = host:

@@ -1,6 +1,7 @@
 {pkgs, ...}: {
   home.packages = with pkgs; [
     spotify
+    spotify-jam
   ];
 
   programs.obs-studio = {
