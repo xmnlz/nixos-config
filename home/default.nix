@@ -25,13 +25,14 @@
     ./gui/beekeeper-studio.nix
 
     ./cli/git.nix
+    ./cli/ssh.nix
     ./cli/direnv.nix
     ./cli/fastfetch.nix
     ./cli/utils.nix
     ./cli/bitwarden.nix
 
     ./tui/opencode.nix
-    ./tui/claude.nix
+    ./tui/claude
     ./tui/lazygit.nix
     ./tui/btop.nix
     ./tui/tmux

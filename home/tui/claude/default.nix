@@ -2,6 +2,12 @@
   programs.claude-code = {
     enable = true;
 
+    context = ./context.md;
+
+    skills = {
+      code-review = ./skills/code-review;
+    };
+
     settings = {
       model = "opus[1m]";
       effortLevel = "high";
