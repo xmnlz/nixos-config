@@ -17,6 +17,7 @@
       ../../modules/desktop/docker.nix
       ../../modules/desktop/keyring.nix
       ../../modules/desktop/nix-ld.nix
+      ../../modules/desktop/files.nix
     ]
     ++ [
       inputs.nixos-hardware.nixosModules.framework-amd-ai-300-series

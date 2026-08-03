@@ -26,6 +26,9 @@
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     plemoljp
+
+    # Stands in for SF Pro as the UI font, close metrics and actually free
+    inter
   ];
 
   fonts.fontconfig = {
