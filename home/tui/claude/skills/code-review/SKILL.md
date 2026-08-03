@@ -1,6 +1,6 @@
 ---
 name: code-review
-description: Systematic code review for TypeScript / React / Effect-TS code — correctness, architecture, security, performance, and quality, with severity-labelled findings. Use when reviewing a pull request, a branch, a diff, or staged/uncommitted changes; when asked to "review this", "check my changes", "look over this PR", "find problems in what I wrote"; or when establishing review standards. If a project-specific review skill matches the repo being reviewed, prefer that one.
+description: Systematic code review for TypeScript / React / Svelte / SvelteKit / Effect-TS code — correctness, architecture, security, performance, and quality, with severity-labelled findings. Use when reviewing a pull request, a branch, a diff, or staged/uncommitted changes; when asked to "review this", "check my changes", "look over this PR", "find problems in what I wrote"; or when establishing review standards. If a project-specific review skill matches the repo being reviewed, prefer that one.
 allowed-tools: Read, Grep, Glob, Bash, WebFetch
 ---
 
@@ -101,6 +101,8 @@ Load only what the diff touches.
 | Review workflow in depth, diff triage, large PRs, migrations, tests | [references/process.md](references/process.md) |
 | TypeScript — type safety, narrowing, async, immutability | [references/typescript.md](references/typescript.md) |
 | React 19 / Next.js — hooks, RSC, Server Actions, TanStack Query | [references/react-next.md](references/react-next.md) |
+| Svelte 5 — runes, effects vs deriveds, snippets, keyed each, scoped CSS | [references/svelte.md](references/svelte.md) |
+| SvelteKit — load, form actions, remote functions, hooks, page options, auth | [references/sveltekit.md](references/sveltekit.md) |
 | Effect-TS — services, layers, typed errors, schema, concurrency | [references/effect-ts.md](references/effect-ts.md) |
 | Security — injection, authz, SSRF, secrets, XSS | [references/security.md](references/security.md) |
 | Performance — N+1, complexity, caching, bundle, re-renders | [references/performance.md](references/performance.md) |
