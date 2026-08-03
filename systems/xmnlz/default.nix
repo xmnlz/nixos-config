@@ -9,6 +9,7 @@
 
       ../../modules/nixos/core.nix
       ../../modules/nixos/locale.nix
+      ../../modules/nixos/cleanup.nix
 
       ../../modules/desktop/boot.nix
       ../../modules/desktop/general.nix
