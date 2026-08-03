@@ -21,7 +21,6 @@
     ./gui/media.nix
     ./gui/notes.nix
     ./gui/helium.nix
-    ./gui/xdiscord.nix
     ./gui/beekeeper-studio.nix
 
     ./cli/git.nix
