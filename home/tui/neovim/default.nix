@@ -65,4 +65,54 @@
   };
 
   xdg.configFile."nvim".source = ./nvim;
+
+  xdg.desktopEntries.nvim = {
+    name = "Neovim";
+    genericName = "Text Editor";
+    exec = "alacritty -e nvim %F";
+    icon = "nvim";
+    terminal = false;
+    categories = ["Utility" "TextEditor"];
+    mimeType = [
+      "text/plain"
+      "text/markdown"
+      "text/css"
+      "text/javascript"
+      "text/x-python"
+      "text/x-lua"
+      "text/x-csrc"
+      "text/x-chdr"
+      "text/x-c++src"
+      "text/x-c++hdr"
+      "text/x-go"
+      "text/x-rust"
+      "text/x-sql"
+      "application/json"
+      "application/xml"
+      "application/x-yaml"
+      "application/toml"
+      "application/x-shellscript"
+    ];
+  };
+
+  xdg.mimeApps.defaultApplications = {
+    "text/plain" = ["nvim.desktop"];
+    "text/markdown" = ["nvim.desktop"];
+    "text/css" = ["nvim.desktop"];
+    "text/javascript" = ["nvim.desktop"];
+    "text/x-python" = ["nvim.desktop"];
+    "text/x-lua" = ["nvim.desktop"];
+    "text/x-csrc" = ["nvim.desktop"];
+    "text/x-chdr" = ["nvim.desktop"];
+    "text/x-c++src" = ["nvim.desktop"];
+    "text/x-c++hdr" = ["nvim.desktop"];
+    "text/x-go" = ["nvim.desktop"];
+    "text/x-rust" = ["nvim.desktop"];
+    "text/x-sql" = ["nvim.desktop"];
+    "application/json" = ["nvim.desktop"];
+    "application/xml" = ["nvim.desktop"];
+    "application/x-yaml" = ["nvim.desktop"];
+    "application/toml" = ["nvim.desktop"];
+    "application/x-shellscript" = ["nvim.desktop"];
+  };
 }
