@@ -8,4 +8,9 @@
   # so it has to be switched on at this level, adding the package to
   # home.packages is not enough to make it appear
   services.gnome.sushi.enable = true;
+
+  programs.nautilus-open-any-terminal = {
+    enable = true;
+    terminal = "alacritty";
+  };
 }
