@@ -6,6 +6,19 @@
 
     skills = {
       code-review = ./skills/code-review;
+
+      # Vendored copy of github.com/jakubkrehel/skills at a673333. Upstream
+      # ships them as a plugin marketplace, but that install is imperative and
+      # lands outside nix, so the files are checked in here instead. Re-copy
+      # from the repo to update, the per-skill agents/openai.yaml files are
+      # Codex specific and get dropped
+      better-interface = ./skills/better-interface;
+      better-accessibility = ./skills/better-accessibility;
+      better-colors = ./skills/better-colors;
+      better-layout = ./skills/better-layout;
+      better-typography = ./skills/better-typography;
+      better-ui = ./skills/better-ui;
+      better-writing = ./skills/better-writing;
     };
 
     settings = {

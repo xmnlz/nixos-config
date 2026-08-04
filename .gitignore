@@ -6,3 +6,4 @@ result
 # claude skills: track only the shared ones
 home/tui/claude/skills/*
 !home/tui/claude/skills/code-review
+!home/tui/claude/skills/better-*
