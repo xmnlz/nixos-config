@@ -14,17 +14,24 @@ ControlPersist = "10m"; # keep the control socket open for 10 minutes
 # Reuse one connection for repeated ssh/scp/rsync/git to the same host
 ControlPersist = "10m";
 ```
-Comment the surprising, skip the obvious A plain preference needs nothing.
+**Comment the surprising, skip the obvious.** A plain preference needs nothing.
 A workaround for a bug, an upstream default being overridden, or anything that
 looks wrong until you know the backstory, that's what gets written down. Mention
 the symptom I would actually see, so I can match it against whatever is broken
 at the time.
 
-Say it in plain language Full sentences, normal words, the way you would
+**Strip, don't just avoid.** This is an editing rule, not only a writing one.
+When you touch a file, delete the comments that restate the line under them,
+collapse blocks that say the same thing twice, and move whatever survives so it
+sits directly above the line it explains. One idea per comment. If you passed
+over an obvious approach, that's worth a line: the slower option and why it
+lost is exactly what I'd otherwise re-derive.
+
+**Say it in plain language.** Full sentences, normal words, the way you would
 explain it out loud to a coworker. Not clipped telegram style, not documentation
 voice, no jargon that only makes sense if you already know the answer.
 
-Keep it short One to four lines If it needs more than that, either the
+**Keep it short.** One to four lines. If it needs more than that, either the
 code should be restructured or the explanation belongs in the commit message.
 
 **Formatting**
@@ -33,6 +40,9 @@ code should be restructured or the explanation belongs in the commit message.
 - Put the comment above the thing it explains, not trailing on the same line,
   unless it is two or three words
 - Blank line between a comment block and whatever came before it
+- The language's ordinary line comment, not a doc block. Doc block syntax
+  (`/** */`, `"""`, `///`) is for things that are genuinely part of a public
+  API. A module-local constant or helper gets a normal comment above it
 
 ## Talking to me
 
