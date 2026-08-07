@@ -1,7 +1,6 @@
 {self, ...}: {
   nixpkgs.config.allowUnfree = true;
   nixpkgs.overlays = [
-    self.overlays.kuromi-cursor
     self.overlays.spotify-jam
   ];
 

@@ -7,11 +7,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nixcord = {
-      url = "github:FlameFlag/nixcord";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -54,10 +49,6 @@
     ...
   } @ inputs: let
     overlays = {
-      kuromi-cursor = final: prev: {
-        kuromi-cursor = prev.callPackage ./pkgs/kuromi-cursor.nix {};
-      };
-
       spotify-jam = final: prev: {
         spotify-jam = prev.callPackage ./pkgs/spotify-jam.nix {};
       };
