@@ -6,12 +6,6 @@
     homeDirectory = "/home/xmnlz";
     stateVersion = "26.05";
 
-    sessionVariables = {
-      NIXOS_OZONE_WL = "1";
-      LIBVA_DRIVER_NAME = "radeonsi";
-      LIBVA_DISPLAY = "drm";
-    };
-
     pointerCursor = {
       enable = true;
       package = pkgs.apple-cursor;
