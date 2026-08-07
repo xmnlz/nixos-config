@@ -11,12 +11,6 @@
     };
   };
 
-  xdg.portal = {
-    enable = true;
-    extraPortals = [pkgs.xdg-desktop-portal-hyprland];
-    config.hyprland.default = ["hyprland" "gtk"];
-  };
-
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
