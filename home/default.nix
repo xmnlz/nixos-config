@@ -21,6 +21,7 @@
     ./gui/media.nix
     ./gui/notes.nix
     ./gui/helium.nix
+    ./gui/bitwarden.nix
     ./gui/beekeeper-studio.nix
 
     ./cli/git.nix
@@ -28,7 +29,6 @@
     ./cli/direnv.nix
     ./cli/fastfetch.nix
     ./cli/utils.nix
-    ./cli/bitwarden.nix
 
     ./tui/opencode.nix
     ./tui/claude

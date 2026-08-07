@@ -17,6 +17,7 @@
       ../../modules/desktop/hyprland.nix
       ../../modules/desktop/docker.nix
       ../../modules/desktop/keyring.nix
+      ../../modules/desktop/bitwarden.nix
       ../../modules/desktop/nix-ld.nix
       ../../modules/desktop/files.nix
     ]
