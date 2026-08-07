@@ -19,7 +19,6 @@
     ./gui/files.nix
     ./gui/gaming.nix
     ./gui/media.nix
-    ./gui/notes.nix
     ./gui/helium.nix
     ./gui/bitwarden.nix
     ./gui/beekeeper-studio.nix
