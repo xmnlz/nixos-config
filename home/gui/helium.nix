@@ -3,7 +3,7 @@
   inputs,
   ...
 }: {
-  home.packages = with pkgs; [
-    inputs.helium.packages.${stdenv.hostPlatform.system}.default
+  home.packages = [
+    inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

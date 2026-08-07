@@ -9,35 +9,34 @@
       enable = true;
       powerOnBoot = false;
     };
-  };
 
-  hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-    extraPackages = with pkgs; [libva mesa];
-  };
-
-  fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-    plemoljp
-    inter
-  ];
-
-  fonts.fontconfig = {
-    enable = true;
-    antialias = true;
-    hinting = {
+    graphics = {
       enable = true;
-      style = "slight";
-    };
-    subpixel = {
-      rgba = "rgb";
-      lcdfilter = "default";
+      enable32Bit = true;
+      extraPackages = with pkgs; [libva mesa];
     };
   };
 
-  fonts.fontconfig.defaultFonts = {
-    monospace = ["JetBrainsMono Nerd Font Mono"];
+  fonts = {
+    packages = with pkgs; [
+      nerd-fonts.jetbrains-mono
+      plemoljp
+      inter
+    ];
+
+    fontconfig = {
+      enable = true;
+      antialias = true;
+      hinting = {
+        enable = true;
+        style = "slight";
+      };
+      subpixel = {
+        rgba = "rgb";
+        lcdfilter = "default";
+      };
+      defaultFonts.monospace = ["JetBrainsMono Nerd Font Mono"];
+    };
   };
 
   services.upower.enable = true;
