@@ -14,8 +14,8 @@
 
     settings = {
       acLockTimeout = 180;
-      acMonitorTimeout = 180;
-      acPostLockMonitorTimeout = 0;
+      acMonitorTimeout = 0;
+      acPostLockMonitorTimeout = 30;
       acProfileName = "";
       acSuspendBehavior = 2;
       acSuspendTimeout = 600;
@@ -146,13 +146,13 @@
       batteryLockTimeout = 180;
       batteryLowNotificationType = 0;
       batteryLowThreshold = 40;
-      batteryMonitorTimeout = 180;
+      batteryMonitorTimeout = 0;
       batteryNotifyChargeLimit = false;
       batteryNotifyCritical = true;
       batteryNotifyLow = true;
       batteryPillPercentSign = false;
       batteryPillStyle = false;
-      batteryPostLockMonitorTimeout = 0;
+      batteryPostLockMonitorTimeout = 30;
       batteryProfileName = "";
       batterySuspendBehavior = 2;
       batterySuspendTimeout = 300;
@@ -196,6 +196,7 @@
       ];
       clockCompactMode = false;
       clockDateFormat = "dddd - dd/MM/yyyy";
+      clockFormat = "24h";
       configVersion = 12;
       connectedFrameBarStyleBackups = {};
       controlCenterShowAudioIcon = true;
@@ -385,9 +386,9 @@
       enableRippleEffects = true;
       enableU2f = false;
       enabledGpuPciIds = [];
-      fadeToDpmsEnabled = true;
+      fadeToDpmsEnabled = false;
       fadeToDpmsGracePeriod = 5;
-      fadeToLockEnabled = true;
+      fadeToLockEnabled = false;
       fadeToLockGracePeriod = 5;
       filePickerUsageHistory = {};
       firstDayOfWeek = -1;
@@ -419,13 +420,10 @@
       greeterEnableU2f = false;
       greeterFontFamily = "";
       greeterLockDateFormat = "";
-      greeterPadHours12Hour = false;
       greeterRememberLastSession = true;
       greeterRememberLastUser = true;
-      greeterShowSeconds = false;
       greeterSyncBaseline = {};
       greeterSyncPending = false;
-      greeterUse24HourClock = true;
       greeterWallpaperFillMode = "";
       greeterWallpaperPath = "";
       groupActiveWorkspaceApps = false;
@@ -735,7 +733,6 @@
       updaterIntervalSeconds = 1800;
       updaterTerminalAdditionalParams = "";
       updaterUseCustomCommand = false;
-      use24HourClock = true;
       useAutoLocation = false;
       useFahrenheit = false;
       useSystemSoundTheme = false;
