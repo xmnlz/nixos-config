@@ -2,7 +2,6 @@
   nixpkgs.config.allowUnfree = true;
   nixpkgs.overlays = [
     self.overlays.spotify-jam
-    self.overlays.curl-cffi-skip-tests
   ];
 
   nix.settings = {

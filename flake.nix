@@ -52,28 +52,6 @@
       spotify-jam = final: prev: {
         spotify-jam = prev.callPackage ./pkgs/spotify-jam.nix {};
       };
-
-      # curl-cffi 0.15.0 test suite fails against newer httpx, which breaks
-      # yt-dlp and mpv. Mirrors NixOS/nixpkgs#554405; drop once the channel
-      # ships curl-cffi 0.16.0.
-      curl-cffi-skip-tests = final: prev: {
-        pythonPackagesExtensions =
-          prev.pythonPackagesExtensions
-          ++ [
-            (pyFinal: pyPrev: {
-              curl-cffi = pyPrev.curl-cffi.overridePythonAttrs (old: {
-                disabledTestPaths =
-                  (old.disabledTestPaths or [])
-                  ++ [
-                    "tests/unittest/test_async_session.py::test_verify"
-                    "tests/unittest/test_curl.py::test_verify"
-                    "tests/unittest/test_requests.py::test_verify"
-                    "tests/unittest/test_requests.py::test_delete_cookies"
-                  ];
-              });
-            })
-          ];
-      };
     };
 
     mkHost = host:
