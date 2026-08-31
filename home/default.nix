@@ -9,6 +9,7 @@
     ./desktop/dms.nix
     ./desktop/qt.nix
     ./desktop/gtk.nix
+    ./desktop/keyring.nix
 
     ./gui/zen.nix
     ./gui/chromium.nix
