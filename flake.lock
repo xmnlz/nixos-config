@@ -1,5 +1,42 @@
 {
   "nodes": {
+    "dank-qml-common": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1787616035,
+        "narHash": "sha256-L4SjLZuMLP1Z3CzhE3QNwRqaPMF3X4gRchhZAtAS3zM=",
+        "owner": "AvengeMedia",
+        "repo": "dank-qml-common",
+        "rev": "fa6df81f05e7e0e4acd82c46afdca45cb0ef98e6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "AvengeMedia",
+        "repo": "dank-qml-common",
+        "type": "github"
+      }
+    },
+    "dankcalendar": {
+      "inputs": {
+        "dank-qml-common": "dank-qml-common",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1788103843,
+        "narHash": "sha256-GFmjelEuFbkGgao0YKAYZGo8PBqIdD6Ge7+2FJRfRug=",
+        "owner": "AvengeMedia",
+        "repo": "dankcalendar",
+        "rev": "2cb03f00cd68a2c536b2fdee0885c1235002ac41",
+        "type": "github"
+      },
+      "original": {
+        "owner": "AvengeMedia",
+        "repo": "dankcalendar",
+        "type": "github"
+      }
+    },
     "dms": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -83,11 +120,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1788199093,
-        "narHash": "sha256-gh09zTgEsbnoWwrNPzIDajc/HoE446Sc3yKDCPFa7Xs=",
+        "lastModified": 1788229478,
+        "narHash": "sha256-G0F2rFORVcFkEvVdE/qWQTnYekIc77YP5/vRF9nZlxU=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "f772b7f968365e7b2b70a860c509d214639556fe",
+        "rev": "1dc2d1f720ab17fc7981e087346bf54b26d284b1",
         "type": "github"
       },
       "original": {
@@ -222,6 +259,7 @@
     },
     "root": {
       "inputs": {
+        "dankcalendar": "dankcalendar",
         "dms": "dms",
         "helium": "helium",
         "home-manager": "home-manager",
@@ -326,11 +364,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1788196788,
-        "narHash": "sha256-C7Kr4wGWZV1xBEFyqIUjniUZlRVXMq6DVsXvSm53yQI=",
+        "lastModified": 1788212181,
+        "narHash": "sha256-egOvbAGAFfrDwblt5fl73IGOdR1x6x4Dqr5J68jD+Wo=",
         "owner": "vicinaehq",
         "repo": "vicinae",
-        "rev": "bad4c9860e6061a009b0b8281f7e27ed7b08d582",
+        "rev": "8a882f7be84c47b5d7dbc1c500fd22763aea5a7d",
         "type": "github"
       },
       "original": {
@@ -374,11 +412,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1788149125,
-        "narHash": "sha256-GueAv4789rOV70hixnL9+uN4tiDKJm7s92DnTejdpuE=",
+        "lastModified": 1788234882,
+        "narHash": "sha256-ObmDN3fTx/xrmdfEyxDHYnpVvIyKQgCWskcwaDg+vxs=",
         "owner": "0xc000022070",
         "repo": "zen-browser-flake",
-        "rev": "5fe00f38d41ced9a5c0ba1cbf2127d7e8b3e3d56",
+        "rev": "0c22264c8760e5e8aa0290e1141c5ead56d0e55e",
         "type": "github"
       },
       "original": {
