@@ -32,6 +32,14 @@ hl.window_rule({
   float = true,
 })
 
+hl.window_rule({
+  name = "center-bitwarden",
+  match = { class = "^bitwarden$" },
+
+  float = true,
+  center = true,
+})
+
 hl.layer_rule({
   name = "vicinae-blur",
   match = { namespace = "vicinae" },
