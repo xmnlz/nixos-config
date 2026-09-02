@@ -9,7 +9,6 @@
       # lsp's
       nixd
       pyright
-      typescript-language-server
       typescript-go
       svelte-language-server
       vscode-langservers-extracted
@@ -19,12 +18,20 @@
       gopls
       tinymist
       docker-language-server
-      pyright
       qt6.qtdeclarative
-      pkgs.kdePackages.qt5compat
+      kdePackages.qt5compat
 
-      # formaters's
+      # formatter's (biome doubles as the biome LSP)
       alejandra
+      biome
+      prettierd
+      stylua
+      taplo
+      yamlfix
+      clang-tools # clang-format
+      ktlint
+      buf
+      # rustfmt/gofmt/zigfmt come from the project devshell, not from here
     ];
 
     plugins = with pkgs.vimPlugins; [

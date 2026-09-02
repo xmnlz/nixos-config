@@ -2,7 +2,7 @@
   programs.claude-code = {
     enable = true;
 
-    memory.source = ./CLAUDE.md;
+    context = ./CLAUDE.md;
 
     skills = {
       code-review = ./skills/code-review;

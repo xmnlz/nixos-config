@@ -22,16 +22,17 @@ conform.setup({
   },
 
   formatters_by_ft = {
-    nix = { "alejandra", "nixfmt", stop_after_first = true },
+    nix = { "alejandra" },
 
     c = { "clang-format" },
     cpp = { "clang-format" },
+    lua = { "stylua" },
+
+    -- these ship with their toolchain, so they resolve inside the project devshell
     rust = { "rustfmt" },
     zig = { "zigfmt" },
     go = { "gofmt" },
-    lua = { "stylua" },
 
-    java = { "google-java-format" },
     kotlin = { "ktlint" },
 
     javascript = { "biome-check", "prettierd", "prettier", stop_after_first = true },
@@ -42,7 +43,7 @@ conform.setup({
     svelte = { "biome-check", "prettierd", "prettier", stop_after_first = true },
     astro = { "biome-check", "prettierd", "prettier", stop_after_first = true },
     css = { "biome-check", "prettierd", "prettier", stop_after_first = true },
-    html = { "htmlbeautifier" },
+    html = { "prettierd", "prettier", stop_after_first = true },
 
     json = { "biome-check", "prettierd", "prettier", stop_after_first = true },
     yaml = { "yamlfix" },

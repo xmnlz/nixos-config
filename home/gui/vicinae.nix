@@ -9,7 +9,7 @@
 
   programs.vicinae = {
     enable = true;
-    package = pkgs.vicinae;
+    package = inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
     systemd = {
       enable = true;
@@ -19,10 +19,5 @@
         USE_LAYER_SHELL = 1;
       };
     };
-
-    # extensions = with inputs.vicinae-extensions.packages.${pkgs.stdenv.hostPlatform.system}; [
-    #   power-profile
-    #   nix
-    # ];
   };
 }

@@ -17,21 +17,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    hyprland-contrib = {
-      url = "github:hyprwm/contrib";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     helium = {
       url = "github:schembriaiden/helium-browser-nix-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    vicinae.url = "github:vicinaehq/vicinae";
-
-    vicinae-extensions = {
-      url = "github:vicinaehq/extensions";
-      inputs.vicinae.follows = "vicinae";
+    vicinae = {
+      url = "github:vicinaehq/vicinae";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -43,28 +35,19 @@
   };
 
   outputs = {
-    self,
     nixpkgs,
     home-manager,
     ...
   } @ inputs: let
-    overlays = {
-      spotify-jam = final: prev: {
-        spotify-jam = prev.callPackage ./pkgs/spotify-jam.nix {};
-      };
-    };
-
     mkHost = host:
       nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs self;};
+        specialArgs = {inherit inputs;};
         modules = [
           home-manager.nixosModules.home-manager
           ./systems/${host}
         ];
       };
   in {
-    inherit overlays;
-
     nixosConfigurations = {
       xmnlz = mkHost "xmnlz";
     };

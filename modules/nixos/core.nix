@@ -1,8 +1,5 @@
-{self, ...}: {
+{...}: {
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.overlays = [
-    self.overlays.spotify-jam
-  ];
 
   nix.settings = {
     auto-optimise-store = true;

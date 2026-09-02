@@ -1,10 +1,6 @@
-{
-  pkgs,
-  inputs,
-  ...
-}: {
+{pkgs, ...}: {
   home.packages = with pkgs; [
-    inputs.hyprland-contrib.packages.${pkgs.stdenv.hostPlatform.system}.grimblast
+    grimblast
     ripgrep
     unzip
     curl
@@ -12,5 +8,8 @@
     wl-clipboard
     iw
     zip
+
+    brightnessctl
+    playerctl
   ];
 }

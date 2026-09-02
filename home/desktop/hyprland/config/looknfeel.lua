@@ -2,60 +2,60 @@
 -- https://wiki.hypr.land/Configuring/Basics/Variables/
 
 hl.config({
-    general = {
-        gaps_in = 4,
-        gaps_out = 8,
+  general = {
+    gaps_in = 4,
+    gaps_out = 8,
 
-        border_size = 1,
+    border_size = 1,
 
-        col = {
-            active_border = "rgba(ffffff4d)",
-        },
-
-        -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
-        resize_on_border = false,
-
-        -- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
-        allow_tearing = false,
-
-        layout = "dwindle",
+    col = {
+      active_border = "rgba(ffffff4d)",
     },
 
-    decoration = {
-        rounding = 12,
-        rounding_power = 6,
+    -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
+    resize_on_border = false,
 
-        active_opacity = 1.0,
-        inactive_opacity = 1.0,
+    -- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
+    allow_tearing = false,
 
-        shadow = {
-            enabled = true,
-            range = 4,
-            render_power = 3,
-            color = "rgba(1a1a1aee)",
-        },
+    layout = "dwindle",
+  },
 
-        blur = {
-            enabled = false,
-        },
+  decoration = {
+    rounding = 12,
+    rounding_power = 6,
+
+    active_opacity = 1.0,
+    inactive_opacity = 1.0,
+
+    shadow = {
+      enabled = true,
+      range = 4,
+      render_power = 3,
+      color = "rgba(1a1a1aee)",
     },
 
-    animations = {
-        enabled = true,
+    blur = {
+      enabled = false,
     },
+  },
 
-    dwindle = {
-        preserve_split = true,
-    },
+  animations = {
+    enabled = true,
+  },
 
-    master = {
-        new_status = "master",
-    },
+  dwindle = {
+    preserve_split = true,
+  },
 
-    misc = {
-        force_default_wallpaper = 1,
-        disable_hyprland_logo = true,
-    },
+  master = {
+    new_status = "master",
+  },
+
+  misc = {
+    force_default_wallpaper = 1,
+    disable_hyprland_logo = true,
+  },
 })
 
 -- https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
