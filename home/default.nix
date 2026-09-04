@@ -23,6 +23,7 @@
     ./gui/helium.nix
     ./gui/bitwarden.nix
     ./gui/beekeeper-studio.nix
+    ./gui/figma.nix
 
     ./cli/git.nix
     ./cli/ssh.nix
