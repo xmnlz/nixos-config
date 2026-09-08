@@ -9,7 +9,7 @@
       # lsp's
       nixd
       pyright
-      typescript-go
+      typescript
       svelte-language-server
       vscode-langservers-extracted
       tailwindcss-language-server
