@@ -16,6 +16,18 @@
       better-writing = ./skills/better-writing;
     };
 
+    mcpServers = {
+      linear = {
+        type = "http";
+        url = "https://mcp.linear.app/mcp";
+      };
+
+      figma = {
+        type = "http";
+        url = "https://mcp.figma.com/mcp";
+      };
+    };
+
     settings = {
       model = "opus[1m]";
       effortLevel = "high";
