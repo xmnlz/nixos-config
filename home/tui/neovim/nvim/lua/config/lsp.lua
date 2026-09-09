@@ -10,7 +10,7 @@ vim.lsp.enable({
   "svelte",
   "lua_ls",
   "gopls",
-  "tsgo",
+  "ts",
   "html",
   "zls",
   "pyright",
