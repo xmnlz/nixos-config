@@ -1,8 +1,4 @@
-{
-  inputs,
-  pkgs,
-  ...
-}: {
+{inputs, ...}: {
   imports = [
     inputs.dms.homeModules.dank-material-shell
   ];
@@ -10,13 +6,6 @@
   programs.dank-material-shell = {
     enable = true;
     systemd.enable = true;
-
-    # stable is stuck on the pre-f16fc1d vendorHash, so the go-modules fetch
-    # fails. This is master's hash; drop it once stable catches up.
-    # https://github.com/AvengeMedia/DankMaterialShell/issues/3370
-    package = inputs.dms.packages.${pkgs.stdenv.hostPlatform.system}.dms-shell.overrideAttrs (_: {
-      vendorHash = "sha256-Ls6Dquwt0fzDCEjZ6FfTsZTXDI8408mFdByv/OWHVgI=";
-    });
 
     # Setting `settings` at all turns settings.json into a read-only store
     # symlink, so the in-shell settings UI can no longer save.
