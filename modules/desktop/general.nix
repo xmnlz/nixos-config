@@ -41,6 +41,11 @@
 
   services.upower.enable = true;
 
+  services.logind.settings.Login = {
+    HandlePowerKey = "lock";
+    HandlePowerKeyLongPress = "poweroff";
+  };
+
   services.pipewire = {
     enable = true;
     alsa.enable = true;
