@@ -24,6 +24,7 @@
     ./gui/bitwarden.nix
     ./gui/beekeeper-studio.nix
     ./gui/figma.nix
+    ./gui/zennotes.nix
 
     ./cli/git.nix
     ./cli/ssh.nix
