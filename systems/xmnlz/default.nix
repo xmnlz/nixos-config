@@ -23,6 +23,7 @@
     ../../modules/desktop/bitwarden.nix
     ../../modules/desktop/nix-ld.nix
     ../../modules/desktop/files.nix
+    ../../modules/desktop/avatar.nix
   ];
 
   system.stateVersion = "26.05";
