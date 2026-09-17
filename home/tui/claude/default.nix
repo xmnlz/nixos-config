@@ -40,6 +40,8 @@
 
       cleanupPeriodDays = 7;
 
+      permissions.defaultMode = "auto";
+
       env = {
         CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC = "1";
 
