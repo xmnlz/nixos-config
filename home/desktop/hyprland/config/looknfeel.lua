@@ -12,6 +12,12 @@ hl.config({
       active_border = "rgba(ffffff4d)",
     },
 
+    -- Snap floating windows to the usable area, so they don't slide under the bar
+    snap = {
+      enabled = true,
+      monitor_gap = 30,
+    },
+
     -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
     resize_on_border = false,
 
