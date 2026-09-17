@@ -40,6 +40,19 @@ hl.window_rule({
   center = true,
 })
 
+hl.window_rule({
+  name = "picture-in-picture",
+  match = { title = "^[Pp]icture[- ][Ii]n[- ][Pp]icture$" },
+
+  float = true,
+  pin = true,
+  size = { 480, 270 },
+  move = { "monitor_w-488", "monitor_h-278" },
+  keep_aspect_ratio = true,
+  no_initial_focus = true,
+  suppress_event = "activate activatefocus",
+})
+
 hl.layer_rule({
   name = "vicinae-blur",
   match = { namespace = "vicinae" },
