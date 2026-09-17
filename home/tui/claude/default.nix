@@ -1,4 +1,4 @@
-{...}: {
+{pkgs, ...}: {
   programs.claude-code = {
     enable = true;
 
@@ -17,6 +17,11 @@
     };
 
     mcpServers = {
+      nixos = {
+        type = "stdio";
+        command = "${pkgs.mcp-nixos}/bin/mcp-nixos";
+      };
+
       linear = {
         type = "http";
         url = "https://mcp.linear.app/mcp";
