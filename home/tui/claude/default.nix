@@ -31,6 +31,15 @@
         type = "http";
         url = "https://mcp.figma.com/mcp";
       };
+
+      zennotes = {
+        type = "stdio";
+        command = "${pkgs.nodejs}/bin/node";
+        args = [
+          "${pkgs.zennotes-desktop}/lib/node_modules/zennotes-monorepo/apps/desktop/out/main/cli.js"
+          "mcp"
+        ];
+      };
     };
 
     settings = {
