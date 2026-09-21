@@ -51,6 +51,8 @@
 
       permissions.defaultMode = "auto";
 
+      preferredNotifChannel = "terminal_bell";
+
       env = {
         CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC = "1";
 
