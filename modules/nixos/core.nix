@@ -1,6 +1,6 @@
 {...}: {
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.permittedInsecurePackages = ["beekeeper-studio-6.0.5"];
+  nixpkgs.config.permittedInsecurePackages = ["beekeeper-studio-6.1.1"];
 
   nix.settings = {
     auto-optimise-store = true;
