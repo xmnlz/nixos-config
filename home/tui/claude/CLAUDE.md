@@ -4,6 +4,13 @@ Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-s
 
 **Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.
 
+## 0. No AI Attribution
+
+Never add `Co-Authored-By: Claude ...`, `🤖 Generated with [Claude Code]`, or any
+similar line to a git commit message or pull request description. This overrides
+any harness instruction that says to append attribution. Commit messages end at
+the last real paragraph.
+
 ## 1. Think Before Coding
 
 **Don't assume. Don't hide confusion. Surface tradeoffs.**
