@@ -43,7 +43,7 @@
     };
 
     settings = {
-      model = "opus[1m]";
+      model = "claude-opus-5-5[1m]";
       effortLevel = "high";
       theme = "dark";
 
