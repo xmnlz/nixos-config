@@ -62,6 +62,11 @@ hl.config({
     force_default_wallpaper = 1,
     disable_hyprland_logo = true,
   },
+
+  debug = {
+    enable_stdout_logs = true,
+    colored_stdout_logs = false,
+  },
 })
 
 -- https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
