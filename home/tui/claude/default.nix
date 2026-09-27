@@ -1,17 +1,6 @@
-{
-  lib,
-  pkgs,
-  ...
-}: {
+{pkgs, ...}: {
   programs.claude-code = {
     enable = true;
-
-    # nixpkgs-unstable is still on 2.1.278, which the server rejects for
-    # claude-opus-5-5. Drop this and the vendored manifest once unstable
-    # ships 2.1.280 or newer.
-    package = pkgs.claude-code.override {
-      manifest = lib.importJSON ./manifest.zst.json;
-    };
 
     context = ./CLAUDE.md;
 
@@ -55,7 +44,6 @@
 
     settings = {
       model = "claude-opus-5-5[1m]";
-      effortLevel = "high";
       theme = "dark";
 
       cleanupPeriodDays = 7;
