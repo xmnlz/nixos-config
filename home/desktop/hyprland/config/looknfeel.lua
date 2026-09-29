@@ -64,6 +64,7 @@ hl.config({
   },
 
   debug = {
+    disable_logs = false,
     enable_stdout_logs = true,
     colored_stdout_logs = false,
   },
