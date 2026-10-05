@@ -32,6 +32,11 @@
         url = "https://mcp.figma.com/mcp";
       };
 
+      cloudflare = {
+        type = "http";
+        url = "https://mcp.cloudflare.com/mcp";
+      };
+
       zennotes = {
         type = "stdio";
         command = "${pkgs.nodejs}/bin/node";
