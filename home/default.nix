@@ -21,7 +21,6 @@
     ./gui/media.nix
     ./gui/helium.nix
     ./gui/bitwarden.nix
-    ./gui/beekeeper-studio.nix
     ./gui/figma.nix
     ./gui/zennotes.nix
 
