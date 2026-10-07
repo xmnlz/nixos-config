@@ -37,6 +37,11 @@
         url = "https://mcp.cloudflare.com/mcp";
       };
 
+      posthog = {
+        type = "http";
+        url = "https://mcp.posthog.com/mcp";
+      };
+
       zennotes = {
         type = "stdio";
         command = "${pkgs.nodejs}/bin/node";
