@@ -1,6 +1,5 @@
 {
   inputs,
-  pkgs,
   ...
 }: {
   imports = [
@@ -10,10 +9,6 @@
   programs.dank-material-shell = {
     enable = true;
     systemd.enable = true;
-
-    # Back to pkgs.quickshell once it is past 0.3.1: the lock screen went black
-    # at startup, and the lock surface screen fix is only on master.
-    quickshell.package = inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
     # Setting `settings` at all turns settings.json into a read-only store
     # symlink, so the in-shell settings UI can no longer save.
