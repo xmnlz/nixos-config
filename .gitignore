@@ -7,3 +7,5 @@ result
 home/tui/claude/skills/*
 !home/tui/claude/skills/code-review
 !home/tui/claude/skills/better-*
+!home/tui/claude/skills/break-ui
+!home/tui/claude/skills/web-design-guidelines

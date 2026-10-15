@@ -14,6 +14,9 @@
       better-typography = ./skills/better-typography;
       better-ui = ./skills/better-ui;
       better-writing = ./skills/better-writing;
+
+      break-ui = ./skills/break-ui;
+      web-design-guidelines = ./skills/web-design-guidelines;
     };
 
     mcpServers = {
