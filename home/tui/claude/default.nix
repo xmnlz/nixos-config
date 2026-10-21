@@ -67,6 +67,16 @@
 
       preferredNotifChannel = "terminal_bell";
 
+      statusLine = {
+        type = "command";
+        command = toString (pkgs.writeShellScript "claude-statusline" ''
+          ${pkgs.jq}/bin/jq -r '
+            .context_window as $c
+            | "\(.model.display_name) · \(($c.total_input_tokens // 0) / 1000 | floor)k / \(($c.context_window_size // 0) / 1000 | floor)k (\($c.used_percentage // 0 | floor)%)"
+          '
+        '');
+      };
+
       env = {
         CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC = "1";
 
