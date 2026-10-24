@@ -15,6 +15,9 @@
     # Setting `settings` at all turns settings.json into a read-only store
     # symlink, so the in-shell settings UI can no longer save.
     settings = {
+      # Without it DMS reruns every migration from version 0 on each start.
+      configVersion = 42;
+
       acLockTimeout = 180;
       acPostLockMonitorTimeout = 30;
       acSuspendBehavior = 2;
@@ -25,7 +28,6 @@
       batterySuspendTimeout = 300;
       lockAtStartup = true;
       lockBeforeSuspend = true;
-      lockScreenNotificationMode = 2;
       fadeToDpmsEnabled = false;
       fadeToLockEnabled = false;
 
@@ -43,7 +45,7 @@
       # themed declaratively elsewhere.
       currentThemeName = "dynamic";
       currentThemeCategory = "dynamic";
-      matugenScheme = "scheme-content";
+      matugenSpec = "2025";
       matugenTemplateAlacritty = false;
       matugenTemplateDgop = false;
       matugenTemplateEmacs = false;
@@ -85,32 +87,71 @@
           iconScale = 1.25;
           transparency = 0.8;
           widgetTransparency = 0.8;
+          # Otherwise the global surface opacity overrides `transparency` above.
+          followInterfaceStyle = false;
+          widgetFollowInterfaceStyle = false;
           shadowColorMode = "text";
           scrollYBehavior = "none";
 
-          leftWidgets = ["workspaceSwitcher"];
+          leftWidgets = [
+            {
+              id = "workspaceSwitcher";
+              showWorkspaceIndex = true;
+              workspaceFollowFocus = true;
+              workspaceFocusedBorderColor = "surfaceText";
+              workspaceFocusedBorderThickness = 3;
+              workspaceIndicatorStyle = "dots";
+            }
+          ];
           centerWidgets = ["clock"];
           rightWidgets = [
             "notificationButton"
-            "idleInhibitor"
-            "battery"
+            {
+              id = "battery";
+              showBatteryPercentOnlyOnBattery = true;
+            }
             "systemTray"
             {
               id = "controlCenterButton";
-              showAudioIcon = true;
               showMicIcon = true;
-              showMicPercent = false;
-              showScreenSharingIcon = true;
+              showVpnIcon = false;
             }
           ];
         }
       ];
       barElevationEnabled = false;
 
-      showWorkspaceIndex = true;
-      workspaceFollowFocus = true;
-      workspaceFocusedBorderColor = "surfaceText";
-      workspaceFocusedBorderThickness = 3;
+      # Like barConfigs, these lists replace the defaults wholesale.
+      controlCenterWidgets = [
+        { id = "user"; enabled = true; w = 5; h = 1; col = 0; row = 0; }
+        { id = "settings"; enabled = true; w = 1; h = 1; small = true; col = 5; row = 0; }
+        { id = "lock"; enabled = true; w = 1; h = 1; small = true; col = 6; row = 0; }
+        { id = "power"; enabled = true; w = 1; h = 1; small = true; col = 7; row = 0; }
+        { id = "brightnessSlider"; enabled = true; w = 4; h = 1; col = 0; row = 1; }
+        { id = "volumeSlider"; enabled = true; w = 4; h = 1; col = 4; row = 1; }
+        { id = "wifi"; enabled = true; w = 4; h = 1; col = 0; row = 2; }
+        { id = "bluetooth"; enabled = true; w = 4; h = 1; col = 4; row = 2; }
+        { id = "audioOutput"; enabled = true; w = 4; h = 1; col = 0; row = 3; }
+        { id = "audioInput"; enabled = true; w = 4; h = 1; col = 4; row = 3; }
+        { id = "nightMode"; enabled = true; w = 2; h = 1; col = 0; row = 4; }
+        { id = "doNotDisturb"; enabled = true; w = 2; h = 1; col = 2; row = 4; }
+        { id = "runningApps"; enabled = true; w = 7; h = 1; small = true; col = 0; row = 5; }
+        { id = "edit"; enabled = true; w = 1; h = 1; small = true; col = 7; row = 5; }
+        { id = "idleInhibitor"; enabled = true; w = 4; h = 1; }
+      ];
+
+      dashCards = [
+        { id = "clock"; w = 4; h = 1; col = 0; row = 0; }
+        { id = "weather"; w = 1; h = 1; }
+        { id = "calendar"; w = 4; h = 4; col = 0; row = 1; }
+        { id = "media"; w = 2; h = 4; col = 4; row = 1; }
+        { id = "sysmon"; w = 2; h = 1; }
+      ];
+      dashOptions = {
+        calendar.weekends = true;
+        clock.date = true;
+      };
+      wellbeingEnabled = false;
 
       notificationCompactMode = true;
       notificationOverlayEnabled = true;
@@ -119,21 +160,16 @@
       osdAlwaysShowValue = true;
       osdPowerProfileEnabled = true;
 
-      showLauncherButton = false;
       weatherEnabled = false;
-      updaterHideWidget = true;
-      audioVisualizerEnabled = false;
       audioWheelScrollAmount = 10;
-      controlCenterShowMicPercent = true;
-      controlCenterShowVpnIcon = false;
-      privacyShowCameraIcon = true;
-      privacyShowMicIcon = true;
-      privacyShowScreenShareIcon = true;
       screenPreferences.wallpaper = ["all"];
-      showOnLastDisplay.dock = false;
       displaySnapToEdge = false;
       modalDarkenBackground = false;
       notepadUseMonospace = false;
+
+      # DMS records here that it already wrote its floating-window rule. The
+      # file is read-only, so without this it rewrites the rule on every start.
+      dmsWindowsFloatingSeeded = ["hyprland"];
 
       powerActionHoldDuration = 1;
       powerMenuActions = [
