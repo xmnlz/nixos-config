@@ -16,7 +16,7 @@
         "type": "github"
       }
     },
-    "dms": {
+    "dux-shell": {
       "inputs": {
         "dank-qml-common": "dank-qml-common",
         "flake-compat": "flake-compat",
@@ -203,7 +203,7 @@
     },
     "root": {
       "inputs": {
-        "dms": "dms",
+        "dux-shell": "dux-shell",
         "helium": "helium",
         "home-manager": "home-manager",
         "nixos-hardware": "nixos-hardware",

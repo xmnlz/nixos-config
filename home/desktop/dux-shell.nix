@@ -3,7 +3,7 @@
   ...
 }: {
   imports = [
-    inputs.dms.homeModules.dank-material-shell
+    inputs.dux-shell.homeModules.dank-material-shell
   ];
 
   programs.dank-material-shell = {

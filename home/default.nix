@@ -6,7 +6,7 @@
     ./languages.nix
 
     ./desktop/hyprland
-    ./desktop/dms.nix
+    ./desktop/dux-shell.nix
     ./desktop/qt.nix
     ./desktop/gtk.nix
 
