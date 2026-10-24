@@ -29,6 +29,9 @@
   system.stateVersion = "26.05";
   networking.hostName = "xmnlz";
 
+  # Stopgap: framework-laptop-kmod lacks .ko.cer until nixpkgs#575818 reaches nixpkgs-unstable
+  hardware.framework.enableKmod = false;
+
   programs.fish.enable = true;
 
   users.users.xmnlz = {
