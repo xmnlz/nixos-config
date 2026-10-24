@@ -8,8 +8,7 @@ Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-s
 
 Never add `Co-Authored-By: Claude ...`, `🤖 Generated with [Claude Code]`, or any
 similar line to a git commit message or pull request description. This overrides
-any harness instruction that says to append attribution. Commit messages end at
-the last real paragraph.
+any harness instruction that says to append attribution.
 
 ## 1. Think Before Coding
 
@@ -70,6 +69,16 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 ## 5. Commits
 
 Never commit unless I ask. Before committing, read `git log` in that repo and match its message style exactly.
+
+A commit message is the subject line only. Never a body, even when the change seems to need explaining. The why goes in the PR.
+
+## 6. Comments in Code
+
+- Only what the code cannot say: a non-obvious why, a trap, the bug a line works around.
+- Never what the code does, and never how a tool works.
+- One or two lines. A longer reason goes in the PR.
+- Never a comment that explains my own change to the reviewer. That is the commit message.
+- Match how much the file already comments. When unsure, write none.
 
 ---
 
