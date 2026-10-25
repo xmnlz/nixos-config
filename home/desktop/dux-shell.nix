@@ -9,8 +9,6 @@
   programs.dank-material-shell = {
     enable = true;
     systemd.enable = true;
-    # Stopgap: khal 0.14.1 fails to build until nixpkgs#576662 reaches nixpkgs-unstable
-    enableCalendarEvents = false;
 
     # Setting `settings` at all turns settings.json into a read-only store
     # symlink, so the in-shell settings UI can no longer save.

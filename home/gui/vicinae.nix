@@ -1,6 +1,5 @@
 {
   inputs,
-  pkgs,
   ...
 }: {
   imports = [
@@ -9,9 +8,6 @@
 
   programs.vicinae = {
     enable = true;
-    # Temporary: the flake's glibc 2.42 can't load the system mesa (needs 2.43). Revert once fixed:
-    # https://github.com/vicinaehq/vicinae/issues/2040
-    package = pkgs.vicinae;
 
     systemd = {
       enable = true;
