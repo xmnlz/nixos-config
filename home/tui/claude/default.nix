@@ -51,6 +51,11 @@
         url = "https://mcp.posthog.com/mcp";
       };
 
+      svelte = {
+        type = "http";
+        url = "https://mcp.svelte.dev/mcp";
+      };
+
       zennotes = {
         type = "stdio";
         command = "${pkgs.nodejs}/bin/node";
