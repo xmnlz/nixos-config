@@ -17,6 +17,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    dux-greeter = {
+      url = "github:duxlabs-dev/dux-greeter/stable-2.0";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     helium = {
       url = "github:schembriaiden/helium-browser-nix-flake";
       inputs.nixpkgs.follows = "nixpkgs";

@@ -1,16 +1,13 @@
-{pkgs, ...}: {
-  services.greetd = {
-    enable = true;
-    settings = {
-      initial_session = {
-        command = "uwsm start hyprland-uwsm.desktop";
-        user = "xmnlz";
-      };
+{inputs, ...}: {
+  imports = [
+    inputs.dux-greeter.nixosModules.default
+  ];
 
-      default_session = {
-        command = "${pkgs.tuigreet}/bin/tuigreet --time --cmd 'uwsm start hyprland-uwsm.desktop'";
-        user = "greeter";
-      };
-    };
+  programs.dms-greeter = {
+    enable = true;
+    compositor.name = "hyprland";
+    configHome = "/home/xmnlz";
   };
+
+  services.greetd.settings.default_session.user = "greeter";
 }
