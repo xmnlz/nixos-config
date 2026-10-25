@@ -48,6 +48,7 @@ conform.setup({
     json = { "biome-check", "prettierd", "prettier", stop_after_first = true },
     yaml = { "yamlfix" },
     toml = { "taplo" },
+    gritql = { "biome" },
     proto = { "buf" },
     markdown = { "prettierd", "prettier", stop_after_first = true },
     ["_"] = { "trim_whitespace" },

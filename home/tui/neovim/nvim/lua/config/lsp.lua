@@ -2,6 +2,11 @@ local capabilities = require('blink.cmp').get_lsp_capabilities()
 
 vim.lsp.config('*', { capabilities = capabilities })
 
+-- biome parses and formats GritQL, but lspconfig leaves it out of the list
+vim.lsp.config('biome', {
+  filetypes = vim.list_extend(vim.deepcopy(vim.lsp.config.biome.filetypes), { 'gritql' }),
+})
+
 vim.lsp.enable({
   "nixd",
   "docker_language_server",

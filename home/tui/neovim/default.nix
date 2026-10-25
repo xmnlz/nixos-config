@@ -67,6 +67,17 @@
         p.toml
         p.markdown
         p.markdown_inline
+        # not in nvim-treesitter; its own highlights.scm gets installed with it
+        (pkgs.tree-sitter.buildGrammar {
+          language = "gritql";
+          version = "0-unstable-2026-10-25";
+          src = pkgs.fetchFromGitHub {
+            owner = "getgrit";
+            repo = "tree-sitter-gritql";
+            rev = "ecaec54b30685c23e65013b2f116a1fb65284f2e";
+            hash = "sha256-LxdiSPJQCGXpCti0LQVqHwMmqpxbsPAb8Q9X+D1FM80=";
+          };
+        })
       ]))
     ];
   };
