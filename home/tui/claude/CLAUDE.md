@@ -80,6 +80,12 @@ A commit message is the subject line only. Never a body, even when the change se
 - Never a comment that explains my own change to the reviewer. That is the commit message.
 - Match how much the file already comments. When unsure, write none.
 
+## 7. Scripts
+
+- Write helper and throwaway scripts in TypeScript and run them with `bun`. It is installed globally.
+- Never Python. It is not installed, and `nix shell nixpkgs#python3` is not a way around that.
+- This is about scripts you write to get a task done, not a project's own code.
+
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
