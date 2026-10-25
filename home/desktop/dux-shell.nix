@@ -34,7 +34,7 @@
       batteryNotifyLow = true;
 
       enableFprint = true;
-      greeterEnableFprint = true;
+      greeterEnableFprint = false;
 
       clockFormat = "24h";
       clockDateFormat = "dddd - dd/MM/yyyy";
