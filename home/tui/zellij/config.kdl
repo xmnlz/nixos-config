@@ -1,4 +1,6 @@
 default_mode "locked"
+default_layout "compact"
+pane_frames false
 keybinds clear-defaults=true {
     normal {
     }
