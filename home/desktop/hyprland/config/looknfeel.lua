@@ -61,6 +61,8 @@ hl.config({
   misc = {
     force_default_wallpaper = 1,
     disable_hyprland_logo = true,
+    -- The default 10s runs out before slow apps like Vesktop map their window
+    initial_workspace_token_timeout = 60,
   },
 
   debug = {
