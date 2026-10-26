@@ -5,6 +5,7 @@
     nrt = "sudo nixos-rebuild test --flake ~/nixos-config";
 
     tm = "tmux new -A -s \"$(basename $PWD)\"";
+    zj = "zellij attach -c \"$(basename $PWD)\"";
   };
 
   programs.fish = {
