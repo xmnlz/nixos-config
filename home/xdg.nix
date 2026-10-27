@@ -13,4 +13,11 @@
     publicShare = "${config.home.homeDirectory}/share";
     projects = "${config.home.homeDirectory}/projects";
   };
+
+  systemd.user.tmpfiles.rules = [
+    "e %h/.cache - - - 30d"
+    "e %h/.npm/_cacache - - - 30d"
+    "e %h/.local/share/Trash/files - - - 30d"
+    "e %h/.local/share/Trash/info - - - 30d"
+  ];
 }
