@@ -13,6 +13,7 @@
 
   programs.nh = {
     enable = true;
+    flake = "/home/xmnlz/nixos-config";
     clean = {
       enable = true;
       dates = "daily";
