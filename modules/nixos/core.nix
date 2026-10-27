@@ -11,10 +11,12 @@
     ];
   };
 
-  nix.gc = {
-    automatic = true;
-    persistent = true;
-    dates = "daily";
-    options = "--delete-older-than 3d";
+  programs.nh = {
+    enable = true;
+    clean = {
+      enable = true;
+      dates = "daily";
+      extraArgs = "--keep-since 7d --keep 3";
+    };
   };
 }
