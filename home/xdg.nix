@@ -16,6 +16,8 @@
 
   systemd.user.tmpfiles.rules = [
     "e %h/.cache - - - 30d"
+    # Nix's tarball cache is a git repo, and losing old files from it breaks every fetch
+    "x %h/.cache/nix"
     "e %h/.npm/_cacache - - - 30d"
     "e %h/.local/share/Trash/files - - - 30d"
     "e %h/.local/share/Trash/info - - - 30d"
