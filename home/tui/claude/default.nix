@@ -24,11 +24,7 @@
     mcpServers = {
       nixos = {
         type = "stdio";
-        # Stopgap: fastmcp 3 is marked broken since nixpkgs#575004 moved mcp to 2.x, and no
-        # mcp-nixos fix is open yet. The same fix for ha-mcp is nixpkgs#578535
-        command = "${pkgs.mcp-nixos.override {
-          python3Packages = pkgs.python3Packages.overrideScope (final: prev: {mcp = final.mcp_1;});
-        }}/bin/mcp-nixos";
+        command = "${pkgs.mcp-nixos}/bin/mcp-nixos";
       };
 
       linear = {
