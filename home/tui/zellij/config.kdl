@@ -21,7 +21,7 @@ keybinds clear-defaults=true {
         bind "Ctrl Space" { Write 0; SwitchToMode "Locked"; }
         bind "Esc" "Enter" { SwitchToMode "Locked"; }
         bind "c" { NewTab; SwitchToMode "Locked"; }
-        bind "," { SwitchToMode "RenameTab"; TabNameInput 0; }
+        bind "," { SwitchToMode "RenamePane"; PaneNameInput 0; }
         bind "&" { CloseTab; SwitchToMode "Locked"; }
         bind "n" { GoToNextTab; SwitchToMode "Locked"; }
         bind "p" { GoToPreviousTab; SwitchToMode "Locked"; }
@@ -87,20 +87,20 @@ keybinds clear-defaults=true {
         bind "Ctrl c" "Esc" { SwitchToMode "Scroll"; }
         bind "Enter" { SwitchToMode "Search"; }
     }
-    renametab {
+    renamepane {
         bind "Enter" { SwitchToMode "Locked"; }
-        bind "Esc" "Ctrl c" { UndoRenameTab; SwitchToMode "Locked"; }
+        bind "Esc" "Ctrl c" { UndoRenamePane; SwitchToMode "Locked"; }
     }
 }
 plugins {
     zjstatus location="file:@zjstatus@" {
-        format_left "#[bg=#a8c5a0,fg=#2b2d2f,bold] {session} {mode}{tabs}"
-        format_space "#[bg=#2b2d2f]"
-        mode_locked "#[bg=#2b2d2f]   "
-        mode_tmux "#[bg=#2b2d2f,fg=#e8a598] ● "
+        format_left " {tabs}"
+        format_right "{mode}#[fg=#6b7280]{session} "
+        mode_locked "#[fg=#6b7280]○ "
+        mode_tmux "#[fg=#e8a598,bold]● "
         mode_default_to_mode "tmux"
-        tab_normal "#[bg=#2b2d2f,fg=#6b7280] {index} {name} "
-        tab_normal_bell "#[bg=#6b7280,fg=#2b2d2f] {index} {name} "
-        tab_active "#[bg=#e8c99a,fg=#2b2d2f,bold] {index} {name} "
+        tab_normal "#[fg=#6b7280] {index} {focused_pane_title} "
+        tab_normal_bell "#[fg=#e8a598,bold] {index} {focused_pane_title} ● "
+        tab_active "#[fg=#a8c5a0]#[bg=#a8c5a0,fg=#1d1f21,bold]{index} {focused_pane_title}#[fg=#a8c5a0]"
     }
 }
