@@ -42,5 +42,20 @@
         (test -n "$git_branch"; and printf " $git_color%s$normal" "$git_branch") \
         ""
     '';
+
+    functions.fish_title = ''
+      set -l command (status current-command)
+      if set -q argv[1]
+          set command (string split -f1 ' ' -- $argv[1])
+      end
+
+      if test "$command" != fish
+          echo $command
+      else if test "$PWD" = "$HOME"
+          echo '~'
+      else
+          path basename $PWD
+      end
+    '';
   };
 }
