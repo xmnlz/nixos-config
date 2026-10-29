@@ -1,6 +1,8 @@
 default_mode "locked"
 default_layout "minimal"
 pane_frames false
+show_startup_tips false
+show_release_notes false
 keybinds clear-defaults=true {
     locked {
         bind "Ctrl Space" { SwitchToMode "Tmux"; }
