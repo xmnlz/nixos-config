@@ -6,7 +6,7 @@
     nru = "nh os switch -u --commit-lock-file";
 
     tm = "tmux new -A -s \"$(basename $PWD)\"";
-    zj = "zellij attach -c \"$(basename $PWD)\"";
+    zj = "zellij attach -f -c \"$(basename $PWD)\"";
   };
 
   programs.fish = {
