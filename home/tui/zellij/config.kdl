@@ -109,6 +109,9 @@ plugins {
         tab_normal "#[fg=#6b7280] {index} {focused_pane_title} "
         tab_normal_bell "#[fg=#e8a598,bold] {index} {focused_pane_title} ● "
         tab_active "#[fg=#a8c5a0]#[bg=#a8c5a0,fg=#1d1f21,bold]{index} {focused_pane_title}#[fg=#a8c5a0]"
+        tab_display_count "5"
+        tab_truncate_start_format "#[fg=#6b7280]‹ +{count} "
+        tab_truncate_end_format "#[fg=#6b7280] +{count} ›"
     }
 }
 themes {
