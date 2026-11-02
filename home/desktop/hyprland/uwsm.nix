@@ -8,9 +8,6 @@ in {
     export LIBVA_DRIVER_NAME=radeonsi
     export LIBVA_DISPLAY=drm
 
-    export ELECTRON_OZONE_PLATFORM_HINT=auto
-    export MOZ_ENABLE_WAYLAND=1
-
     # home.pointerCursor puts these in home.sessionVariables, but those only
     # reach interactive shells, never the compositor. Exporting them here is
     # what actually sets the cursor now that neither DMS nor an autostart
