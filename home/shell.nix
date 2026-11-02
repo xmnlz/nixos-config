@@ -6,7 +6,6 @@
     nru = "nh os switch -u --commit-lock-file";
 
     tm = "tmux new -A -s \"$(basename $PWD)\"";
-    zj = "zellij attach -f -c \"$(basename $PWD)\"";
   };
 
   programs.fish = {
@@ -56,6 +55,15 @@
       else
           path basename $PWD
       end
+    '';
+
+    functions.zj = ''
+      if set -q ZELLIJ
+          echo "already in zellij session $ZELLIJ_SESSION_NAME" >&2
+          return 1
+      end
+
+      zellij attach -f -c (path basename $PWD)
     '';
   };
 }
