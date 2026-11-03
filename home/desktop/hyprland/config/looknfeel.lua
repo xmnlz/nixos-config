@@ -63,6 +63,8 @@ hl.config({
     disable_hyprland_logo = true,
     -- The default 10s runs out before slow apps like Vesktop map their window
     initial_workspace_token_timeout = 60,
+    -- Off, a restarted lock client loops on the inert lock until a hard reset
+    allow_session_lock_restore = true,
   },
 
   debug = {
