@@ -30,7 +30,6 @@
     ./cli/fastfetch.nix
     ./cli/utils.nix
 
-    ./tui/opencode.nix
     ./tui/claude
     ./tui/lazygit.nix
     ./tui/btop.nix
