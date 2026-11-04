@@ -154,6 +154,7 @@
       notificationCompactMode = true;
       notificationOverlayEnabled = true;
       notificationHistoryMaxAgeDays = 3;
+      notificationFocusedMonitor = true;
       osdPosition = 7;
       osdAlwaysShowValue = true;
       osdPowerProfileEnabled = true;
