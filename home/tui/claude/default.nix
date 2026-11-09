@@ -37,6 +37,11 @@
         url = "https://mcp.figma.com/mcp";
       };
 
+      mobbin = {
+        type = "http";
+        url = "https://api.mobbin.com/mcp";
+      };
+
       cloudflare = {
         type = "http";
         url = "https://mcp.cloudflare.com/mcp";
