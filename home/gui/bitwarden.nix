@@ -1,21 +1,4 @@
-{pkgs, ...}: let
-  bitwardenDesktop = pkgs.writeShellScript "bitwarden-desktop" ''
-    for _ in $(${pkgs.coreutils}/bin/seq 1 300); do
-      locked=$(${pkgs.systemd}/bin/busctl --user get-property \
-        org.freedesktop.secrets \
-        /org/freedesktop/secrets/collection/login \
-        org.freedesktop.Secret.Collection Locked 2>/dev/null || true)
-
-      if [ "$locked" = "b false" ]; then
-        exec ${pkgs.bitwarden-desktop}/bin/bitwarden --autostart
-      fi
-
-      ${pkgs.coreutils}/bin/sleep 1
-    done
-
-    exit 1
-  '';
-in {
+{pkgs, ...}: {
   home.packages = with pkgs; [
     bitwarden-desktop
     bitwarden-cli
@@ -25,11 +8,12 @@ in {
     Unit = {
       Description = "Bitwarden desktop";
       PartOf = ["graphical-session.target"];
-      After = ["graphical-session.target"];
+      After = ["graphical-session.target" "tray.target"];
+      Requires = ["tray.target"];
     };
 
     Service = {
-      ExecStart = "${bitwardenDesktop}";
+      ExecStart = "${pkgs.bitwarden-desktop}/bin/bitwarden --autostart";
       Restart = "on-failure";
       RestartSec = 5;
     };
