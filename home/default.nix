@@ -34,7 +34,6 @@
     ./tui/lazygit.nix
     ./tui/btop.nix
     ./tui/tmux
-    ./tui/zellij
     ./tui/neovim
   ];
 }
