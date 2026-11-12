@@ -22,29 +22,14 @@
         url = "https://mcp.linear.app/mcp";
       };
 
-      figma = {
-        type = "http";
-        url = "https://mcp.figma.com/mcp";
-      };
-
       mobbin = {
         type = "http";
         url = "https://api.mobbin.com/mcp";
       };
 
-      cloudflare = {
-        type = "http";
-        url = "https://mcp.cloudflare.com/mcp";
-      };
-
       posthog = {
         type = "http";
         url = "https://mcp.posthog.com/mcp";
-      };
-
-      svelte = {
-        type = "http";
-        url = "https://mcp.svelte.dev/mcp";
       };
 
       zennotes = {
