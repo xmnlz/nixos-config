@@ -46,7 +46,7 @@
       model = "claude-opus-5-5[1m]";
       theme = "dark";
 
-      cleanupPeriodDays = 7;
+      cleanupPeriodDays = 14;
 
       skillOverrides = {
         simplify = "off";
