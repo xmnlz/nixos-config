@@ -63,6 +63,21 @@
 
       cleanupPeriodDays = 7;
 
+      skillOverrides = {
+        simplify = "off";
+        loop = "off";
+        schedule = "off";
+        claude-api = "off";
+        workflow-authoring = "off";
+        run = "off";
+        plugin-authoring = "off";
+        init = "off";
+        security-review = "off";
+        update-config = "off";
+        keybindings-help = "off";
+        fewer-permission-prompts = "off";
+      };
+
       permissions.defaultMode = "auto";
 
       preferredNotifChannel = "terminal_bell";
