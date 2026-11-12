@@ -5,14 +5,10 @@
     context = ./CLAUDE.md;
 
     skills = {
-      code-review = ./skills/code-review;
+      agent-browser = "${pkgs.agent-browser}/skills/agent-browser";
 
       ui = ./skills/ui;
-
       break-ui = ./skills/break-ui;
-      web-design-guidelines = ./skills/web-design-guidelines;
-
-      agent-browser = "${pkgs.agent-browser}/skills/agent-browser";
     };
 
     mcpServers = {

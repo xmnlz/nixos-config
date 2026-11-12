@@ -5,7 +5,5 @@ result
 
 # claude skills: track only the shared ones
 home/tui/claude/skills/*
-!home/tui/claude/skills/code-review
 !home/tui/claude/skills/ui
 !home/tui/claude/skills/break-ui
-!home/tui/claude/skills/web-design-guidelines
