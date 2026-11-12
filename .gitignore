@@ -7,3 +7,4 @@ result
 home/tui/claude/skills/*
 !home/tui/claude/skills/ui
 !home/tui/claude/skills/break-ui
+!home/tui/claude/skills/preview

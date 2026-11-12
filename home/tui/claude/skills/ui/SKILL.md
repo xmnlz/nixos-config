@@ -23,17 +23,7 @@ review, or several areas at once, follow the rest of this file.
 When a guide talks about another area, open that guide. Paths are relative to
 this skill folder.
 
-## Previews
-
-A preview is an HTML page I use to pick a design before it is built.
-
-- **One to one with the real screen.** Screenshot the real screen first and
-  build from the project's own components, tokens and CSS. Compare the two
-  side by side before showing it. If it does not match, it is not done.
-- **Every state.** Each language the app ships, light and dark, empty,
-  loading, error, and a narrow width.
-- **Several variants**, labelled A, B, C, side by side, so I can pick.
-- **Open it** as soon as it is ready.
+For a throwaway preview to pick a design from, use the `preview` skill.
 
 # Review the interface as one system
 

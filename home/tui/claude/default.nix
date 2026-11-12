@@ -8,6 +8,7 @@
       agent-browser = "${pkgs.agent-browser}/skills/agent-browser";
 
       ui = ./skills/ui;
+      preview = ./skills/preview;
       break-ui = ./skills/break-ui;
     };
 
