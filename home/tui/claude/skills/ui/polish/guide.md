@@ -1,8 +1,3 @@
----
-name: better-ui
-description: Design engineering principles for making interfaces feel polished. Use when building UI components, reviewing frontend code, implementing animations, hover states, shadows, borders, micro-interactions, enter/exit animations, choosing or reviewing icons, or any visual detail work. Triggers on UI polish, design details, "make it feel better", "feels off", stagger animations, border radius, optical alignment, image outlines, box shadows, icons, icon stroke weight, icon states, motion restraint.
----
-
 # Details that make interfaces feel better
 
 Great interfaces rarely come from a single thing. It's usually a collection of small details that compound into a great experience. Apply these principles when building or reviewing UI code.
@@ -11,7 +6,7 @@ When reviewing, slow the interface down: replay motion at 10% speed in the brows
 
 Preserve the project's component library, tokens, and density. Match its established motion language except where a principle below prescribes an exact interaction pattern.
 
-Typography (text wrapping, font rendering, tabular numbers, spacing) is covered by the `better-typography` skill; use that for anything text-related. Accessibility (hit areas, focus states, keyboard support, ARIA, reduced motion) is covered by the `better-accessibility` skill. Layout structure (grouping, spacing between sections, breakpoints, spatial RTL) is covered by the `better-layout` skill.
+Typography (text wrapping, font rendering, tabular numbers, spacing) is covered by the `typography/` guide; use that for anything text-related. Accessibility (hit areas, focus states, keyboard support, ARIA, reduced motion) is covered by the `accessibility/` guide. Layout structure (grouping, spacing between sections, breakpoints, spatial RTL) is covered by the `layout/` guide.
 
 ## Quick Reference
 
@@ -102,7 +97,7 @@ No custom animation on high-frequency interactions: the attention cost repeats o
 
 ## Review Output Format
 
-Use this format only when the user asks for a standalone UI-polish review. When `better-interface` orchestrates the review, provide domain evidence and findings to that skill and let its output format, severity scale, consolidation rules, cap, and verdict take precedence.
+Use this format only when the user asks for a standalone UI-polish review. When `ui` orchestrates the review, provide domain evidence and findings to that skill and let its output format, severity scale, consolidation rules, cap, and verdict take precedence.
 
 Present the standalone review in two parts.
 

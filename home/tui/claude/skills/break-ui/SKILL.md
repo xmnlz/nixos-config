@@ -1,6 +1,6 @@
 ---
 name: break-ui
-description: Try to break a piece of UI by feeding it worst-case data — long names, unbreakable emails, one-letter names, missing fields, huge counts, zero items, long labels, non-Latin text, emoji, extreme numbers — then render it behind a "Demo data / Worst case" toggle and report everything that broke, with the fix for each. Use when the user asks to stress-test, break, or find edge cases in a component or screen, or to "try the worst case". For visual polish and motion use better-ui; for a full interface review use better-interface.
+description: Try to break a piece of UI by feeding it worst-case data — long names, unbreakable emails, one-letter names, missing fields, huge counts, zero items, long labels, non-Latin text, emoji, extreme numbers — then render it behind a "Demo data / Worst case" toggle and report everything that broke, with the fix for each. Use when the user asks to stress-test, break, or find edge cases in a component or screen, or to "try the worst case". For visual polish, motion and full interface reviews use the ui skill.
 argument-hint: <component or screen> [fix]
 ---
 
@@ -10,7 +10,7 @@ Adapted from Emil Kowalski's `break-ui` skill.
 
 If invoked with no component named, ask which component or screen to break, and nothing else.
 
-An adversarial skill. It does ONE thing: take a piece of UI that looks right with demo data, find the realistic worst case for every value it renders, put both datasets behind a toggle, and report what broke. It does not redesign the component, critique its taste or review its motion (that's `better-ui`), or audit accessibility (that's `better-accessibility`).
+An adversarial skill. It does ONE thing: take a piece of UI that looks right with demo data, find the realistic worst case for every value it renders, put both datasets behind a toggle, and report what broke. It does not redesign the component, critique its taste or review its motion (that's the ui skill), or audit accessibility (that's the ui skill).
 
 ## Operating Posture
 

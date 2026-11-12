@@ -1,13 +1,8 @@
----
-name: better-layout
-description: Layout structure for web interfaces, from grouping and alignment to reading order, progressive disclosure, and adaptive breakpoints. Use when structuring a page or component, spacing or aligning controls, deciding what collapses at small sizes, handling RTL layout direction, or reviewing frontend code for layout. Triggers on layout, spacing, alignment, grouping, negative space, whitespace, visual hierarchy, reading order, progressive disclosure, breakpoints, responsive layout, container queries, safe area, full-bleed, edge-to-edge, layout margins, RTL layout, logical properties.
----
-
 # Layout that communicates structure
 
 Layout communicates before a single word is read: position, spacing, and alignment carry hierarchy on their own, and generous space beats decoration. A good layout also survives stress: resize it, translate it, mirror it for RTL, and it should still hold together. Apply these principles when building or reviewing UI code, and express every change in the project's existing styling system (Tailwind, plain CSS, CSS-in-JS); never introduce a second styling approach.
 
-Hit-area sizes and focus behavior are covered by the `better-accessibility` skill; visual polish (radius, shadows, animation) by the `better-ui` skill; line length and text spacing by the `better-typography` skill.
+Hit-area sizes and focus behavior are covered by the `accessibility/` guide; visual polish (radius, shadows, animation) by the `polish/` guide; line length and text spacing by the `typography/` guide.
 
 Treat the numeric values below as starting points for interfaces without an established density or spacing system. Preserve deliberate platform chrome, compact professional tools, and project tokens when they remain usable under hit-area, zoom, localization, and viewport stress tests.
 
@@ -42,7 +37,7 @@ Progressive disclosure needs a visible affordance. Use the project's established
 
 ### 6. Breathing Room Between Targets
 
-Without an established density system, start with `12px` between adjacent bordered or filled controls and `24px` of clearance around borderless text- and icon-only controls. Compact layouts may use less when `better-accessibility` hit areas do not overlap and the controls remain visually distinct.
+Without an established density system, start with `12px` between adjacent bordered or filled controls and `24px` of clearance around borderless text- and icon-only controls. Compact layouts may use less when `accessibility/` hit areas do not overlap and the controls remain visually distinct.
 
 ### 7. Inset Buttons from the Edges
 
@@ -75,7 +70,7 @@ Plan for substantial and language-dependent string growth rather than relying on
 
 ## Review Output Format
 
-Use this format only when the user asks for a standalone layout review. When `better-interface` orchestrates the review, provide domain evidence and findings to that skill and let its output format, severity scale, consolidation rules, cap, and verdict take precedence.
+Use this format only when the user asks for a standalone layout review. When `ui` orchestrates the review, provide domain evidence and findings to that skill and let its output format, severity scale, consolidation rules, cap, and verdict take precedence.
 
 Present the standalone review in two parts.
 

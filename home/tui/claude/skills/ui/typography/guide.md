@@ -1,15 +1,10 @@
----
-name: better-typography
-description: Web typography from choosing fonts to spacing, wrapping and accessibility. Use when picking or pairing typefaces, configuring variable fonts or OpenType features, setting up a type scale, checking heading hierarchy, styling text in components, truncating text, styling underlines, selection, placeholders or carets, or reviewing frontend code for typography. Triggers on typography, fonts, font formats, woff2, variable fonts, font-weight, opentype, font-feature-settings, letter-spacing, line-height, type scale, heading hierarchy, heading levels, tabular numbers, text-wrap, truncation, line clamp, underlines, text-decoration, text selection, iOS input zoom, font smoothing, text contrast, measure, line length, text-box, smart punctuation, drop cap.
----
-
 # Great typography
 
 Good typography is mostly restraint. A sensible scale, comfortable spacing and enough contrast beat any clever effect. A label, a table cell, a marketing headline and an article paragraph should not share one set of rules. Apply these principles when building or reviewing anything with text in it.
 
 When reviewing, read the page instead of scanning the code: squint to check the hierarchy holds, read one full paragraph for comfort, and resize the viewport to catch bad wrapping, widows and truncation at real content lengths.
 
-The words themselves (button labels, error messages, empty states) are covered by the `better-writing` skill; semantic heading structure by `better-accessibility`; spatial RTL layout and logical CSS properties by `better-layout`; rendered-pair contrast measurement and color remediation by `better-colors`. This skill owns how text renders, wraps, and behaves in mixed-direction content.
+The words themselves (button labels, error messages, empty states) are covered by the `writing/` guide; semantic heading structure by `accessibility/`; spatial RTL layout and logical CSS properties by `layout/`; rendered-pair contrast measurement and color remediation by `colors/`. This skill owns how text renders, wraps, and behaves in mixed-direction content.
 
 **Match the project's styling system.** Before suggesting or writing any fix, check how the codebase styles things and express every change in that system: Tailwind utilities in a Tailwind project, plain declarations in CSS, CSS Modules, styled-components or StyleX. The [cheat sheet](css-cheat-sheet.md) maps each declaration to its Tailwind equivalent. Never introduce a second styling approach just to apply a typography fix.
 
@@ -48,7 +43,7 @@ Define a small set of sizes and deviate from it as little as possible. Hard-code
 
 ### 6. Heading Sizes Descend with Level
 
-Within a coherent page hierarchy, map heading levels to descending steps of the type scale: a visually subordinate heading should not accidentally overpower its parent. Adjacent levels may share a size toward the small end of the scale as long as weight or spacing keeps them distinct. Pick semantic heading elements according to `better-accessibility`; this skill controls only their visual treatment.
+Within a coherent page hierarchy, map heading levels to descending steps of the type scale: a visually subordinate heading should not accidentally overpower its parent. Adjacent levels may share a size toward the small end of the scale as long as weight or spacing keeps them distinct. Pick semantic heading elements according to `accessibility/`; this skill controls only their visual treatment.
 
 ### 7. Line-Height by Role
 
@@ -88,7 +83,7 @@ iOS Safari zooms the whole page when an input's text is smaller than `16px`. Kee
 
 ### 16. Size and Contrast Floors
 
-Start long-form body text near the browser default of `16px`, then judge it in the actual typeface, measure, platform, and product density. UI text can go smaller: `14px` is a useful starting point for inputs and menus (inputs still need `16px` on mobile, see principle 15), `13px` for captions, rarely below `12px`. When text appears low-contrast, use `better-colors` to measure the rendered pair and `better-accessibility` to classify the requirement; do not change colors unless asked.
+Start long-form body text near the browser default of `16px`, then judge it in the actual typeface, measure, platform, and product density. UI text can go smaller: `14px` is a useful starting point for inputs and menus (inputs still need `16px` on mobile, see principle 15), `13px` for captions, rarely below `12px`. When text appears low-contrast, use `colors/` to measure the rendered pair and `accessibility/` to classify the requirement; do not change colors unless asked.
 
 ### 17. Font Smoothing on the Root
 
@@ -96,7 +91,7 @@ On macOS text renders heavier than intended. Apply `-webkit-font-smoothing: anti
 
 ### 18. Language and Bidi Behavior
 
-Set `lang` so browsers and assistive technology choose the right pronunciation, quotes, and hyphenation. Set `dir` at the document or content boundary where direction changes, preserve digit order, and use `<bdi>` for isolated mixed-direction values when needed. Spatial mirroring and logical CSS properties belong to `better-layout`.
+Set `lang` so browsers and assistive technology choose the right pronunciation, quotes, and hyphenation. Set `dir` at the document or content boundary where direction changes, preserve digit order, and use `<bdi>` for isolated mixed-direction values when needed. Spatial mirroring and logical CSS properties belong to `layout/`.
 
 ### 19. Keep Useful Text Selectable
 
@@ -112,7 +107,7 @@ Set `lang` so browsers and assistive technology choose the right pronunciation, 
 | Synthesized face differs from the intended design | Load the required face; disable only the verified synthesis mode without erasing emphasis |
 | Hard-coded one-off font sizes | Use the type scale |
 | Child heading visually overpowers its parent | Map that section's hierarchy to descending scale steps |
-| Heading element picked for its default size | Choose semantics with `better-accessibility`, then set the visual size in CSS |
+| Heading element picked for its default size | Choose semantics with `accessibility/`, then set the visual size in CSS |
 | `line-height: 24px` on scalable text | Unitless value (`1.5`) |
 | Full-width paragraphs | Cap around 60–75 characters per line |
 | Orphan on the last line of a paragraph | `text-wrap: pretty` |
@@ -132,7 +127,7 @@ Set `lang` so browsers and assistive technology choose the right pronunciation, 
 
 ## Review Output Format
 
-Use this format only when the user asks for a standalone typography review. When `better-interface` orchestrates the review, provide domain evidence and findings to that skill and let its output format, severity scale, consolidation rules, cap, and verdict take precedence.
+Use this format only when the user asks for a standalone typography review. When `ui` orchestrates the review, provide domain evidence and findings to that skill and let its output format, severity scale, consolidation rules, cap, and verdict take precedence.
 
 Present the standalone review in two parts.
 

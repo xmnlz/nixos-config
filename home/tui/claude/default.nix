@@ -7,13 +7,7 @@
     skills = {
       code-review = ./skills/code-review;
 
-      better-interface = ./skills/better-interface;
-      better-accessibility = ./skills/better-accessibility;
-      better-colors = ./skills/better-colors;
-      better-layout = ./skills/better-layout;
-      better-typography = ./skills/better-typography;
-      better-ui = ./skills/better-ui;
-      better-writing = ./skills/better-writing;
+      ui = ./skills/ui;
 
       break-ui = ./skills/break-ui;
       web-design-guidelines = ./skills/web-design-guidelines;

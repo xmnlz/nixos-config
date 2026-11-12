@@ -1,14 +1,8 @@
----
-name: better-writing
-description: >-
-  UX writing and interface copy, from voice and button labels to error messages and empty states. Use when writing or reviewing any user-facing text: button and link labels, form errors, placeholders, settings labels, onboarding flows, notifications, or empty states. Triggers on UX writing, microcopy, interface copy, product copy, copywriting, button labels, link text, error messages, empty states, placeholder text, settings labels, capitalization, title case, sentence case, voice and tone.
----
-
 # Writing that disappears into the interface
 
 Clear and brief beats clever, consistency beats variety, and the best error message is the interaction redesigned so the error can't happen. Apply these principles when writing or reviewing any user-facing text.
 
-How copy renders (capitalization via `text-transform`, truncation, smart punctuation) is covered by the `better-typography` skill; error markup and announcements (`aria-invalid`, live regions) by the `better-accessibility` skill; room for translated strings by the `better-layout` skill.
+How copy renders (capitalization via `text-transform`, truncation, smart punctuation) is covered by the `typography/` guide; error markup and announcements (`aria-invalid`, live regions) by the `accessibility/` guide; room for translated strings by the `layout/` guide.
 
 ## Core Principles
 
@@ -106,7 +100,7 @@ Placeholders show the expected format (`name@example.com`, `DD/MM/YYYY`). A plac
 
 ## Review Output Format
 
-Use this format only when the user asks for a standalone writing review. When `better-interface` orchestrates the review, provide domain evidence and findings to that skill and let its output format, severity scale, consolidation rules, cap, and verdict take precedence.
+Use this format only when the user asks for a standalone writing review. When `ui` orchestrates the review, provide domain evidence and findings to that skill and let its output format, severity scale, consolidation rules, cap, and verdict take precedence.
 
 Present the standalone review in two parts.
 
