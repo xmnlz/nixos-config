@@ -86,6 +86,12 @@ A commit message is the subject line only. Never a body, even when the change se
 - Never Python. It is not installed, and `nix shell nixpkgs#python3` is not a way around that.
 - This is about scripts you write to get a task done, not a project's own code.
 
+## 8. Showing Work
+
+- Open whatever you made for me to look at (a page, a preview, a note) as soon as it is ready. Do not wait to be asked.
+- Before every commit and every PR, run the repo's review skill if it has one, and fix what it finds.
+- A PR description is short bullets of what the reviewer gets. Any UI change carries before and after screenshots. Add a flow chart only when a flow changed.
+
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
