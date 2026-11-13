@@ -13,7 +13,7 @@
     };
 
     Service = {
-      ExecStart = "${pkgs.bitwarden-desktop}/bin/bitwarden --autostart";
+      ExecStart = "${pkgs.bitwarden-desktop}/bin/bitwarden";
       Restart = "on-failure";
       RestartSec = 5;
     };
