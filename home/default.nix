@@ -14,7 +14,7 @@
     ./gui/chromium.nix
 
     ./gui/communication.nix
-    ./gui/alacritty.nix
+    ./gui/ghostty.nix
     ./gui/vicinae.nix
     ./gui/files.nix
     ./gui/gaming.nix

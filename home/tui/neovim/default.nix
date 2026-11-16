@@ -87,7 +87,7 @@
   xdg.desktopEntries.nvim = {
     name = "Neovim";
     genericName = "Text Editor";
-    exec = "alacritty -e nvim %F";
+    exec = "ghostty -e nvim %F";
     icon = "nvim";
     terminal = false;
     categories = ["Utility" "TextEditor"];
