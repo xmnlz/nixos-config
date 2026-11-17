@@ -65,6 +65,11 @@
       };
 
       permissions.defaultMode = "auto";
+      permissions.deny = [
+        "Bash(python:*)"
+        "Bash(python3:*)"
+        "Bash(nix shell nixpkgs#python3:*)"
+      ];
 
       preferredNotifChannel = "terminal_bell";
 
