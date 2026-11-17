@@ -3,5 +3,6 @@
 
   systemd.tmpfiles.rules = [
     "L+ /var/lib/AccountsService/icons/xmnlz - - - - /home/xmnlz/pictures/avatar.png"
+    "L+ /home/xmnlz/.face - - - - /home/xmnlz/pictures/avatar.png"
   ];
 }
