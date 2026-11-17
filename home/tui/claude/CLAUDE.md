@@ -68,7 +68,7 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 
 ## 5. Commits
 
-Never commit unless I ask. Before committing, read `git log` in that repo and match its message style exactly.
+Never commit unless I ask or the repo's own instructions say otherwise. Before committing, read `git log` in that repo and match its message style exactly.
 
 A commit message is the subject line only. Never a body, even when the change seems to need explaining. The why goes in the PR.
 
