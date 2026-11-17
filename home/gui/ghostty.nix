@@ -11,6 +11,7 @@
       window-inherit-working-directory = false;
       tab-inherit-working-directory = false;
       split-inherit-working-directory = false;
+      keybind = ["ctrl+,=unbind"];
     };
   };
 }
