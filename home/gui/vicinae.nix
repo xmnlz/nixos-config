@@ -1,4 +1,5 @@
 {
+  config,
   inputs,
   pkgs,
   ...
@@ -23,7 +24,22 @@ in {
   programs.vicinae = {
     enable = true;
 
-    settings.providers.applications.preferences.launchPrefix = "${hl-exec}/bin/hl-exec uwsm app --";
+    settings.providers = {
+      applications.preferences.launchPrefix = "${hl-exec}/bin/hl-exec uwsm app --";
+
+      # Not all of ~: browser profiles and app state change nonstop and bloat the index.
+      files.preferences.indexingPaths = with config.xdg.userDirs; [
+        desktop
+        documents
+        download
+        music
+        pictures
+        videos
+        projects
+        "${config.home.homeDirectory}/nixos-config"
+        "${config.home.homeDirectory}/work-internship"
+      ];
+    };
 
     systemd = {
       enable = true;
