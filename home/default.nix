@@ -17,7 +17,6 @@
     ./gui/ghostty.nix
     ./gui/vicinae.nix
     ./gui/files.nix
-    ./gui/gaming.nix
     ./gui/media.nix
     ./gui/helium.nix
     ./gui/bitwarden.nix
