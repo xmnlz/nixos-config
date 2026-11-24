@@ -151,6 +151,15 @@
       };
       wellbeingEnabled = false;
 
+      mediaLyricsProviders = [
+        { id = "lyricsplus"; enabled = true; }
+        { id = "betterlyrics"; enabled = true; }
+        { id = "unison"; enabled = true; }
+        { id = "kugou"; enabled = true; }
+        { id = "lrclib"; enabled = true; }
+        { id = "youtubemusic"; enabled = true; }
+      ];
+
       notificationCompactMode = true;
       notificationOverlayEnabled = true;
       notificationHistoryMaxAgeDays = 3;
