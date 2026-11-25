@@ -32,6 +32,7 @@
     ./tui/claude
     ./tui/lazygit.nix
     ./tui/btop.nix
+    ./tui/herdr.nix
     ./tui/tmux
     ./tui/neovim
   ];
