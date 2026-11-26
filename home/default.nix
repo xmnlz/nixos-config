@@ -22,6 +22,7 @@
     ./gui/bitwarden.nix
     ./gui/figma.nix
     ./gui/zennotes.nix
+    ./gui/herdr.nix
 
     ./cli/git.nix
     ./cli/ssh.nix
